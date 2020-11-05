@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <root>
+    <file name="ActionAspectDescriptorImpl.java">
+      <unit at="12,0,30,0" name="FirstOrderLogic.actions.ActionAspectDescriptorImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:b99417da-4eab-4617-8cfa-ffc2f0e4d5e3(FirstOrderLogic.actions)/5925154266062172456">
+    <file name="AtomicStatementConverters.java">
+      <node id="5925154266062172559" at="18,7,19,39" concept="4" />
+      <node id="5925154266062174080" at="21,11,22,85" concept="4" />
+      <node id="5925154266062174483" at="23,84,24,128" concept="1" />
+      <node id="5925154266062179110" at="33,7,34,39" concept="4" />
+      <node id="5925154266062179217" at="36,11,37,85" concept="4" />
+      <node id="5925154266062191960" at="38,83,39,186" concept="4" />
+      <node id="5925154266062192344" at="39,186,40,73" concept="1" />
+      <node id="5925154266062180688" at="40,73,41,73" concept="1" />
+      <node id="5925154266062195192" at="44,11,45,85" concept="4" />
+      <node id="5925154266062197130" at="46,83,47,186" concept="4" />
+      <node id="5925154266062197466" at="47,186,48,73" concept="1" />
+      <node id="5925154266062199788" at="48,73,49,73" concept="1" />
+      <node id="5925154266062172456" at="58,0,59,0" concept="5" trace="EmptyAtomicStatement$t6" />
+      <node id="5925154266062172456" at="59,0,60,0" concept="5" trace="PredicateReference$$I" />
+      <node id="5925154266062172456" at="60,0,61,0" concept="5" trace="ConstantReference$fz" />
+      <node id="5925154266062172456" at="61,0,62,0" concept="5" trace="FunctionReference$P$" />
+      <node id="5925154266062172456" at="65,0,66,0" concept="5" trace="reference$2bI7" />
+      <node id="5925154266062172456" at="66,0,67,0" concept="5" trace="predicate$Y1x2" />
+      <node id="5925154266062172456" at="67,0,68,0" concept="5" trace="reference$y4zr" />
+      <node id="5925154266062172456" at="68,0,69,0" concept="5" trace="term1$Q5Mf" />
+      <node id="5925154266062174080" at="22,85,25,13" concept="2" />
+      <node id="5925154266062179217" at="37,85,42,13" concept="2" />
+      <node id="5925154266062195192" at="45,85,50,13" concept="2" />
+      <node id="5925154266062174080" at="20,84,26,11" concept="0" />
+      <node id="5925154266062172559" at="19,39,27,9" concept="2" />
+      <node id="5925154266062179217" at="35,84,43,11" concept="0" />
+      <node id="5925154266062195192" at="43,11,51,11" concept="0" />
+      <node id="5925154266062172559" at="17,91,28,7" concept="0" />
+      <node id="5925154266062172516" at="17,0,30,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <node id="5925154266062179110" at="34,39,52,9" concept="2" />
+      <node id="5925154266062179110" at="32,91,53,7" concept="0" />
+      <node id="5925154266062179071" at="32,0,55,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="5925154266062174082" at="23,84,24,128" />
+      <scope id="5925154266062179219" at="38,83,41,73">
+        <var name="term" id="5925154266062191963" />
+      </scope>
+      <scope id="5925154266062195196" at="46,83,49,73">
+        <var name="term" id="5925154266062197133" />
+      </scope>
+      <scope id="5925154266062174080" at="21,11,25,13">
+        <var name="ref" id="5925154266062174080" />
+      </scope>
+      <scope id="5925154266062172561" at="20,84,26,11" />
+      <scope id="5925154266062179217" at="36,11,42,13">
+        <var name="ref" id="5925154266062179217" />
+      </scope>
+      <scope id="5925154266062195192" at="44,11,50,13">
+        <var name="ref" id="5925154266062195192" />
+      </scope>
+      <scope id="5925154266062172559" at="18,7,27,9">
+        <var name="empty" id="5925154266062172559" />
+      </scope>
+      <scope id="5925154266062172516" at="17,91,28,7" />
+      <scope id="5925154266062172516" at="17,0,30,0">
+        <var name="enclosingNode" id="5925154266062172516" />
+        <var name="model" id="5925154266062172516" />
+        <var name="newNode" id="5925154266062172516" />
+        <var name="sampleNode" id="5925154266062172516" />
+      </scope>
+      <scope id="5925154266062179112" at="35,84,51,11" />
+      <scope id="5925154266062179110" at="33,7,52,9">
+        <var name="empty" id="5925154266062179110" />
+      </scope>
+      <scope id="5925154266062179071" at="32,91,53,7" />
+      <scope id="5925154266062179071" at="32,0,55,0">
+        <var name="enclosingNode" id="5925154266062179071" />
+        <var name="model" id="5925154266062179071" />
+        <var name="newNode" id="5925154266062179071" />
+        <var name="sampleNode" id="5925154266062179071" />
+      </scope>
+      <unit id="5925154266062172456" at="57,0,63,0" name="FirstOrderLogic.actions.AtomicStatementConverters$CONCEPTS" />
+      <unit id="5925154266062172456" at="64,0,70,0" name="FirstOrderLogic.actions.AtomicStatementConverters$LINKS" />
+      <unit id="5925154266062172516" at="16,0,31,0" name="FirstOrderLogic.actions.AtomicStatementConverters$NodeFactory_5925154266062172516" />
+      <unit id="5925154266062179071" at="31,0,56,0" name="FirstOrderLogic.actions.AtomicStatementConverters$NodeFactory_5925154266062179071" />
+      <unit id="5925154266062172456" at="15,0,71,0" name="FirstOrderLogic.actions.AtomicStatementConverters" />
+    </file>
+  </root>
+</debug-info>
+
