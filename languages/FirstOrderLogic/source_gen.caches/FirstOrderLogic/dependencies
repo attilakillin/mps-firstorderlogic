@@ -5,6 +5,7 @@
     <classNode dependClassName="FirstOrderLogic.behavior.BehaviorAspectDescriptor" />
     <classNode dependClassName="FirstOrderLogic.constraints.ConstraintsAspectDescriptor" />
     <classNode dependClassName="FirstOrderLogic.editor.EditorAspectDescriptorImpl" />
+    <classNode dependClassName="FirstOrderLogic.intentions.IntentionsDescriptor" />
     <classNode dependClassName="FirstOrderLogic.structure.ConceptPresentationAspectImpl" />
     <classNode dependClassName="FirstOrderLogic.structure.StructureAspectDescriptor" />
     <classNode dependClassName="FirstOrderLogic.typesystem.TypesystemDescriptor" />
@@ -15,6 +16,7 @@
     <classNode dependClassName="jetbrains.mps.lang.typesystem.runtime.IHelginsDescriptor" />
     <classNode dependClassName="jetbrains.mps.openapi.actions.descriptor.ActionAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor" />
+    <classNode dependClassName="jetbrains.mps.openapi.intentions.IntentionAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SLanguageId" />
     <classNode dependClassName="jetbrains.mps.smodel.language.LanguageExtensions" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />

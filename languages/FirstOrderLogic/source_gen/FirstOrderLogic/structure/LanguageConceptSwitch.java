@@ -31,15 +31,17 @@ public final class LanguageConceptSwitch {
   public static final int IDeclarableReference = 19;
   public static final int ISheetEntry = 20;
   public static final int KnowledgeBaseEntry = 21;
-  public static final int Predicate = 22;
-  public static final int PredicateAtomicStatement = 23;
-  public static final int PredicateListEntry = 24;
-  public static final int PredicateReference = 25;
-  public static final int Sheet = 26;
-  public static final int Term = 27;
-  public static final int TermEqualsAtomicStatement = 28;
-  public static final int Variable = 29;
-  public static final int VariableReference = 30;
+  public static final int NegatedStatement = 22;
+  public static final int ParenthesesStatement = 23;
+  public static final int Predicate = 24;
+  public static final int PredicateAtomicStatement = 25;
+  public static final int PredicateListEntry = 26;
+  public static final int PredicateReference = 27;
+  public static final int Sheet = 28;
+  public static final int Term = 29;
+  public static final int TermEqualsAtomicStatement = 30;
+  public static final int Variable = 31;
+  public static final int VariableReference = 32;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL);
@@ -65,6 +67,8 @@ public final class LanguageConceptSwitch {
     builder.put(0x523a606984019bbbL, IDeclarableReference);
     builder.put(0x5c35fb00ac8463L, ISheetEntry);
     builder.put(0x636efe58094cc959L, KnowledgeBaseEntry);
+    builder.put(0x36e551eaf2c8dae6L, NegatedStatement);
+    builder.put(0x36e551eaf2ccfec9L, ParenthesesStatement);
     builder.put(0x41354ec0cdeac250L, Predicate);
     builder.put(0x41354ec0cdece64dL, PredicateAtomicStatement);
     builder.put(0x41354ec0cdeaf521L, PredicateListEntry);

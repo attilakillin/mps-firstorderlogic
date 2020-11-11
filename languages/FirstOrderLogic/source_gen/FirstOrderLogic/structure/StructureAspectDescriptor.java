@@ -35,6 +35,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptIDeclarableReference = createDescriptorForIDeclarableReference();
   /*package*/ final ConceptDescriptor myConceptISheetEntry = createDescriptorForISheetEntry();
   /*package*/ final ConceptDescriptor myConceptKnowledgeBaseEntry = createDescriptorForKnowledgeBaseEntry();
+  /*package*/ final ConceptDescriptor myConceptNegatedStatement = createDescriptorForNegatedStatement();
+  /*package*/ final ConceptDescriptor myConceptParenthesesStatement = createDescriptorForParenthesesStatement();
   /*package*/ final ConceptDescriptor myConceptPredicate = createDescriptorForPredicate();
   /*package*/ final ConceptDescriptor myConceptPredicateAtomicStatement = createDescriptorForPredicateAtomicStatement();
   /*package*/ final ConceptDescriptor myConceptPredicateListEntry = createDescriptorForPredicateListEntry();
@@ -58,7 +60,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAAtomicStatement, myConceptADeclarable, myConceptAOperatorStatement, myConceptAQuantifiedStatement, myConceptAStatement, myConceptATermComponent, myConceptAllQuantifiedStatement, myConceptComment, myConceptConstant, myConceptConstantListEntry, myConceptConstantReference, myConceptEmptyAtomicStatement, myConceptEmptyLine, myConceptEmptyStatement, myConceptExistsQuantifiedStatement, myConceptFunction, myConceptFunctionListEntry, myConceptFunctionReference, myConceptICommonPattern, myConceptIDeclarableReference, myConceptISheetEntry, myConceptKnowledgeBaseEntry, myConceptPredicate, myConceptPredicateAtomicStatement, myConceptPredicateListEntry, myConceptPredicateReference, myConceptSheet, myConceptTerm, myConceptTermEqualsAtomicStatement, myConceptVariable, myConceptVariableReference);
+    return Arrays.asList(myConceptAAtomicStatement, myConceptADeclarable, myConceptAOperatorStatement, myConceptAQuantifiedStatement, myConceptAStatement, myConceptATermComponent, myConceptAllQuantifiedStatement, myConceptComment, myConceptConstant, myConceptConstantListEntry, myConceptConstantReference, myConceptEmptyAtomicStatement, myConceptEmptyLine, myConceptEmptyStatement, myConceptExistsQuantifiedStatement, myConceptFunction, myConceptFunctionListEntry, myConceptFunctionReference, myConceptICommonPattern, myConceptIDeclarableReference, myConceptISheetEntry, myConceptKnowledgeBaseEntry, myConceptNegatedStatement, myConceptParenthesesStatement, myConceptPredicate, myConceptPredicateAtomicStatement, myConceptPredicateListEntry, myConceptPredicateReference, myConceptSheet, myConceptTerm, myConceptTermEqualsAtomicStatement, myConceptVariable, myConceptVariableReference);
   }
 
   @Override
@@ -109,6 +111,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptISheetEntry;
       case LanguageConceptSwitch.KnowledgeBaseEntry:
         return myConceptKnowledgeBaseEntry;
+      case LanguageConceptSwitch.NegatedStatement:
+        return myConceptNegatedStatement;
+      case LanguageConceptSwitch.ParenthesesStatement:
+        return myConceptParenthesesStatement;
       case LanguageConceptSwitch.Predicate:
         return myConceptPredicate;
       case LanguageConceptSwitch.PredicateAtomicStatement:
@@ -332,6 +338,25 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.aggregate("statements", 0x636efe58094cc95aL).target(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x13ba598d20c7b07fL).optional(true).ordered(true).multiple(true).origin("7164943711259642202").done();
     b.alias("know");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForNegatedStatement() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("FirstOrderLogic", "NegatedStatement", 0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x36e551eaf2c8dae6L);
+    b.class_(false, false, false);
+    b.super_("FirstOrderLogic.structure.AStatement", 0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x13ba598d20c7b07fL);
+    b.origin("r:5389c23f-8d86-4868-bd96-51d0f09aae8a(FirstOrderLogic.structure)/3955657917252295398");
+    b.version(2);
+    b.aggregate("statement", 0x36e551eaf2c8dae7L).target(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x13ba598d20c7b07fL).optional(false).ordered(true).multiple(false).origin("3955657917252295399").done();
+    b.alias("not");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForParenthesesStatement() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("FirstOrderLogic", "ParenthesesStatement", 0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x36e551eaf2ccfec9L);
+    b.class_(false, false, false);
+    b.super_("FirstOrderLogic.structure.AStatement", 0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x13ba598d20c7b07fL);
+    b.origin("r:5389c23f-8d86-4868-bd96-51d0f09aae8a(FirstOrderLogic.structure)/3955657917252566729");
+    b.version(2);
+    b.aggregate("statement", 0x36e551eaf2ccfecaL).target(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x13ba598d20c7b07fL).optional(false).ordered(true).multiple(false).origin("3955657917252566730").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForPredicate() {

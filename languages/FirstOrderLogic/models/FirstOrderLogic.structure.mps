@@ -125,7 +125,7 @@
     <node concept="PrWs8" id="1sdvG0GWHZ" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="PrWs8" id="1JQioSn9jhh" role="PzmwI">
+    <node concept="PrWs8" id="1JQioSnfEun" role="PzmwI">
       <ref role="PrY4T" to="tpee:4H$HgYMZ7sw" resolve="IVariableDeclaration" />
     </node>
   </node>
@@ -419,7 +419,7 @@
   </node>
   <node concept="1TIwiD" id="1eUmoOwMpzS">
     <property role="EcuMT" value="1421547095064156408" />
-    <property role="3GE5qa" value="model.statements" />
+    <property role="3GE5qa" value="model.statements.quantified" />
     <property role="TrG5h" value="AQuantifiedStatement" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" node="1eUmoOwLV1Z" resolve="AStatement" />
@@ -443,7 +443,7 @@
   </node>
   <node concept="1TIwiD" id="1eUmoOwMp$6">
     <property role="EcuMT" value="1421547095064156422" />
-    <property role="3GE5qa" value="model.statements" />
+    <property role="3GE5qa" value="model.statements.quantified" />
     <property role="TrG5h" value="AllQuantifiedStatement" />
     <property role="34LRSv" value="all" />
     <ref role="1TJDcQ" node="1eUmoOwMpzS" resolve="AQuantifiedStatement" />
@@ -463,10 +463,37 @@
   </node>
   <node concept="1TIwiD" id="1JQioSndctG">
     <property role="EcuMT" value="2014878757918394220" />
-    <property role="3GE5qa" value="model.statements" />
+    <property role="3GE5qa" value="model.statements.quantified" />
     <property role="TrG5h" value="ExistsQuantifiedStatement" />
     <property role="34LRSv" value="exists" />
     <ref role="1TJDcQ" node="1eUmoOwMpzS" resolve="AQuantifiedStatement" />
+  </node>
+  <node concept="1TIwiD" id="3r_kuFMMdFA">
+    <property role="EcuMT" value="3955657917252295398" />
+    <property role="3GE5qa" value="model.statements" />
+    <property role="TrG5h" value="NegatedStatement" />
+    <property role="34LRSv" value="not" />
+    <ref role="1TJDcQ" node="1eUmoOwLV1Z" resolve="AStatement" />
+    <node concept="1TJgyj" id="3r_kuFMMdFB" role="1TKVEi">
+      <property role="IQ2ns" value="3955657917252295399" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="statement" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="1eUmoOwLV1Z" resolve="AStatement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3r_kuFMNfV9">
+    <property role="EcuMT" value="3955657917252566729" />
+    <property role="3GE5qa" value="model.statements" />
+    <property role="TrG5h" value="ParenthesesStatement" />
+    <ref role="1TJDcQ" node="1eUmoOwLV1Z" resolve="AStatement" />
+    <node concept="1TJgyj" id="3r_kuFMNfVa" role="1TKVEi">
+      <property role="IQ2ns" value="3955657917252566730" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="statement" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="1eUmoOwLV1Z" resolve="AStatement" />
+    </node>
   </node>
 </model>
 

@@ -31,6 +31,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_IDeclarableReference;
   private ConceptPresentation props_ISheetEntry;
   private ConceptPresentation props_KnowledgeBaseEntry;
+  private ConceptPresentation props_NegatedStatement;
+  private ConceptPresentation props_ParenthesesStatement;
   private ConceptPresentation props_Predicate;
   private ConceptPresentation props_PredicateAtomicStatement;
   private ConceptPresentation props_PredicateListEntry;
@@ -195,6 +197,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_KnowledgeBaseEntry = cpb.create();
         }
         return props_KnowledgeBaseEntry;
+      case LanguageConceptSwitch.NegatedStatement:
+        if (props_NegatedStatement == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("not");
+          props_NegatedStatement = cpb.create();
+        }
+        return props_NegatedStatement;
+      case LanguageConceptSwitch.ParenthesesStatement:
+        if (props_ParenthesesStatement == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("ParenthesesStatement");
+          props_ParenthesesStatement = cpb.create();
+        }
+        return props_ParenthesesStatement;
       case LanguageConceptSwitch.Predicate:
         if (props_Predicate == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
