@@ -344,18 +344,6 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
-  <node concept="1TIwiD" id="58Uo6A40hgL">
-    <property role="EcuMT" value="5925154266061804593" />
-    <property role="3GE5qa" value="model.atomics" />
-    <property role="TrG5h" value="EmptyAtomicStatement" />
-    <ref role="1TJDcQ" node="44PjG3dVhLG" resolve="AAtomicStatement" />
-    <node concept="1TJgyj" id="58Uo6A40B5Z" role="1TKVEi">
-      <property role="IQ2ns" value="5925154266061894015" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="reference" />
-      <ref role="20lvS9" node="58Uo6A40pIV" resolve="IDeclarableReference" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="58Uo6A40pIU">
     <property role="EcuMT" value="5925154266061839290" />
     <property role="3GE5qa" value="model.references" />

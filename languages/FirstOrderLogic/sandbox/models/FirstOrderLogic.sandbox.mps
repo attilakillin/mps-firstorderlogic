@@ -42,7 +42,6 @@
         <child id="4698748376226395426" name="predicates" index="2cRVJy" />
       </concept>
       <concept id="1421547095064280118" name="FirstOrderLogic.structure.VariableReference" flags="ng" index="NsimV" />
-      <concept id="1421547095064064247" name="FirstOrderLogic.structure.EmptyStatement" flags="ng" index="NsA_U" />
       <concept id="1421547095064156422" name="FirstOrderLogic.structure.AllQuantifiedStatement" flags="ng" index="NsW2b" />
       <concept id="1421547095064156408" name="FirstOrderLogic.structure.AQuantifiedStatement" flags="ng" index="NsW5P">
         <child id="1421547095064197867" name="statement" index="Ns6dA" />
@@ -156,34 +155,7 @@
           </node>
         </node>
       </node>
-      <node concept="1E92w3" id="3nX5WPyrf6s" role="1E8zs2">
-        <node concept="0VyRe" id="3nX5WPyrf6u" role="1E92w4">
-          <node concept="0VyR1" id="3nX5WPyrf70" role="0ToWW">
-            <ref role="0TofN" node="1eUmoOwN4U4" resolve="Test" />
-            <node concept="0VyRe" id="3nX5WPyrf72" role="0UW2I">
-              <node concept="0TofX" id="3nX5WPyrf79" role="0ToWW">
-                <ref role="0TofN" node="1eUmoOwN4qY" resolve="Const2" />
-              </node>
-            </node>
-            <node concept="0VyRe" id="3nX5WPyrf7f" role="0UW2I">
-              <node concept="0TofX" id="3nX5WPyrf7j" role="0ToWW">
-                <ref role="0TofN" node="1eUmoOwN4r1" resolve="Const3" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="0VyRe" id="3nX5WPyrf6y" role="1E92w6">
-          <node concept="0TofX" id="3nX5WPyrf7c" role="0ToWW">
-            <ref role="0TofN" node="58Uo6A3ZWVq" resolve="Const1" />
-          </node>
-        </node>
-      </node>
-      <node concept="NsA_U" id="3nX5WPyrf7l" role="1E8zs2" />
     </node>
-    <node concept="1Y9TpK" id="3erzhaeVs2A" role="0Wb6v" />
-    <node concept="1Y9TpK" id="3XKUXnAEiuf" role="0Wb6v" />
-    <node concept="1Y9TpK" id="3XKUXnAEitg" role="0Wb6v" />
-    <node concept="1Y9TpK" id="1eUmoOwM2Z8" role="0Wb6v" />
   </node>
 </model>
 

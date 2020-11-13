@@ -20,7 +20,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Constant;
   private ConceptPresentation props_ConstantListEntry;
   private ConceptPresentation props_ConstantReference;
-  private ConceptPresentation props_EmptyAtomicStatement;
   private ConceptPresentation props_EmptyLine;
   private ConceptPresentation props_EmptyStatement;
   private ConceptPresentation props_ExistsQuantifiedStatement;
@@ -121,13 +120,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ConstantReference = cpb.create();
         }
         return props_ConstantReference;
-      case LanguageConceptSwitch.EmptyAtomicStatement:
-        if (props_EmptyAtomicStatement == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("EmptyAtomicStatement");
-          props_EmptyAtomicStatement = cpb.create();
-        }
-        return props_EmptyAtomicStatement;
       case LanguageConceptSwitch.EmptyLine:
         if (props_EmptyLine == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
