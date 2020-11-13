@@ -23,6 +23,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_ConstantReference;
   private ConceptPresentation props_EmptyLine;
   private ConceptPresentation props_EmptyStatement;
+  private ConceptPresentation props_EqualsOperatorStatement;
   private ConceptPresentation props_ExistsQuantifiedStatement;
   private ConceptPresentation props_Function;
   private ConceptPresentation props_FunctionListEntry;
@@ -30,6 +31,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_ICommonPattern;
   private ConceptPresentation props_IDeclarableReference;
   private ConceptPresentation props_ISheetEntry;
+  private ConceptPresentation props_ImpliesOperatorStatement;
   private ConceptPresentation props_KnowledgeBaseEntry;
   private ConceptPresentation props_NegatedStatement;
   private ConceptPresentation props_OrOperatorStatement;
@@ -143,6 +145,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_EmptyStatement = cpb.create();
         }
         return props_EmptyStatement;
+      case LanguageConceptSwitch.EqualsOperatorStatement:
+        if (props_EqualsOperatorStatement == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("equals");
+          props_EqualsOperatorStatement = cpb.create();
+        }
+        return props_EqualsOperatorStatement;
       case LanguageConceptSwitch.ExistsQuantifiedStatement:
         if (props_ExistsQuantifiedStatement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -190,6 +199,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ISheetEntry = cpb.create();
         }
         return props_ISheetEntry;
+      case LanguageConceptSwitch.ImpliesOperatorStatement:
+        if (props_ImpliesOperatorStatement == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("implies");
+          props_ImpliesOperatorStatement = cpb.create();
+        }
+        return props_ImpliesOperatorStatement;
       case LanguageConceptSwitch.KnowledgeBaseEntry:
         if (props_KnowledgeBaseEntry == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

@@ -497,5 +497,19 @@
     <property role="34LRSv" value="or" />
     <ref role="1TJDcQ" node="1eUmoOwLV27" resolve="AOperatorStatement" />
   </node>
+  <node concept="1TIwiD" id="5PbuL$CX5Qn">
+    <property role="EcuMT" value="6722602216772099479" />
+    <property role="3GE5qa" value="model.statements.twoops" />
+    <property role="TrG5h" value="ImpliesOperatorStatement" />
+    <property role="34LRSv" value="implies" />
+    <ref role="1TJDcQ" node="1eUmoOwLV27" resolve="AOperatorStatement" />
+  </node>
+  <node concept="1TIwiD" id="5PbuL$CX5Rn">
+    <property role="EcuMT" value="6722602216772099543" />
+    <property role="3GE5qa" value="model.statements.twoops" />
+    <property role="TrG5h" value="EqualsOperatorStatement" />
+    <property role="34LRSv" value="equals" />
+    <ref role="1TJDcQ" node="1eUmoOwLV27" resolve="AOperatorStatement" />
+  </node>
 </model>
 

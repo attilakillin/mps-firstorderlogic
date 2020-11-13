@@ -27,6 +27,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptConstantReference = createDescriptorForConstantReference();
   /*package*/ final ConceptDescriptor myConceptEmptyLine = createDescriptorForEmptyLine();
   /*package*/ final ConceptDescriptor myConceptEmptyStatement = createDescriptorForEmptyStatement();
+  /*package*/ final ConceptDescriptor myConceptEqualsOperatorStatement = createDescriptorForEqualsOperatorStatement();
   /*package*/ final ConceptDescriptor myConceptExistsQuantifiedStatement = createDescriptorForExistsQuantifiedStatement();
   /*package*/ final ConceptDescriptor myConceptFunction = createDescriptorForFunction();
   /*package*/ final ConceptDescriptor myConceptFunctionListEntry = createDescriptorForFunctionListEntry();
@@ -34,6 +35,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptICommonPattern = createDescriptorForICommonPattern();
   /*package*/ final ConceptDescriptor myConceptIDeclarableReference = createDescriptorForIDeclarableReference();
   /*package*/ final ConceptDescriptor myConceptISheetEntry = createDescriptorForISheetEntry();
+  /*package*/ final ConceptDescriptor myConceptImpliesOperatorStatement = createDescriptorForImpliesOperatorStatement();
   /*package*/ final ConceptDescriptor myConceptKnowledgeBaseEntry = createDescriptorForKnowledgeBaseEntry();
   /*package*/ final ConceptDescriptor myConceptNegatedStatement = createDescriptorForNegatedStatement();
   /*package*/ final ConceptDescriptor myConceptOrOperatorStatement = createDescriptorForOrOperatorStatement();
@@ -61,7 +63,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAAtomicStatement, myConceptADeclarable, myConceptAOperatorStatement, myConceptAQuantifiedStatement, myConceptAStatement, myConceptATermComponent, myConceptAllQuantifiedStatement, myConceptAndOperatorStatement, myConceptComment, myConceptConstant, myConceptConstantListEntry, myConceptConstantReference, myConceptEmptyLine, myConceptEmptyStatement, myConceptExistsQuantifiedStatement, myConceptFunction, myConceptFunctionListEntry, myConceptFunctionReference, myConceptICommonPattern, myConceptIDeclarableReference, myConceptISheetEntry, myConceptKnowledgeBaseEntry, myConceptNegatedStatement, myConceptOrOperatorStatement, myConceptParenthesesStatement, myConceptPredicate, myConceptPredicateAtomicStatement, myConceptPredicateListEntry, myConceptPredicateReference, myConceptSheet, myConceptTerm, myConceptTermEqualsAtomicStatement, myConceptVariable, myConceptVariableReference);
+    return Arrays.asList(myConceptAAtomicStatement, myConceptADeclarable, myConceptAOperatorStatement, myConceptAQuantifiedStatement, myConceptAStatement, myConceptATermComponent, myConceptAllQuantifiedStatement, myConceptAndOperatorStatement, myConceptComment, myConceptConstant, myConceptConstantListEntry, myConceptConstantReference, myConceptEmptyLine, myConceptEmptyStatement, myConceptEqualsOperatorStatement, myConceptExistsQuantifiedStatement, myConceptFunction, myConceptFunctionListEntry, myConceptFunctionReference, myConceptICommonPattern, myConceptIDeclarableReference, myConceptISheetEntry, myConceptImpliesOperatorStatement, myConceptKnowledgeBaseEntry, myConceptNegatedStatement, myConceptOrOperatorStatement, myConceptParenthesesStatement, myConceptPredicate, myConceptPredicateAtomicStatement, myConceptPredicateListEntry, myConceptPredicateReference, myConceptSheet, myConceptTerm, myConceptTermEqualsAtomicStatement, myConceptVariable, myConceptVariableReference);
   }
 
   @Override
@@ -96,6 +98,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptEmptyLine;
       case LanguageConceptSwitch.EmptyStatement:
         return myConceptEmptyStatement;
+      case LanguageConceptSwitch.EqualsOperatorStatement:
+        return myConceptEqualsOperatorStatement;
       case LanguageConceptSwitch.ExistsQuantifiedStatement:
         return myConceptExistsQuantifiedStatement;
       case LanguageConceptSwitch.Function:
@@ -110,6 +114,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptIDeclarableReference;
       case LanguageConceptSwitch.ISheetEntry:
         return myConceptISheetEntry;
+      case LanguageConceptSwitch.ImpliesOperatorStatement:
+        return myConceptImpliesOperatorStatement;
       case LanguageConceptSwitch.KnowledgeBaseEntry:
         return myConceptKnowledgeBaseEntry;
       case LanguageConceptSwitch.NegatedStatement:
@@ -271,6 +277,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForEqualsOperatorStatement() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("FirstOrderLogic", "EqualsOperatorStatement", 0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5d4b7b1928f45dd7L);
+    b.class_(false, false, false);
+    b.super_("FirstOrderLogic.structure.AOperatorStatement", 0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x13ba598d20c7b087L);
+    b.origin("r:5389c23f-8d86-4868-bd96-51d0f09aae8a(FirstOrderLogic.structure)/6722602216772099543");
+    b.version(2);
+    b.alias("equals");
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForExistsQuantifiedStatement() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("FirstOrderLogic", "ExistsQuantifiedStatement", 0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x1bf6498e1734c76cL);
     b.class_(false, false, false);
@@ -330,6 +345,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.interface_();
     b.origin("r:5389c23f-8d86-4868-bd96-51d0f09aae8a(FirstOrderLogic.structure)/4823207154411163928");
     b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForImpliesOperatorStatement() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("FirstOrderLogic", "ImpliesOperatorStatement", 0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5d4b7b1928f45d97L);
+    b.class_(false, false, false);
+    b.super_("FirstOrderLogic.structure.AOperatorStatement", 0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x13ba598d20c7b087L);
+    b.origin("r:5389c23f-8d86-4868-bd96-51d0f09aae8a(FirstOrderLogic.structure)/6722602216772099479");
+    b.version(2);
+    b.alias("implies");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForKnowledgeBaseEntry() {
