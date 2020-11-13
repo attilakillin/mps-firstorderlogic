@@ -148,7 +148,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.EqualsOperatorStatement:
         if (props_EqualsOperatorStatement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("equals");
+          cpb.rawPresentation("equivalent");
           props_EqualsOperatorStatement = cpb.create();
         }
         return props_EqualsOperatorStatement;

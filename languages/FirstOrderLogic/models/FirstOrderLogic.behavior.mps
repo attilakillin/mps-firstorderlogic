@@ -9,13 +9,9 @@
   </languages>
   <imports>
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
-    <import index="6xgk" ref="r:6e9ad488-5df2-49e4-8c01-8a7f3812adf7(jetbrains.mps.lang.scopes.runtime)" />
-    <import index="genb" ref="r:142fc2e9-fc09-4c4f-92d7-6ce0e3f66b61(jetbrains.mps.lang.scopes.structure)" />
     <import index="fnmy" ref="r:89c0fb70-0977-4113-a076-5906f9d8630f(jetbrains.mps.baseLanguage.scopes)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="d43x" ref="r:5389c23f-8d86-4868-bd96-51d0f09aae8a(FirstOrderLogic.structure)" implicit="true" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -83,7 +79,6 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
-      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
@@ -163,20 +158,21 @@
             <ref role="iy1sa" to="d43x:1eUmoOwMzFF" resolve="statement" />
           </node>
           <node concept="3clFbS" id="1JQioSn8kMz" role="3clFbx">
-            <node concept="3cpWs6" id="1JQioSn8kRl" role="3cqZAp">
-              <node concept="2YIFZM" id="1JQioSn8pPg" role="3cqZAk">
-                <ref role="37wK5l" to="fnmy:6Kqn2fZyoYf" resolve="forVariables" />
-                <ref role="1Pybhc" to="fnmy:3A2qfoxVUBF" resolve="Scopes" />
-                <node concept="37vLTw" id="1JQioSn8pPh" role="37wK5m">
-                  <ref role="3cqZAo" node="1JQioSn8k98" resolve="kind" />
-                </node>
-                <node concept="2OqwBi" id="1JQioSn8pPi" role="37wK5m">
-                  <node concept="13iPFW" id="1JQioSn8pPj" role="2Oq$k0" />
-                  <node concept="3Tsc0h" id="1JQioSn8pPk" role="2OqNvi">
-                    <ref role="3TtcxE" to="d43x:1eUmoOwMp$2" resolve="quantors" />
+            <node concept="3cpWs6" id="5PbuL$D4BLa" role="3cqZAp">
+              <node concept="2YIFZM" id="5PbuL$D4BYz" role="3cqZAk">
+                <ref role="37wK5l" to="o8zo:7ipADkTevQ_" resolve="createComposite" />
+                <ref role="1Pybhc" to="o8zo:7ipADkTevLt" resolve="CompositeScope" />
+                <node concept="2YIFZM" id="5PbuL$D4Czo" role="37wK5m">
+                  <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+                  <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+                  <node concept="2OqwBi" id="5PbuL$D4CXu" role="37wK5m">
+                    <node concept="13iPFW" id="5PbuL$D4CEQ" role="2Oq$k0" />
+                    <node concept="3Tsc0h" id="5PbuL$D4D8p" role="2OqNvi">
+                      <ref role="3TtcxE" to="d43x:1eUmoOwMp$2" resolve="quantors" />
+                    </node>
                   </node>
                 </node>
-                <node concept="iy90A" id="1JQioSn8pPl" role="37wK5m" />
+                <node concept="iy90A" id="5PbuL$D4Dhw" role="37wK5m" />
               </node>
             </node>
           </node>
@@ -212,12 +208,12 @@
           <node concept="3cpWsn" id="1JQioSn9kjN" role="3cpWs9">
             <property role="TrG5h" value="values" />
             <node concept="2I9FWS" id="1JQioSn9kjI" role="1tU5fm">
-              <ref role="2I9WkF" to="tpee:4H$HgYMZ7sw" resolve="IVariableDeclaration" />
+              <ref role="2I9WkF" to="d43x:1sdvG0GxwG" resolve="ADeclarable" />
             </node>
             <node concept="2ShNRf" id="1JQioSn9nsk" role="33vP2m">
               <node concept="2T8Vx0" id="1JQioSn9nwu" role="2ShVmc">
                 <node concept="2I9FWS" id="1JQioSn9nww" role="2T96Bj">
-                  <ref role="2I9WkF" to="tpee:4H$HgYMZ7sw" resolve="IVariableDeclaration" />
+                  <ref role="2I9WkF" to="d43x:1sdvG0GxwG" resolve="ADeclarable" />
                 </node>
               </node>
             </node>
@@ -351,19 +347,11 @@
           </node>
         </node>
         <node concept="3cpWs6" id="1JQioSn9Va9" role="3cqZAp">
-          <node concept="2YIFZM" id="1JQioSna8pk" role="3cqZAk">
-            <ref role="1Pybhc" to="fnmy:3A2qfoxVUBF" resolve="Scopes" />
-            <ref role="37wK5l" to="fnmy:6Kqn2fZyoYf" resolve="forVariables" />
-            <node concept="37vLTw" id="1JQioSna9uz" role="37wK5m">
-              <ref role="3cqZAo" node="1JQioSn9goO" resolve="kind" />
-            </node>
-            <node concept="37vLTw" id="1JQioSnaavu" role="37wK5m">
+          <node concept="2YIFZM" id="5PbuL$D5P7E" role="3cqZAk">
+            <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+            <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+            <node concept="37vLTw" id="5PbuL$D5Q8i" role="37wK5m">
               <ref role="3cqZAo" node="1JQioSn9kjN" resolve="values" />
-            </node>
-            <node concept="2ShNRf" id="1JQioSnaZ6P" role="37wK5m">
-              <node concept="1pGfFk" id="1JQioSnb0PP" role="2ShVmc">
-                <ref role="37wK5l" to="o8zo:7ipADkTfAzT" resolve="EmptyScope" />
-              </node>
             </node>
           </node>
         </node>

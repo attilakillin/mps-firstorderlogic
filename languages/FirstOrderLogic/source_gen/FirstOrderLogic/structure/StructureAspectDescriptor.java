@@ -164,7 +164,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("FirstOrderLogic", "ADeclarable", 0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00b2182cL);
     b.class_(false, true, false);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
-    b.parent(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x4b64b50fb2fc7720L);
     b.origin("r:5389c23f-8d86-4868-bd96-51d0f09aae8a(FirstOrderLogic.structure)/25955050022115372");
     b.version(2);
     return b.create();
@@ -283,7 +282,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("FirstOrderLogic.structure.AOperatorStatement", 0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x13ba598d20c7b087L);
     b.origin("r:5389c23f-8d86-4868-bd96-51d0f09aae8a(FirstOrderLogic.structure)/6722602216772099543");
     b.version(2);
-    b.alias("equals");
+    b.alias("equivalent");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForExistsQuantifiedStatement() {
@@ -360,7 +359,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("FirstOrderLogic", "KnowledgeBaseEntry", 0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x636efe58094cc959L);
     b.class_(false, false, false);
     b.parent(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00ac8463L);
-    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x33d23ee961a0cbf3L);
     b.origin("r:5389c23f-8d86-4868-bd96-51d0f09aae8a(FirstOrderLogic.structure)/7164943711259642201");
     b.version(2);
     b.aggregate("statements", 0x636efe58094cc95aL).target(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x13ba598d20c7b07fL).optional(true).ordered(true).multiple(true).origin("7164943711259642202").done();

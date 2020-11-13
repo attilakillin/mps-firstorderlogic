@@ -42,7 +42,6 @@
         <child id="4698748376226395426" name="predicates" index="2cRVJy" />
       </concept>
       <concept id="1421547095064280118" name="FirstOrderLogic.structure.VariableReference" flags="ng" index="NsimV" />
-      <concept id="1421547095064064247" name="FirstOrderLogic.structure.EmptyStatement" flags="ng" index="NsA_U" />
       <concept id="1421547095064156422" name="FirstOrderLogic.structure.AllQuantifiedStatement" flags="ng" index="NsW2b" />
       <concept id="1421547095064156408" name="FirstOrderLogic.structure.AQuantifiedStatement" flags="ng" index="NsW5P">
         <child id="1421547095064197867" name="statement" index="Ns6dA" />
@@ -70,7 +69,6 @@
         <child id="7164943711259514460" name="term1" index="1E92w4" />
         <child id="7164943711259514462" name="term2" index="1E92w6" />
       </concept>
-      <concept id="6722602216770099215" name="FirstOrderLogic.structure.OrOperatorStatement" flags="ng" index="1PBEcm" />
       <concept id="6722602216772099479" name="FirstOrderLogic.structure.ImpliesOperatorStatement" flags="ng" index="1PJMqe" />
       <concept id="4823207154410909482" name="FirstOrderLogic.structure.EmptyLine" flags="ng" index="1Y9TpK" />
     </language>
@@ -205,36 +203,49 @@
           <property role="TrG5h" value="x" />
         </node>
       </node>
-      <node concept="1PBEcm" id="5PbuL$CPQGq" role="1E8zs2">
-        <node concept="2cQqyd" id="5PbuL$CPQGs" role="Nvu$7">
-          <node concept="3meZJj" id="5PbuL$CPQGt" role="3meZZs">
-            <ref role="3meZIF" node="3r_kuFMN3zB" resolve="Dead" />
-            <node concept="0VyRe" id="5PbuL$CPQGu" role="3meZIH">
-              <node concept="0TofX" id="5PbuL$CPQGv" role="0ToWW">
-                <ref role="0TofN" node="1eUmoOwN4qY" resolve="Const2" />
+      <node concept="1PJMqe" id="5PbuL$CXY0X" role="1E8zs2">
+        <node concept="34aqWz" id="5PbuL$CXY0Z" role="Nvu$7">
+          <node concept="32XbrI" id="5PbuL$CXY10" role="34aqWw">
+            <node concept="2cQqyd" id="5PbuL$CXY11" role="Nvu$7">
+              <node concept="3meZJj" id="5PbuL$CXY12" role="3meZZs">
+                <ref role="3meZIF" node="3r_kuFMN3zB" resolve="Dead" />
+                <node concept="0VyRe" id="5PbuL$CXY13" role="3meZIH">
+                  <node concept="0TofX" id="5PbuL$CXY14" role="0ToWW">
+                    <ref role="0TofN" node="1eUmoOwN4qY" resolve="Const2" />
+                  </node>
+                </node>
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="1E92w3" id="5PbuL$CXq4t" role="Ns6dF">
-          <node concept="0VyRe" id="5PbuL$CXq4u" role="1E92w4">
-            <node concept="0VyR1" id="5PbuL$CXq4v" role="0ToWW">
-              <ref role="0TofN" node="4bJulCWPEhN" resolve="Parent" />
-              <node concept="0VyRe" id="5PbuL$CXq4w" role="0UW2I">
-                <node concept="0TofX" id="5PbuL$CXq4x" role="0ToWW">
+            <node concept="1E92w3" id="5PbuL$CXY15" role="Ns6dF">
+              <node concept="0VyRe" id="5PbuL$CXY16" role="1E92w4">
+                <node concept="0VyR1" id="5PbuL$CXY17" role="0ToWW">
+                  <ref role="0TofN" node="4bJulCWPEhN" resolve="Parent" />
+                  <node concept="0VyRe" id="5PbuL$CXY18" role="0UW2I">
+                    <node concept="0TofX" id="5PbuL$CXY19" role="0ToWW">
+                      <ref role="0TofN" node="1eUmoOwN4qY" resolve="Const2" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="0VyRe" id="5PbuL$CXY1a" role="1E92w6">
+                <node concept="0TofX" id="5PbuL$CXY1b" role="0ToWW">
                   <ref role="0TofN" node="58Uo6A3ZWVq" resolve="Const1" />
                 </node>
               </node>
             </node>
           </node>
-          <node concept="0VyRe" id="5PbuL$CXq4y" role="1E92w6">
-            <node concept="0TofX" id="5PbuL$CXq4z" role="0ToWW">
-              <ref role="0TofN" node="1eUmoOwN4qY" resolve="Const2" />
+        </node>
+        <node concept="2cQqyd" id="5PbuL$CXY1c" role="Ns6dF">
+          <node concept="3meZJj" id="5PbuL$CXY1d" role="3meZZs">
+            <ref role="3meZIF" node="3r_kuFMN3zB" resolve="Dead" />
+            <node concept="0VyRe" id="5PbuL$CXY1e" role="3meZIH">
+              <node concept="0TofX" id="5PbuL$CXY1f" role="0ToWW">
+                <ref role="0TofN" node="58Uo6A3ZWVq" resolve="Const1" />
+              </node>
             </node>
           </node>
         </node>
       </node>
-      <node concept="NsA_U" id="5PbuL$CRQnX" role="1E8zs2" />
     </node>
     <node concept="1Y9TpK" id="5PbuL$CS5MS" role="0Wb6v" />
   </node>

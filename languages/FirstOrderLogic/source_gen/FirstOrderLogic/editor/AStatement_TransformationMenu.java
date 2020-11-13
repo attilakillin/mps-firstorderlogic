@@ -150,7 +150,7 @@ public class AStatement_TransformationMenu extends TransformationMenuBase {
     @Nullable
     @Override
     protected Iterable<? extends String> getParameters(TransformationMenuContext _context) {
-      return ListSequence.fromListAndArray(new ArrayList<String>(), "and", "or", "implies", "equals");
+      return ListSequence.fromListAndArray(new ArrayList<String>(), "and", "or", "implies", "equivalent");
     }
     @NotNull
     @Override
@@ -213,7 +213,7 @@ public class AStatement_TransformationMenu extends TransformationMenuBase {
             op = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5d4b7b1928d5d80fL, "FirstOrderLogic.structure.OrOperatorStatement"));
           } else if (myParameterObject.equals("implies")) {
             op = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5d4b7b1928f45d97L, "FirstOrderLogic.structure.ImpliesOperatorStatement"));
-          } else if (myParameterObject.equals("equals")) {
+          } else if (myParameterObject.equals("equivalent")) {
             op = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5d4b7b1928f45dd7L, "FirstOrderLogic.structure.EqualsOperatorStatement"));
           } else {
             throw new IllegalArgumentException("Invalid operator argument");
@@ -480,7 +480,7 @@ public class AStatement_TransformationMenu extends TransformationMenuBase {
     @Nullable
     @Override
     protected Iterable<? extends String> getParameters(TransformationMenuContext _context) {
-      return ListSequence.fromListAndArray(new ArrayList<String>(), "and", "or", "implies", "equals");
+      return ListSequence.fromListAndArray(new ArrayList<String>(), "and", "or", "implies", "equivalent");
     }
     @NotNull
     @Override
@@ -543,7 +543,7 @@ public class AStatement_TransformationMenu extends TransformationMenuBase {
             op = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5d4b7b1928d5d80fL, "FirstOrderLogic.structure.OrOperatorStatement"));
           } else if (myParameterObject.equals("implies")) {
             op = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5d4b7b1928f45d97L, "FirstOrderLogic.structure.ImpliesOperatorStatement"));
-          } else if (myParameterObject.equals("equals")) {
+          } else if (myParameterObject.equals("equivalent")) {
             op = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5d4b7b1928f45dd7L, "FirstOrderLogic.structure.EqualsOperatorStatement"));
           } else {
             throw new IllegalArgumentException("Invalid operator argument");

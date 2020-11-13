@@ -19,8 +19,7 @@ import java.util.ArrayList;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.baseLanguage.scopes.Scopes;
-import jetbrains.mps.scope.EmptyScope;
+import jetbrains.mps.scope.ListScope;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
@@ -50,7 +49,7 @@ public final class Sheet__BehaviorDescriptor extends BaseBHDescriptor {
         ListSequence.fromList(values).addSequence(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.as(entry, CONCEPTS.PredicateListEntry$jl), LINKS.predicates$26Nq)));
       }
     }
-    return Scopes.forVariables(kind, values, new EmptyScope());
+    return ListScope.forNamedElements(values);
   }
 
   /*package*/ Sheet__BehaviorDescriptor() {

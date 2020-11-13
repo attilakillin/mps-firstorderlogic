@@ -16,7 +16,8 @@ import java.util.List;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 import jetbrains.mps.lang.scopes.runtime.ScopeUtils;
-import jetbrains.mps.baseLanguage.scopes.Scopes;
+import jetbrains.mps.scope.CompositeScope;
+import jetbrains.mps.scope.ListScope;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.core.aspects.behaviour.api.SConstructor;
 import org.jetbrains.annotations.Nullable;
@@ -35,7 +36,7 @@ public final class AQuantifiedStatement__BehaviorDescriptor extends BaseBHDescri
 
   /*package*/ static Scope getScope_id52_Geb4QDV$(@NotNull SNode __thisNode__, SAbstractConcept kind, SNode child) {
     if (ScopeUtils.comeFrom(LINKS.statement$PMeT, __thisNode__, child)) {
-      return Scopes.forVariables(kind, SLinkOperations.getChildren(__thisNode__, LINKS.quantors$jFRS), ScopeUtils.lazyParentScope(__thisNode__, kind));
+      return CompositeScope.createComposite(ListScope.forNamedElements(SLinkOperations.getChildren(__thisNode__, LINKS.quantors$jFRS)), ScopeUtils.lazyParentScope(__thisNode__, kind));
     }
     return ScopeUtils.lazyParentScope(__thisNode__, kind);
   }
