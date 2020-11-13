@@ -245,7 +245,7 @@
   </node>
   <node concept="1TIwiD" id="44PjG3dVepd">
     <property role="EcuMT" value="4698748376226522701" />
-    <property role="3GE5qa" value="model.atomics" />
+    <property role="3GE5qa" value="model.statements.atomics" />
     <property role="TrG5h" value="PredicateAtomicStatement" />
     <property role="34LRSv" value="predicate" />
     <ref role="1TJDcQ" node="44PjG3dVhLG" resolve="AAtomicStatement" />
@@ -259,14 +259,14 @@
   </node>
   <node concept="1TIwiD" id="44PjG3dVhLG">
     <property role="EcuMT" value="4698748376226536556" />
-    <property role="3GE5qa" value="model.atomics" />
+    <property role="3GE5qa" value="model.statements.atomics" />
     <property role="TrG5h" value="AAtomicStatement" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" node="1eUmoOwLV1Z" resolve="AStatement" />
   </node>
   <node concept="1TIwiD" id="6dIZ_w9iHpr">
     <property role="EcuMT" value="7164943711259514459" />
-    <property role="3GE5qa" value="model.atomics" />
+    <property role="3GE5qa" value="model.statements.atomics" />
     <property role="TrG5h" value="TermEqualsAtomicStatement" />
     <property role="34LRSv" value="term" />
     <ref role="1TJDcQ" node="44PjG3dVhLG" resolve="AAtomicStatement" />
@@ -380,7 +380,7 @@
   </node>
   <node concept="1TIwiD" id="1eUmoOwLV27">
     <property role="EcuMT" value="1421547095064031367" />
-    <property role="3GE5qa" value="model.statements" />
+    <property role="3GE5qa" value="model.statements.twoops" />
     <property role="TrG5h" value="AOperatorStatement" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" node="1eUmoOwLV1Z" resolve="AStatement" />
@@ -482,6 +482,20 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="1eUmoOwLV1Z" resolve="AStatement" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="6AmFVEFox_k">
+    <property role="EcuMT" value="7608461836763142484" />
+    <property role="3GE5qa" value="model.statements.twoops" />
+    <property role="TrG5h" value="AndOperatorStatement" />
+    <property role="34LRSv" value="and" />
+    <ref role="1TJDcQ" node="1eUmoOwLV27" resolve="AOperatorStatement" />
+  </node>
+  <node concept="1TIwiD" id="5PbuL$CPtwf">
+    <property role="EcuMT" value="6722602216770099215" />
+    <property role="3GE5qa" value="model.statements.twoops" />
+    <property role="TrG5h" value="OrOperatorStatement" />
+    <property role="34LRSv" value="or" />
+    <ref role="1TJDcQ" node="1eUmoOwLV27" resolve="AOperatorStatement" />
   </node>
 </model>
 
