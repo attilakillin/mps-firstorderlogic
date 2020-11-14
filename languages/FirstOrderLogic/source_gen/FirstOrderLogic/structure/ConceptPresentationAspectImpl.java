@@ -29,7 +29,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_FunctionListEntry;
   private ConceptPresentation props_FunctionReference;
   private ConceptPresentation props_ICommonPattern;
-  private ConceptPresentation props_IDeclarableReference;
   private ConceptPresentation props_ISheetEntry;
   private ConceptPresentation props_ImpliesOperatorStatement;
   private ConceptPresentation props_KnowledgeBaseEntry;
@@ -39,7 +38,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Predicate;
   private ConceptPresentation props_PredicateAtomicStatement;
   private ConceptPresentation props_PredicateListEntry;
-  private ConceptPresentation props_PredicateReference;
   private ConceptPresentation props_Sheet;
   private ConceptPresentation props_Term;
   private ConceptPresentation props_TermEqualsAtomicStatement;
@@ -187,12 +185,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ICommonPattern = cpb.create();
         }
         return props_ICommonPattern;
-      case LanguageConceptSwitch.IDeclarableReference:
-        if (props_IDeclarableReference == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          props_IDeclarableReference = cpb.create();
-        }
-        return props_IDeclarableReference;
       case LanguageConceptSwitch.ISheetEntry:
         if (props_ISheetEntry == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -257,13 +249,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_PredicateListEntry = cpb.create();
         }
         return props_PredicateListEntry;
-      case LanguageConceptSwitch.PredicateReference:
-        if (props_PredicateReference == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x523a606984019bbaL, 0x523a606984019bc2L, "predicate", "", "");
-          props_PredicateReference = cpb.create();
-        }
-        return props_PredicateReference;
       case LanguageConceptSwitch.Sheet:
         if (props_Sheet == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

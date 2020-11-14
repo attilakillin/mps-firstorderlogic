@@ -216,7 +216,7 @@
   </node>
   <node concept="18kY7G" id="44PjG3dVg40">
     <property role="TrG5h" value="check_PredicateReference" />
-    <property role="3GE5qa" value="model" />
+    <property role="3GE5qa" value="model.statements.atomics" />
     <node concept="3clFbS" id="44PjG3dVg41" role="18ibNy">
       <node concept="3clFbJ" id="44PjG3dVg6e" role="3cqZAp">
         <node concept="3y3z36" id="44PjG3dVg6f" role="3clFbw">
@@ -261,7 +261,7 @@
     </node>
     <node concept="1YaCAy" id="44PjG3dVg43" role="1YuTPh">
       <property role="TrG5h" value="predicateReference" />
-      <ref role="1YaFvo" to="d43x:58Uo6A40pIU" resolve="PredicateReference" />
+      <ref role="1YaFvo" to="d43x:58Uo6A40pIU" resolve="PredicateAtomicStatement" />
     </node>
   </node>
 </model>

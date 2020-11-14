@@ -29,22 +29,20 @@ public final class LanguageConceptSwitch {
   public static final int FunctionListEntry = 17;
   public static final int FunctionReference = 18;
   public static final int ICommonPattern = 19;
-  public static final int IDeclarableReference = 20;
-  public static final int ISheetEntry = 21;
-  public static final int ImpliesOperatorStatement = 22;
-  public static final int KnowledgeBaseEntry = 23;
-  public static final int NegatedStatement = 24;
-  public static final int OrOperatorStatement = 25;
-  public static final int ParenthesesStatement = 26;
-  public static final int Predicate = 27;
-  public static final int PredicateAtomicStatement = 28;
-  public static final int PredicateListEntry = 29;
-  public static final int PredicateReference = 30;
-  public static final int Sheet = 31;
-  public static final int Term = 32;
-  public static final int TermEqualsAtomicStatement = 33;
-  public static final int Variable = 34;
-  public static final int VariableReference = 35;
+  public static final int ISheetEntry = 20;
+  public static final int ImpliesOperatorStatement = 21;
+  public static final int KnowledgeBaseEntry = 22;
+  public static final int NegatedStatement = 23;
+  public static final int OrOperatorStatement = 24;
+  public static final int ParenthesesStatement = 25;
+  public static final int Predicate = 26;
+  public static final int PredicateAtomicStatement = 27;
+  public static final int PredicateListEntry = 28;
+  public static final int Sheet = 29;
+  public static final int Term = 30;
+  public static final int TermEqualsAtomicStatement = 31;
+  public static final int Variable = 32;
+  public static final int VariableReference = 33;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL);
@@ -68,7 +66,6 @@ public final class LanguageConceptSwitch {
     builder.put(0x5c35fb00b32488L, FunctionListEntry);
     builder.put(0x5c35fb00b2183aL, FunctionReference);
     builder.put(0x42ef795a3ccd6001L, ICommonPattern);
-    builder.put(0x523a606984019bbbL, IDeclarableReference);
     builder.put(0x5c35fb00ac8463L, ISheetEntry);
     builder.put(0x5d4b7b1928f45d97L, ImpliesOperatorStatement);
     builder.put(0x636efe58094cc959L, KnowledgeBaseEntry);
@@ -76,9 +73,8 @@ public final class LanguageConceptSwitch {
     builder.put(0x5d4b7b1928d5d80fL, OrOperatorStatement);
     builder.put(0x36e551eaf2ccfec9L, ParenthesesStatement);
     builder.put(0x41354ec0cdeac250L, Predicate);
-    builder.put(0x41354ec0cdece64dL, PredicateAtomicStatement);
+    builder.put(0x523a606984019bbaL, PredicateAtomicStatement);
     builder.put(0x41354ec0cdeaf521L, PredicateListEntry);
-    builder.put(0x523a606984019bbaL, PredicateReference);
     builder.put(0x5c35fb00ac843eL, Sheet);
     builder.put(0x5c35fb00b21835L, Term);
     builder.put(0x636efe58094ad65bL, TermEqualsAtomicStatement);

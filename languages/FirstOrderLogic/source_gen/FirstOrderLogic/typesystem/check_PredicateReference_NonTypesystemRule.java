@@ -31,7 +31,7 @@ public class check_PredicateReference_NonTypesystemRule extends AbstractNonTypes
     }
   }
   public SAbstractConcept getApplicableConcept() {
-    return CONCEPTS.PredicateReference$$I;
+    return CONCEPTS.PredicateAtomicStatement$$I;
   }
   public IsApplicableStatus isApplicableAndPattern(SNode argument) {
     return new IsApplicableStatus(argument.getConcept().isSubConceptOf(getApplicableConcept()), null);
@@ -50,6 +50,6 @@ public class check_PredicateReference_NonTypesystemRule extends AbstractNonTypes
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept PredicateReference$$I = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x523a606984019bbaL, "FirstOrderLogic.structure.PredicateReference");
+    /*package*/ static final SConcept PredicateAtomicStatement$$I = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x523a606984019bbaL, "FirstOrderLogic.structure.PredicateAtomicStatement");
   }
 }

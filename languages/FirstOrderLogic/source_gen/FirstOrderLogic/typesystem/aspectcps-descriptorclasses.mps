@@ -1122,7 +1122,7 @@
     </node>
   </node>
   <node concept="312cEu" id="4J">
-    <property role="3GE5qa" value="model" />
+    <property role="3GE5qa" value="model.statements.atomics" />
     <property role="TrG5h" value="check_PredicateReference_NonTypesystemRule" />
     <uo k="s:originTrace" v="n:4698748376226529536" />
     <node concept="3clFbW" id="4K" role="jymVt">
@@ -1291,7 +1291,7 @@
         <node concept="3cpWs6" id="5D" role="3cqZAp">
           <uo k="s:originTrace" v="n:4698748376226529536" />
           <node concept="35c_gC" id="5E" role="3cqZAk">
-            <ref role="35c_gD" to="d43x:58Uo6A40pIU" resolve="PredicateReference" />
+            <ref role="35c_gD" to="d43x:58Uo6A40pIU" resolve="PredicateAtomicStatement" />
             <uo k="s:originTrace" v="n:4698748376226529536" />
           </node>
         </node>

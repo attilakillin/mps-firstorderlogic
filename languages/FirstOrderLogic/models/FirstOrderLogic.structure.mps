@@ -157,9 +157,6 @@
       <ref role="20lvS9" node="1sdvG0Gxv$" resolve="Function" />
       <ref role="20ksaX" node="1sdvG0Iro8" resolve="ref" />
     </node>
-    <node concept="PrWs8" id="58Uo6A40pIW" role="PzmwI">
-      <ref role="PrY4T" node="58Uo6A40pIV" resolve="IDeclarableReference" />
-    </node>
   </node>
   <node concept="1TIwiD" id="1sdvG0GMi8">
     <property role="EcuMT" value="25955050022184072" />
@@ -204,9 +201,6 @@
       <ref role="20lvS9" node="1sdvG0EYSg" resolve="Constant" />
       <ref role="20ksaX" node="1sdvG0Iro8" resolve="ref" />
     </node>
-    <node concept="PrWs8" id="58Uo6A40pIY" role="PzmwI">
-      <ref role="PrY4T" node="58Uo6A40pIV" resolve="IDeclarableReference" />
-    </node>
   </node>
   <node concept="1TIwiD" id="44PjG3dUG9g">
     <property role="EcuMT" value="4698748376226382416" />
@@ -236,20 +230,6 @@
     </node>
     <node concept="PrWs8" id="4bJulCWNd4t" role="PzmwI">
       <ref role="PrY4T" node="4bJulCWNd4o" resolve="ISheetEntry" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="44PjG3dVepd">
-    <property role="EcuMT" value="4698748376226522701" />
-    <property role="3GE5qa" value="model.statements.atomics" />
-    <property role="TrG5h" value="PredicateAtomicStatement" />
-    <property role="34LRSv" value="predicate" />
-    <ref role="1TJDcQ" node="44PjG3dVhLG" resolve="AAtomicStatement" />
-    <node concept="1TJgyj" id="58Uo6A40pYP" role="1TKVEi">
-      <property role="IQ2ns" value="5925154266061840309" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="predicate" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="58Uo6A40pIU" resolve="PredicateReference" />
     </node>
   </node>
   <node concept="1TIwiD" id="44PjG3dVhLG">
@@ -338,12 +318,10 @@
   </node>
   <node concept="1TIwiD" id="58Uo6A40pIU">
     <property role="EcuMT" value="5925154266061839290" />
-    <property role="3GE5qa" value="model.references" />
-    <property role="TrG5h" value="PredicateReference" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="58Uo6A40pJ0" role="PzmwI">
-      <ref role="PrY4T" node="58Uo6A40pIV" resolve="IDeclarableReference" />
-    </node>
+    <property role="3GE5qa" value="model.statements.atomics" />
+    <property role="TrG5h" value="PredicateAtomicStatement" />
+    <property role="34LRSv" value="predicate" />
+    <ref role="1TJDcQ" node="44PjG3dVhLG" resolve="AAtomicStatement" />
     <node concept="1TJgyj" id="58Uo6A40pJ2" role="1TKVEi">
       <property role="IQ2ns" value="5925154266061839298" />
       <property role="20kJfa" value="predicate" />
@@ -357,11 +335,6 @@
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="1sdvG0GxwP" resolve="Term" />
     </node>
-  </node>
-  <node concept="PlHQZ" id="58Uo6A40pIV">
-    <property role="EcuMT" value="5925154266061839291" />
-    <property role="3GE5qa" value="model.references.interface" />
-    <property role="TrG5h" value="IDeclarableReference" />
   </node>
   <node concept="1TIwiD" id="1eUmoOwLV1Z">
     <property role="EcuMT" value="1421547095064031359" />
