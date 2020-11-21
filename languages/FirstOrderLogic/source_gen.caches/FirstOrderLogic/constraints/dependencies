@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="FirstOrderLogic.constraints.ATermComponent_Constraints">
+  <dependency className="FirstOrderLogic.constraints.ATerm_Constraints">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.util.HashMap" />
     <classNode dependClassName="java.util.Map" />
@@ -20,7 +20,7 @@
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
   <dependency className="FirstOrderLogic.constraints.ConstraintsAspectDescriptor">
-    <classNode dependClassName="FirstOrderLogic.constraints.ATermComponent_Constraints" />
+    <classNode dependClassName="FirstOrderLogic.constraints.ATerm_Constraints" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.ConceptSwitchIndex" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.ConceptSwitchIndexBuilder" />

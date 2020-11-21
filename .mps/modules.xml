@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/FirstOrderLogic/FirstOrderLogic.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/FirstOrderLogic/sandbox/FirstOrderLogic.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/PrologProxy/PrologProxy.mpl" folder="" />
     </projectModules>
   </component>
 </project>

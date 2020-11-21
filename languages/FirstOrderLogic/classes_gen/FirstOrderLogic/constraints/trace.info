@@ -12,52 +12,52 @@
       <unit at="13,0,29,0" name="FirstOrderLogic.constraints.ConstraintsAspectDescriptor" />
     </file>
   </root>
-  <root nodeRef="r:9196fdfc-f6cf-4150-8369-beebdadf0d29(FirstOrderLogic.constraints)/2014878757918086371">
-    <file name="ATermComponent_Constraints.java">
-      <node id="2014878757918086371" at="23,39,24,38" concept="6" />
-      <node id="2014878757918086372" at="31,44,32,20" concept="4" />
-      <node id="2014878757918086372" at="39,63,40,57" concept="4" />
-      <node id="2014878757918086372" at="43,80,44,148" concept="3" />
-      <node id="2014878757918086372" at="44,148,45,62" concept="4" />
-      <node id="2014878757918086371" at="49,6,50,131" concept="3" />
-      <node id="2014878757918086372" at="50,131,51,42" concept="1" />
-      <node id="2014878757918086371" at="51,42,52,22" concept="4" />
-      <node id="2014878757918086371" at="54,0,55,0" concept="5" trace="breakingNode_88k4hv_a0a0a0a0a1a0a0a0c" />
-      <node id="2014878757918086371" at="57,0,58,0" concept="5" trace="ATermComponent$e6" />
-      <node id="2014878757918086371" at="58,0,59,0" concept="5" trace="ADeclarable$$B" />
-      <node id="2014878757918086371" at="62,0,63,0" concept="5" trace="ref$a57Y" />
-      <node id="2014878757918086371" at="23,0,26,0" concept="0" trace="ATermComponent_Constraints#()V" />
-      <node id="2014878757918086372" at="30,0,34,0" concept="2" trace="hasOwnScopeProvider#()Z" />
-      <node id="2014878757918086372" at="38,0,42,0" concept="2" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
-      <node id="2014878757918086372" at="42,0,47,0" concept="2" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
-      <node id="2014878757918086372" at="36,56,47,10" concept="4" />
-      <node id="2014878757918086372" at="34,0,49,0" concept="2" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
-      <node id="2014878757918086372" at="28,90,49,6" concept="3" />
-      <node id="2014878757918086371" at="27,0,54,0" concept="2" trace="getSpecifiedReferences#()Ljava/util/Map;" />
-      <scope id="2014878757918086371" at="23,39,24,38" />
-      <scope id="2014878757918086372" at="31,44,32,20" />
-      <scope id="2014878757918086372" at="39,63,40,57" />
-      <scope id="2014878757918086372" at="43,80,45,62">
-        <var name="scope" id="2014878757918086372" />
+  <root nodeRef="r:9196fdfc-f6cf-4150-8369-beebdadf0d29(FirstOrderLogic.constraints)/1474033860181780826">
+    <file name="ATerm_Constraints.java">
+      <node id="1474033860181780826" at="23,30,24,29" concept="6" />
+      <node id="1474033860181780827" at="31,44,32,20" concept="4" />
+      <node id="1474033860181780827" at="39,63,40,57" concept="4" />
+      <node id="1474033860181780827" at="43,80,44,148" concept="3" />
+      <node id="1474033860181780827" at="44,148,45,62" concept="4" />
+      <node id="1474033860181780826" at="49,6,50,131" concept="3" />
+      <node id="1474033860181780827" at="50,131,51,42" concept="1" />
+      <node id="1474033860181780826" at="51,42,52,22" concept="4" />
+      <node id="1474033860181780826" at="54,0,55,0" concept="5" trace="breakingNode_xt13f6_a0a0a0a0a1a0a0a0c" />
+      <node id="1474033860181780826" at="57,0,58,0" concept="5" trace="ATerm$N9" />
+      <node id="1474033860181780826" at="58,0,59,0" concept="5" trace="ADeclarable$$B" />
+      <node id="1474033860181780826" at="62,0,63,0" concept="5" trace="ref$3iQK" />
+      <node id="1474033860181780826" at="23,0,26,0" concept="0" trace="ATerm_Constraints#()V" />
+      <node id="1474033860181780827" at="30,0,34,0" concept="2" trace="hasOwnScopeProvider#()Z" />
+      <node id="1474033860181780827" at="38,0,42,0" concept="2" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
+      <node id="1474033860181780827" at="42,0,47,0" concept="2" trace="createScope#(Ljetbrains/mps/smodel/runtime/ReferenceConstraintsContext;)Ljetbrains/mps/scope/Scope;" />
+      <node id="1474033860181780827" at="36,56,47,10" concept="4" />
+      <node id="1474033860181780827" at="34,0,49,0" concept="2" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
+      <node id="1474033860181780827" at="28,90,49,6" concept="3" />
+      <node id="1474033860181780826" at="27,0,54,0" concept="2" trace="getSpecifiedReferences#()Ljava/util/Map;" />
+      <scope id="1474033860181780826" at="23,30,24,29" />
+      <scope id="1474033860181780827" at="31,44,32,20" />
+      <scope id="1474033860181780827" at="39,63,40,57" />
+      <scope id="1474033860181780827" at="43,80,45,62">
+        <var name="scope" id="1474033860181780827" />
       </scope>
-      <scope id="2014878757918086371" at="23,0,26,0" />
-      <scope id="2014878757918086372" at="30,0,34,0" />
-      <scope id="2014878757918086372" at="38,0,42,0" />
-      <scope id="2014878757918086372" at="42,0,47,0">
-        <var name="_context" id="2014878757918086372" />
+      <scope id="1474033860181780826" at="23,0,26,0" />
+      <scope id="1474033860181780827" at="30,0,34,0" />
+      <scope id="1474033860181780827" at="38,0,42,0" />
+      <scope id="1474033860181780827" at="42,0,47,0">
+        <var name="_context" id="1474033860181780827" />
       </scope>
-      <scope id="2014878757918086372" at="36,56,47,10" />
-      <scope id="2014878757918086372" at="34,0,49,0" />
-      <scope id="2014878757918086371" at="28,90,52,22">
-        <var name="d0" id="2014878757918086372" />
-        <var name="references" id="2014878757918086371" />
+      <scope id="1474033860181780827" at="36,56,47,10" />
+      <scope id="1474033860181780827" at="34,0,49,0" />
+      <scope id="1474033860181780826" at="28,90,52,22">
+        <var name="d0" id="1474033860181780827" />
+        <var name="references" id="1474033860181780826" />
       </scope>
-      <scope id="2014878757918086371" at="27,0,54,0" />
-      <unit id="2014878757918086371" at="61,0,64,0" name="FirstOrderLogic.constraints.ATermComponent_Constraints$LINKS" />
-      <unit id="2014878757918086371" at="56,0,60,0" name="FirstOrderLogic.constraints.ATermComponent_Constraints$CONCEPTS" />
-      <unit id="2014878757918086372" at="37,19,47,9" name="FirstOrderLogic.constraints.ATermComponent_Constraints$1$1" />
-      <unit id="2014878757918086372" at="29,48,49,5" name="FirstOrderLogic.constraints.ATermComponent_Constraints$1" />
-      <unit id="2014878757918086371" at="22,0,65,0" name="FirstOrderLogic.constraints.ATermComponent_Constraints" />
+      <scope id="1474033860181780826" at="27,0,54,0" />
+      <unit id="1474033860181780826" at="61,0,64,0" name="FirstOrderLogic.constraints.ATerm_Constraints$LINKS" />
+      <unit id="1474033860181780826" at="56,0,60,0" name="FirstOrderLogic.constraints.ATerm_Constraints$CONCEPTS" />
+      <unit id="1474033860181780827" at="37,19,47,9" name="FirstOrderLogic.constraints.ATerm_Constraints$1$1" />
+      <unit id="1474033860181780827" at="29,48,49,5" name="FirstOrderLogic.constraints.ATerm_Constraints$1" />
+      <unit id="1474033860181780826" at="22,0,65,0" name="FirstOrderLogic.constraints.ATerm_Constraints" />
     </file>
   </root>
 </debug-info>

@@ -14,7 +14,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_AOperatorStatement;
   private ConceptPresentation props_AQuantifiedStatement;
   private ConceptPresentation props_AStatement;
-  private ConceptPresentation props_ATermComponent;
+  private ConceptPresentation props_ATerm;
   private ConceptPresentation props_AllQuantifiedStatement;
   private ConceptPresentation props_AndOperatorStatement;
   private ConceptPresentation props_Comment;
@@ -39,7 +39,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_PredicateAtomicStatement;
   private ConceptPresentation props_PredicateListEntry;
   private ConceptPresentation props_Sheet;
-  private ConceptPresentation props_Term;
   private ConceptPresentation props_TermEqualsAtomicStatement;
   private ConceptPresentation props_Variable;
   private ConceptPresentation props_VariableReference;
@@ -79,12 +78,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_AStatement = cpb.create();
         }
         return props_AStatement;
-      case LanguageConceptSwitch.ATermComponent:
-        if (props_ATermComponent == null) {
+      case LanguageConceptSwitch.ATerm:
+        if (props_ATerm == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          props_ATermComponent = cpb.create();
+          props_ATerm = cpb.create();
         }
-        return props_ATermComponent;
+        return props_ATerm;
       case LanguageConceptSwitch.AllQuantifiedStatement:
         if (props_AllQuantifiedStatement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -125,7 +124,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.ConstantReference:
         if (props_ConstantReference == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00b9b603L, 0x5c35fb00b9b608L, "ref", "", "");
+          cpb.presentationByReference(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00b21835L, 0x1474d1fc6f086922L, "ref", "", "");
           props_ConstantReference = cpb.create();
         }
         return props_ConstantReference;
@@ -175,7 +174,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.FunctionReference:
         if (props_FunctionReference == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00b9b603L, 0x5c35fb00b9b608L, "ref", "", "");
+          cpb.presentationByReference(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00b21835L, 0x1474d1fc6f086922L, "ref", "", "");
           props_FunctionReference = cpb.create();
         }
         return props_FunctionReference;
@@ -223,7 +222,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.ParenthesesStatement:
         if (props_ParenthesesStatement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("ParenthesesStatement");
+          cpb.rawPresentation("(");
           props_ParenthesesStatement = cpb.create();
         }
         return props_ParenthesesStatement;
@@ -256,13 +255,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Sheet = cpb.create();
         }
         return props_Sheet;
-      case LanguageConceptSwitch.Term:
-        if (props_Term == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("term");
-          props_Term = cpb.create();
-        }
-        return props_Term;
       case LanguageConceptSwitch.TermEqualsAtomicStatement:
         if (props_TermEqualsAtomicStatement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -280,7 +272,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.VariableReference:
         if (props_VariableReference == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00b9b603L, 0x5c35fb00b9b608L, "ref", "", "");
+          cpb.presentationByReference(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00b21835L, 0x1474d1fc6f086922L, "ref", "", "");
           props_VariableReference = cpb.create();
         }
         return props_VariableReference;

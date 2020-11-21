@@ -8,9 +8,10 @@ import jetbrains.mps.smodel.language.LanguageRuntime;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.mps.openapi.module.SModuleReference;
 import org.jetbrains.mps.openapi.persistence.PersistenceFacade;
-import FirstOrderLogic.generator.templates.QueriesGenerated;
+import FirstOrderLogic.generator.generator.translate.QueriesGenerated;
 import java.util.Collection;
 import org.jetbrains.mps.openapi.language.SLanguage;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import java.util.Arrays;
 
 public class Generator extends TemplateModuleInterpreted2 {
@@ -27,13 +28,15 @@ public class Generator extends TemplateModuleInterpreted2 {
 
   @Override
   protected void fillTemplateModels(TemplateModuleInterpreted2.TemplateModels models) {
-    models.templates("r:bc709e61-8ee8-4028-93a5-838ca9cd008d", QueriesGenerated.class);
+    models.templates("r:d10a8a23-5e3f-455c-bbc1-e889e2e1bf3f", QueriesGenerated.class);
   }
 
 
   @Override
   public Collection<SLanguage> getTargetLanguages() {
-    SLanguage[] rv = new SLanguage[0];
+    SLanguage[] rv = new SLanguage[2];
+    rv[0] = MetaAdapterFactory.getLanguage(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, "FirstOrderLogic");
+    rv[1] = MetaAdapterFactory.getLanguage(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, "PrologProxy");
     return Arrays.asList(rv);
   }
 

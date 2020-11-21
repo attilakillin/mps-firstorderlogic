@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-bd1evuftuy5s1ipa3b0vq5pq51xiuh4">
-  <files names="ATermComponent_Constraints.java:ConstraintsAspectDescriptor.java" />
+<product version="3" modelHash="-degja20sov5lohegofkzueonaf90o5r">
+  <files names="ATerm_Constraints.java:ConstraintsAspectDescriptor.java" />
 </product>
 

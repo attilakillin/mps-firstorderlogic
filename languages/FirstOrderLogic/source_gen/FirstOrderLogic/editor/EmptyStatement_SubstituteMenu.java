@@ -26,7 +26,10 @@ import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import jetbrains.mps.internal.collections.runtime.Sequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
+import org.jetbrains.mps.openapi.language.SProperty;
 
 public class EmptyStatement_SubstituteMenu extends SubstituteMenuBase {
   @NotNull
@@ -90,9 +93,8 @@ public class EmptyStatement_SubstituteMenu extends SubstituteMenuBase {
       @Override
       public SNode createNode(@NotNull String pattern) {
         SNode teas = SNodeOperations.replaceWithNewChild(_context.getCurrentTargetNode(), CONCEPTS.TermEqualsAtomicStatement$7s);
-        SLinkOperations.setTarget(teas, LINKS.term1$Q5Mf, SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00b21835L, "FirstOrderLogic.structure.Term")));
-        SLinkOperations.setTarget(teas, LINKS.term2$Q6gh, SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00b21835L, "FirstOrderLogic.structure.Term")));
-        SLinkOperations.setTarget(SLinkOperations.getTarget(teas, LINKS.term1$Q5Mf), LINKS.reference$y4zr, null);
+        SLinkOperations.setTarget(teas, LINKS.term1$Q5Mf, SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00b21835L, "FirstOrderLogic.structure.ATerm")));
+        SLinkOperations.setTarget(teas, LINKS.term2$Q6gh, SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00b21835L, "FirstOrderLogic.structure.ATerm")));
         return teas;
       }
 
@@ -125,7 +127,27 @@ public class EmptyStatement_SubstituteMenu extends SubstituteMenuBase {
         if (aliasMatch) {
           return false;
         }
-        return true;
+        boolean functions = ListSequence.fromList(SModelOperations.nodes(SNodeOperations.getModel(_context.getCurrentTargetNode()), CONCEPTS.Function$Uy)).any(new IWhereFilter<SNode>() {
+          public boolean accept(SNode it) {
+            return SPropertyOperations.getString(it, PROPS.name$MnvL).startsWith(pattern);
+          }
+        });
+        boolean constants = ListSequence.fromList(SModelOperations.nodes(SNodeOperations.getModel(_context.getCurrentTargetNode()), CONCEPTS.Constant$96)).any(new IWhereFilter<SNode>() {
+          public boolean accept(SNode it) {
+            return SPropertyOperations.getString(it, PROPS.name$MnvL).startsWith(pattern);
+          }
+        });
+        boolean variables = ListSequence.fromList(SModelOperations.nodes(SNodeOperations.getModel(_context.getCurrentTargetNode()), CONCEPTS.Variable$8o)).any(new IWhereFilter<SNode>() {
+          public boolean accept(SNode it) {
+            return SPropertyOperations.getString(it, PROPS.name$MnvL).startsWith(pattern);
+          }
+        });
+        boolean predicates = ListSequence.fromList(SModelOperations.nodes(SNodeOperations.getModel(_context.getCurrentTargetNode()), CONCEPTS.Predicate$8h)).any(new IWhereFilter<SNode>() {
+          public boolean accept(SNode it) {
+            return SPropertyOperations.getString(it, PROPS.name$MnvL).startsWith(pattern);
+          }
+        });
+        return !(predicates) && (functions || constants || variables);
       }
     }
   }
@@ -133,11 +155,18 @@ public class EmptyStatement_SubstituteMenu extends SubstituteMenuBase {
   private static final class CONCEPTS {
     /*package*/ static final SConcept TermEqualsAtomicStatement$7s = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x636efe58094ad65bL, "FirstOrderLogic.structure.TermEqualsAtomicStatement");
     /*package*/ static final SConcept AStatement$1q = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x13ba598d20c7b07fL, "FirstOrderLogic.structure.AStatement");
+    /*package*/ static final SConcept Function$Uy = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00b217e4L, "FirstOrderLogic.structure.Function");
+    /*package*/ static final SConcept Constant$96 = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00abee10L, "FirstOrderLogic.structure.Constant");
+    /*package*/ static final SConcept Variable$8o = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00b08382L, "FirstOrderLogic.structure.Variable");
+    /*package*/ static final SConcept Predicate$8h = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x41354ec0cdeac250L, "FirstOrderLogic.structure.Predicate");
   }
 
   private static final class LINKS {
     /*package*/ static final SContainmentLink term1$Q5Mf = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x636efe58094ad65bL, 0x636efe58094ad65cL, "term1");
     /*package*/ static final SContainmentLink term2$Q6gh = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x636efe58094ad65bL, 0x636efe58094ad65eL, "term2");
-    /*package*/ static final SContainmentLink reference$y4zr = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00b21835L, 0x5c35fb00b9bac7L, "reference");
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
   }
 }

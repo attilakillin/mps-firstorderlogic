@@ -23,7 +23,7 @@ public class check_FunctionReference_NonTypesystemRule extends AbstractNonTypesy
   public check_FunctionReference_NonTypesystemRule() {
   }
   public void applyRule(final SNode f, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
-    if (SPropertyOperations.getInteger(SLinkOperations.getTarget(f, LINKS.ref$a57Y), PROPS.arity$TURW) != SLinkOperations.getChildren(f, LINKS.parameters$Jqsy).size()) {
+    if (SPropertyOperations.getInteger(SLinkOperations.getTarget(f, LINKS.ref$3iQK), PROPS.arity$TURW) != SLinkOperations.getChildren(f, LINKS.parameters$Jqsy).size()) {
       {
         final MessageTarget errorTarget = new NodeMessageTarget();
         IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(f, "Function arity does not match the number of supplied parameters", "r:b69ce92e-a548-4f0f-a04b-02eabb63b5b3(FirstOrderLogic.typesystem)", "25955050022992554", null, errorTarget);
@@ -42,7 +42,7 @@ public class check_FunctionReference_NonTypesystemRule extends AbstractNonTypesy
 
   private static final class LINKS {
     /*package*/ static final SContainmentLink parameters$Jqsy = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00b2183aL, 0x5c35fb00b7f555L, "parameters");
-    /*package*/ static final SReferenceLink ref$a57Y = MetaAdapterFactory.getReferenceLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00b9b603L, 0x5c35fb00b9b608L, "ref");
+    /*package*/ static final SReferenceLink ref$3iQK = MetaAdapterFactory.getReferenceLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00b21835L, 0x1474d1fc6f086922L, "ref");
   }
 
   private static final class PROPS {

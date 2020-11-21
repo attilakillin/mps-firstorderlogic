@@ -14,7 +14,7 @@ public final class LanguageConceptSwitch {
   public static final int AOperatorStatement = 2;
   public static final int AQuantifiedStatement = 3;
   public static final int AStatement = 4;
-  public static final int ATermComponent = 5;
+  public static final int ATerm = 5;
   public static final int AllQuantifiedStatement = 6;
   public static final int AndOperatorStatement = 7;
   public static final int Comment = 8;
@@ -39,10 +39,9 @@ public final class LanguageConceptSwitch {
   public static final int PredicateAtomicStatement = 27;
   public static final int PredicateListEntry = 28;
   public static final int Sheet = 29;
-  public static final int Term = 30;
-  public static final int TermEqualsAtomicStatement = 31;
-  public static final int Variable = 32;
-  public static final int VariableReference = 33;
+  public static final int TermEqualsAtomicStatement = 30;
+  public static final int Variable = 31;
+  public static final int VariableReference = 32;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL);
@@ -51,7 +50,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x13ba598d20c7b087L, AOperatorStatement);
     builder.put(0x13ba598d20c998f8L, AQuantifiedStatement);
     builder.put(0x13ba598d20c7b07fL, AStatement);
-    builder.put(0x5c35fb00b9b603L, ATermComponent);
+    builder.put(0x5c35fb00b21835L, ATerm);
     builder.put(0x13ba598d20c99906L, AllQuantifiedStatement);
     builder.put(0x6996afbaab621954L, AndOperatorStatement);
     builder.put(0x42ef795a3ccd6007L, Comment);
@@ -76,7 +75,6 @@ public final class LanguageConceptSwitch {
     builder.put(0x523a606984019bbaL, PredicateAtomicStatement);
     builder.put(0x41354ec0cdeaf521L, PredicateListEntry);
     builder.put(0x5c35fb00ac843eL, Sheet);
-    builder.put(0x5c35fb00b21835L, Term);
     builder.put(0x636efe58094ad65bL, TermEqualsAtomicStatement);
     builder.put(0x5c35fb00b08382L, Variable);
     builder.put(0x13ba598d20cb7c36L, VariableReference);

@@ -36,12 +36,12 @@
       </concept>
     </language>
   </registry>
-  <node concept="1M2fIO" id="1JQioSnc1jz">
+  <node concept="1M2fIO" id="1hOOvLJ26_q">
     <property role="3GE5qa" value="model.references" />
-    <ref role="1M2myG" to="d43x:1sdvG0Iro3" resolve="ATermComponent" />
-    <node concept="1N5Pfh" id="1JQioSnc1j$" role="1Mr941">
-      <ref role="1N5Vy1" to="d43x:1sdvG0Iro8" resolve="ref" />
-      <node concept="1dDu$B" id="1JQioSnc1nD" role="1N6uqs">
+    <ref role="1M2myG" to="d43x:1sdvG0GxwP" resolve="ATerm" />
+    <node concept="1N5Pfh" id="1hOOvLJ26_r" role="1Mr941">
+      <ref role="1N5Vy1" to="d43x:1hOOvLJ26$y" resolve="ref" />
+      <node concept="1dDu$B" id="1hOOvLJ26B$" role="1N6uqs">
         <ref role="1dDu$A" to="d43x:1sdvG0GxwG" resolve="ADeclarable" />
       </node>
     </node>
