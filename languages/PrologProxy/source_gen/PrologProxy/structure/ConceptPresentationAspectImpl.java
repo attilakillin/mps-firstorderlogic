@@ -15,6 +15,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_CompoundTerm;
   private ConceptPresentation props_Fact;
   private ConceptPresentation props_FunctionsTerm;
+  private ConceptPresentation props_NegatedFact;
   private ConceptPresentation props_PrologFile;
   private ConceptPresentation props_Rule;
   private ConceptPresentation props_Variable;
@@ -65,6 +66,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_FunctionsTerm = cpb.create();
         }
         return props_FunctionsTerm;
+      case LanguageConceptSwitch.NegatedFact:
+        if (props_NegatedFact == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("NegatedFact");
+          props_NegatedFact = cpb.create();
+        }
+        return props_NegatedFact;
       case LanguageConceptSwitch.PrologFile:
         if (props_PrologFile == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

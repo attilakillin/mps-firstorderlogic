@@ -156,5 +156,11 @@
       <ref role="20lvS9" node="68Nt5BhShlq" resolve="ATerm" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5f7F1S_ZvrU">
+    <property role="EcuMT" value="6036983070999836410" />
+    <property role="3GE5qa" value="clauses" />
+    <property role="TrG5h" value="NegatedFact" />
+    <ref role="1TJDcQ" node="68Nt5BhShlt" resolve="AClause" />
+  </node>
 </model>
 

@@ -15,10 +15,6 @@ public class PrologFile_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    tgs.append("equals(EQUALS_LEFT, EQUALS_RIGHT).");
-    tgs.newLine();
-    tgs.append("equals(EQUALS_RIGHT, EQUALS_LEFT).");
-    tgs.newLine();
 
     for (SNode clause : ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.clauses$JOWE))) {
       tgs.appendNode(clause);

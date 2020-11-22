@@ -18,6 +18,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptCompoundTerm = createDescriptorForCompoundTerm();
   /*package*/ final ConceptDescriptor myConceptFact = createDescriptorForFact();
   /*package*/ final ConceptDescriptor myConceptFunctionsTerm = createDescriptorForFunctionsTerm();
+  /*package*/ final ConceptDescriptor myConceptNegatedFact = createDescriptorForNegatedFact();
   /*package*/ final ConceptDescriptor myConceptPrologFile = createDescriptorForPrologFile();
   /*package*/ final ConceptDescriptor myConceptRule = createDescriptorForRule();
   /*package*/ final ConceptDescriptor myConceptVariable = createDescriptorForVariable();
@@ -35,7 +36,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAClause, myConceptATerm, myConceptAtom, myConceptCompoundTerm, myConceptFact, myConceptFunctionsTerm, myConceptPrologFile, myConceptRule, myConceptVariable);
+    return Arrays.asList(myConceptAClause, myConceptATerm, myConceptAtom, myConceptCompoundTerm, myConceptFact, myConceptFunctionsTerm, myConceptNegatedFact, myConceptPrologFile, myConceptRule, myConceptVariable);
   }
 
   @Override
@@ -54,6 +55,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptFact;
       case LanguageConceptSwitch.FunctionsTerm:
         return myConceptFunctionsTerm;
+      case LanguageConceptSwitch.NegatedFact:
+        return myConceptNegatedFact;
       case LanguageConceptSwitch.PrologFile:
         return myConceptPrologFile;
       case LanguageConceptSwitch.Rule:
@@ -120,6 +123,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.aggregate("left", 0x764fe01be3ee79faL).target(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e1155aL).optional(false).ordered(true).multiple(false).origin("8525279030028433914").done();
     b.aggregate("right", 0x764fe01be3ee79fcL).target(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e1155aL).optional(false).ordered(true).multiple(false).origin("8525279030028433916").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForNegatedFact() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("PrologProxy", "NegatedFact", 0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x53c7ac1e25fdf6faL);
+    b.class_(false, false, false);
+    b.super_("PrologProxy.structure.AClause", 0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e1155dL);
+    b.origin("r:74317ac3-e87e-4e84-924a-bd83aedc1973(PrologProxy.structure)/6036983070999836410");
+    b.version(2);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForPrologFile() {

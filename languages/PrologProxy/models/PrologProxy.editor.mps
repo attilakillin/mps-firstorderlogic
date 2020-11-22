@@ -176,5 +176,21 @@
       <node concept="2iRfu4" id="7pfS1JzVBCB" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="5f7F1S_ZvrV">
+    <property role="3GE5qa" value="clauses" />
+    <ref role="1XX52x" to="kl2v:5f7F1S_ZvrU" resolve="NegatedFact" />
+    <node concept="3EZMnI" id="5f7F1S_Zvs0" role="2wV5jI">
+      <node concept="3F0ifn" id="5f7F1S_Zvs9" role="3EZMnx">
+        <property role="3F0ifm" value="negated fact {" />
+      </node>
+      <node concept="2iRfu4" id="5f7F1S_Zvs1" role="2iSdaV" />
+      <node concept="3F1sOY" id="5f7F1S_ZvrX" role="3EZMnx">
+        <ref role="1NtTu8" to="kl2v:68Nt5BhShlz" resolve="head" />
+      </node>
+      <node concept="3F0ifn" id="5f7F1S_Zvsh" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+      </node>
+    </node>
+  </node>
 </model>
 
