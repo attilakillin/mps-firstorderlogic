@@ -6,8 +6,6 @@ import jetbrains.mps.text.rt.TextGenDescriptorBase;
 import jetbrains.mps.text.rt.TextGenContext;
 import jetbrains.mps.text.impl.TextGenSupport;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
@@ -17,12 +15,7 @@ public class Rule_TextGen extends TextGenDescriptorBase {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.head$JOh4));
     tgs.append(" :- ");
-    for (SNode term : ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.body$JNMz))) {
-      tgs.appendNode(term);
-      if (ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.body$JNMz)).last() != term) {
-        tgs.append(", ");
-      }
-    }
+    tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.body$JNMz));
   }
 
   private static final class LINKS {

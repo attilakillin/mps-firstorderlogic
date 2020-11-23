@@ -10,34 +10,51 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc982716-13a2-445c-918c-7d724cff1647" name="Default Changelist" comment="A *lot* of generator behaviour">
-      <change afterPath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/editor/NegatedFact_Editor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/editor/NegatedFact_EditorBuilder_a.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/textGen/NegatedFact_TextGen.java" afterDir="false" />
+    <list default="true" id="bc982716-13a2-445c-918c-7d724cff1647" name="Default Changelist" comment="Generator: Skolemization works, negation doesn't">
+      <change afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/ATerm_TransformationMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/editor/BinaryRuleBody_EditorBuilder_a.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/textGen/BinaryRuleBody_TextGen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/editor/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/generator/classes_gen/FirstOrderLogic/generator/Generator.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/generator/classes_gen/FirstOrderLogic/generator/Generator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/generator/classes_gen/FirstOrderLogic/generator/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/generator/classes_gen/FirstOrderLogic/generator/trace.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/generator/source_gen.caches/FirstOrderLogic/generator/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/generator/source_gen.caches/FirstOrderLogic/generator/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/generator/source_gen.caches/FirstOrderLogic/generator/generator/translate/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/generator/source_gen.caches/FirstOrderLogic/generator/generator/translate/dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/generator/source_gen.caches/FirstOrderLogic/generator/generator/translate/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/generator/source_gen.caches/FirstOrderLogic/generator/generator/translate/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/generator/source_gen/FirstOrderLogic/generator/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/generator/source_gen/FirstOrderLogic/generator/Generator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/generator/source_gen/FirstOrderLogic/generator/generator/translate/QueriesGenerated.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/generator/source_gen/FirstOrderLogic/generator/generator/translate/QueriesGenerated.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/generator/source_gen/FirstOrderLogic/generator/generator/translate/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/generator/source_gen/FirstOrderLogic/generator/generator/translate/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/generator/source_gen/FirstOrderLogic/generator/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/generator/source_gen/FirstOrderLogic/generator/trace.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/generator/templates/FirstOrderLogic.generator.generator.translate@generator.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/generator/templates/FirstOrderLogic.generator.generator.translate@generator.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/models/FirstOrderLogic.editor.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/models/FirstOrderLogic.editor.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/sandbox/models/FirstOrderLogic.sandbox.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/sandbox/models/FirstOrderLogic.sandbox.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen.caches/FirstOrderLogic/editor/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen.caches/FirstOrderLogic/editor/dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen.caches/FirstOrderLogic/editor/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen.caches/FirstOrderLogic/editor/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen.caches/FirstOrderLogic/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen.caches/FirstOrderLogic/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/EditorAspectDescriptorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/EditorAspectDescriptorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/trace.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/PrologProxy/models/PrologProxy.editor.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/PrologProxy/models/PrologProxy.editor.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/PrologProxy/models/PrologProxy.structure.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/PrologProxy/models/PrologProxy.structure.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/PrologProxy/models/PrologProxy.textGen.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/PrologProxy/models/PrologProxy.textGen.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen.caches/PrologProxy/editor/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/PrologProxy/source_gen.caches/PrologProxy/editor/dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen.caches/PrologProxy/editor/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/PrologProxy/source_gen.caches/PrologProxy/editor/generated" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen.caches/PrologProxy/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/PrologProxy/source_gen.caches/PrologProxy/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen.caches/PrologProxy/structure/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/PrologProxy/source_gen.caches/PrologProxy/structure/dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen.caches/PrologProxy/structure/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/PrologProxy/source_gen.caches/PrologProxy/structure/generated" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen.caches/PrologProxy/textGen/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/PrologProxy/source_gen.caches/PrologProxy/textGen/dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen.caches/PrologProxy/textGen/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/PrologProxy/source_gen.caches/PrologProxy/textGen/generated" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/editor/EditorAspectDescriptorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/editor/EditorAspectDescriptorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/editor/NegatedFact_Editor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/editor/BinaryRuleBody_Editor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/editor/NegatedFact_EditorBuilder_a.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/editor/Rule_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/editor/Rule_EditorBuilder_a.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/editor/trace.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/structure/ConceptPresentationAspectImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/structure/ConceptPresentationAspectImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/structure/LanguageConceptSwitch.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/structure/LanguageConceptSwitch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/structure/StructureAspectDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/structure/StructureAspectDescriptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/structure/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/textGen/PrologFile_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/textGen/PrologFile_TextGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/textGen/NegatedFact_TextGen.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/textGen/Rule_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/textGen/Rule_TextGen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/textGen/TextGenAspectDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/textGen/TextGenAspectDescriptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/textGen/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/textGen/aspectcps-descriptorclasses.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/textGen/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/textGen/trace.info" afterDir="false" />
@@ -53,7 +70,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="e01b4d75-2ee7-43e1-9c30-bda1ef5c35fd/r:60d0643f-6866-4b46-ba22-1f54d905d120(TempModulee01b4d75-2ee7-43e1-9c30-bda1ef5c35fd/ConsoleModel_11069198433747)">
+            <model ref="44bbcab5-a316-443c-b974-7e5b72411590/r:1691e8a6-8190-4965-a297-ef48145b1487(TempModule44bbcab5-a316-443c-b974-7e5b72411590/ConsoleModel_9881155768952)">
               <persistence version="9" />
               <languages>
                 <devkit ref="70d3d6da-af63-483d-a75f-9c8acf8de332(jetbrains.mps.console.devkit)" />
@@ -73,11 +90,11 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="5f7F1S_ZeA5">
-                <node concept="3balQm" id="5f7F1S_ZeA6" role="aymYE" />
-                <node concept="2Clz$F" id="5f7F1S_ZeA7" role="aymYO" />
-                <node concept="2_V_lH" id="5f7F1S_ZeA8" role="1PhJh3">
-                  <ref role="2_V_lI" node="5f7F1S_ZeA7" resolve="CommandHolder" />
+              <node concept="aymSD" id="6bDjTnxDLj1">
+                <node concept="3balQm" id="6bDjTnxDLj2" role="aymYE" />
+                <node concept="2Clz$F" id="6bDjTnxDLj3" role="aymYO" />
+                <node concept="2_V_lH" id="6bDjTnxDLj4" role="1PhJh3">
+                  <ref role="2_V_lI" node="6bDjTnxDLj3" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -206,7 +223,6 @@
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" />
     <panes>
-      <pane id="FileSystem" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -215,11 +231,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="5d8a3d04-c5e5-47e4-806d-03da42a8c2cb(FirstOrderLogic)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FirstOrderLogic.generator" />
+              <option name="myItemId" value="c89da285-9ac5-4e3c-9fcf-eb4b39236f25(PrologProxy)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -229,11 +241,11 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="b652e673-8536-4769-bfa6-45ef50c1c44d" />
+              <option name="myItemId" value="c89da285-9ac5-4e3c-9fcf-eb4b39236f25(PrologProxy)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="FirstOrderLogic" />
+              <option name="myItemId" value="r:74317ac3-e87e-4e84-924a-bd83aedc1973(PrologProxy.structure) in IdeaFile[path: /home/attila/University/Témalabor/FirstOrderLogic/languages/PrologProxy/models/PrologProxy.structure.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -264,14 +276,8 @@
               <option name="myItemId" value="5d8a3d04-c5e5-47e4-806d-03da42a8c2cb(FirstOrderLogic)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="c89da285-9ac5-4e3c-9fcf-eb4b39236f25(PrologProxy)" />
+              <option name="myItemId" value="r:5389c23f-8d86-4868-bd96-51d0f09aae8a(FirstOrderLogic.structure) in IdeaFile[path: /home/attila/University/Témalabor/FirstOrderLogic/languages/FirstOrderLogic/models/FirstOrderLogic.structure.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -281,55 +287,11 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="5d8a3d04-c5e5-47e4-806d-03da42a8c2cb(FirstOrderLogic)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FirstOrderLogic.generator" />
+              <option name="myItemId" value="b652e673-8536-4769-bfa6-45ef50c1c44d" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="FirstOrderLogic" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="5d8a3d04-c5e5-47e4-806d-03da42a8c2cb(FirstOrderLogic)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FirstOrderLogic.generator" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FirstOrderLogic" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:d10a8a23-5e3f-455c-bbc1-e889e2e1bf3f(FirstOrderLogic.generator.generator.translate@generator) in IdeaFile[path: /home/attila/University/Témalabor/FirstOrderLogic/languages/FirstOrderLogic/generator/templates/FirstOrderLogic.generator.generator.translate@generator.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="preprocess" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="c89da285-9ac5-4e3c-9fcf-eb4b39236f25(PrologProxy)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:74317ac3-e87e-4e84-924a-bd83aedc1973(PrologProxy.structure) in IdeaFile[path: /home/attila/University/Témalabor/FirstOrderLogic/languages/PrologProxy/models/PrologProxy.structure.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -356,6 +318,22 @@
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="5d8a3d04-c5e5-47e4-806d-03da42a8c2cb(FirstOrderLogic)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:5389c23f-8d86-4868-bd96-51d0f09aae8a(FirstOrderLogic.structure) in IdeaFile[path: /home/attila/University/Témalabor/FirstOrderLogic/languages/FirstOrderLogic/models/FirstOrderLogic.structure.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="statements" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -367,15 +345,57 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="FirstOrderLogic.generator" />
+              <option name="myItemId" value="r:5389c23f-8d86-4868-bd96-51d0f09aae8a(FirstOrderLogic.structure) in IdeaFile[path: /home/attila/University/Témalabor/FirstOrderLogic/languages/FirstOrderLogic/models/FirstOrderLogic.structure.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="FirstOrderLogic" />
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:d10a8a23-5e3f-455c-bbc1-e889e2e1bf3f(FirstOrderLogic.generator.generator.translate@generator) in IdeaFile[path: /home/attila/University/Témalabor/FirstOrderLogic/languages/FirstOrderLogic/generator/templates/FirstOrderLogic.generator.generator.translate@generator.mps]" />
+              <option name="myItemId" value="c89da285-9ac5-4e3c-9fcf-eb4b39236f25(PrologProxy)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:5915abd6-195a-45fa-953b-4165218b6bf9(PrologProxy.textGen) in IdeaFile[path: /home/attila/University/Témalabor/FirstOrderLogic/languages/PrologProxy/models/PrologProxy.textGen.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clauses" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="5d8a3d04-c5e5-47e4-806d-03da42a8c2cb(FirstOrderLogic)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="c89da285-9ac5-4e3c-9fcf-eb4b39236f25(PrologProxy)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:74317ac3-e87e-4e84-924a-bd83aedc1973(PrologProxy.structure) in IdeaFile[path: /home/attila/University/Témalabor/FirstOrderLogic/languages/PrologProxy/models/PrologProxy.structure.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="terms" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -386,6 +406,74 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="b652e673-8536-4769-bfa6-45ef50c1c44d" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="5d8a3d04-c5e5-47e4-806d-03da42a8c2cb(FirstOrderLogic)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:5389c23f-8d86-4868-bd96-51d0f09aae8a(FirstOrderLogic.structure) in IdeaFile[path: /home/attila/University/Témalabor/FirstOrderLogic/languages/FirstOrderLogic/models/FirstOrderLogic.structure.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="references" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="5d8a3d04-c5e5-47e4-806d-03da42a8c2cb(FirstOrderLogic)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:5389c23f-8d86-4868-bd96-51d0f09aae8a(FirstOrderLogic.structure) in IdeaFile[path: /home/attila/University/Témalabor/FirstOrderLogic/languages/FirstOrderLogic/models/FirstOrderLogic.structure.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="statements" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atomics" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="c89da285-9ac5-4e3c-9fcf-eb4b39236f25(PrologProxy)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:5915abd6-195a-45fa-953b-4165218b6bf9(PrologProxy.textGen) in IdeaFile[path: /home/attila/University/Témalabor/FirstOrderLogic/languages/PrologProxy/models/PrologProxy.textGen.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -413,6 +501,7 @@
           </SELECTED>
         </subPane>
       </pane>
+      <pane id="FileSystem" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -494,7 +583,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605976458316</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Generator: Skolemization works, negation doesn't">
+      <created>1606056966707</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1606056966707</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="UsagesViewTool">
@@ -591,7 +687,8 @@
     <MESSAGE value="Removed dependency on IVariableDeclaration" />
     <MESSAGE value="Removed IDeclarableReference&#10;Merged PredicateReference with PredicateAtomicStatement" />
     <MESSAGE value="A *lot* of generator behaviour" />
-    <option name="LAST_COMMIT_MESSAGE" value="A *lot* of generator behaviour" />
+    <MESSAGE value="Generator: Skolemization works, negation doesn't" />
+    <option name="LAST_COMMIT_MESSAGE" value="Generator: Skolemization works, negation doesn't" />
   </component>
   <component name="WindowStateProjectService">
     <state x="567" y="177" width="916" height="582" key="#MPSPropertiesConfigurable" timestamp="1605969670249">

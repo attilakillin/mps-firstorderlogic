@@ -10,12 +10,13 @@ import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private ConceptPresentation props_AClause;
+  private ConceptPresentation props_ARuleBody;
   private ConceptPresentation props_ATerm;
   private ConceptPresentation props_Atom;
+  private ConceptPresentation props_BinaryRuleBody;
   private ConceptPresentation props_CompoundTerm;
   private ConceptPresentation props_Fact;
   private ConceptPresentation props_FunctionsTerm;
-  private ConceptPresentation props_NegatedFact;
   private ConceptPresentation props_PrologFile;
   private ConceptPresentation props_Rule;
   private ConceptPresentation props_Variable;
@@ -31,6 +32,12 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_AClause = cpb.create();
         }
         return props_AClause;
+      case LanguageConceptSwitch.ARuleBody:
+        if (props_ARuleBody == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          props_ARuleBody = cpb.create();
+        }
+        return props_ARuleBody;
       case LanguageConceptSwitch.ATerm:
         if (props_ATerm == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -44,6 +51,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Atom = cpb.create();
         }
         return props_Atom;
+      case LanguageConceptSwitch.BinaryRuleBody:
+        if (props_BinaryRuleBody == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("BinaryRuleBody");
+          props_BinaryRuleBody = cpb.create();
+        }
+        return props_BinaryRuleBody;
       case LanguageConceptSwitch.CompoundTerm:
         if (props_CompoundTerm == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -66,13 +80,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_FunctionsTerm = cpb.create();
         }
         return props_FunctionsTerm;
-      case LanguageConceptSwitch.NegatedFact:
-        if (props_NegatedFact == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("NegatedFact");
-          props_NegatedFact = cpb.create();
-        }
-        return props_NegatedFact;
       case LanguageConceptSwitch.PrologFile:
         if (props_PrologFile == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

@@ -16,27 +16,6 @@
       <unit at="16,0,68,0" name="PrologProxy.textGen.TextGenAspectDescriptor" />
     </file>
   </root>
-  <root nodeRef="r:5915abd6-195a-45fa-953b-4165218b6bf9(PrologProxy.textGen)/6036983070999836750">
-    <file name="NegatedFact_TextGen.java">
-      <node id="6036983070999836750" at="14,54,15,55" concept="5" />
-      <node id="6036983070999836790" at="15,55,16,23" concept="1" />
-      <node id="6036983070999836858" at="16,23,17,86" concept="1" />
-      <node id="6036983070999836750" at="21,0,22,0" concept="8" trace="head$JOh4" />
-      <node id="6036983070999836750" at="13,0,19,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
-      <scope id="6036983070999836750" at="14,54,17,86">
-        <var name="tgs" id="6036983070999836750" />
-      </scope>
-      <scope id="6036983070999836750" at="13,0,19,0">
-        <var name="ctx" id="6036983070999836750" />
-      </scope>
-      <unit id="6036983070999836750" at="20,0,23,0" name="PrologProxy.textGen.NegatedFact_TextGen$LINKS" />
-      <unit id="6036983070999836750" at="12,0,24,0" name="PrologProxy.textGen.NegatedFact_TextGen" />
-    </file>
-    <file name="TextGenAspectDescriptor.java">
-      <node id="6036983070999836750" at="34,45,35,41" concept="6" />
-      <scope id="6036983070999836750" at="34,45,35,41" />
-    </file>
-  </root>
   <root nodeRef="r:5915abd6-195a-45fa-953b-4165218b6bf9(PrologProxy.textGen)/7076127368651281792">
     <file name="PrologFile_TextGen.java">
       <node id="7076127368651281792" at="16,54,17,55" concept="5" />
@@ -102,35 +81,27 @@
       <unit id="7076127368651284288" at="12,0,23,0" name="PrologProxy.textGen.Fact_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7076127368651284288" at="30,38,31,34" concept="6" />
-      <scope id="7076127368651284288" at="30,38,31,34" />
+      <node id="7076127368651284288" at="32,38,33,34" concept="6" />
+      <scope id="7076127368651284288" at="32,38,33,34" />
     </file>
   </root>
   <root nodeRef="r:5915abd6-195a-45fa-953b-4165218b6bf9(PrologProxy.textGen)/7076127368651285715">
     <file name="Rule_TextGen.java">
-      <node id="7076127368651285715" at="16,54,17,55" concept="5" />
-      <node id="7076127368651285755" at="17,55,18,86" concept="1" />
-      <node id="7076127368651287039" at="18,86,19,23" concept="1" />
-      <node id="7076127368651288703" at="20,115,21,27" concept="1" />
-      <node id="7076127368651304600" at="22,118,23,25" concept="1" />
-      <node id="7076127368651285715" at="29,0,30,0" concept="8" trace="head$JOh4" />
-      <node id="7076127368651285715" at="30,0,31,0" concept="8" trace="body$JNMz" />
-      <node id="7076127368651288924" at="21,27,24,7" concept="3" />
-      <node id="7076127368651287464" at="19,23,25,5" concept="2" />
-      <node id="7076127368651285715" at="15,0,27,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
-      <scope id="7076127368651288926" at="22,118,23,25" />
-      <scope id="7076127368651287470" at="20,115,24,7" />
-      <scope id="7076127368651287464" at="19,23,25,5">
-        <var name="term" id="7076127368651287466" />
-      </scope>
-      <scope id="7076127368651285715" at="16,54,25,5">
+      <node id="7076127368651285715" at="14,54,15,55" concept="5" />
+      <node id="7076127368651285755" at="15,55,16,86" concept="1" />
+      <node id="7076127368651287039" at="16,86,17,23" concept="1" />
+      <node id="8521472005505306633" at="17,23,18,86" concept="1" />
+      <node id="7076127368651285715" at="22,0,23,0" concept="8" trace="head$JOh4" />
+      <node id="7076127368651285715" at="23,0,24,0" concept="8" trace="body$JNMz" />
+      <node id="7076127368651285715" at="13,0,20,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="7076127368651285715" at="14,54,18,86">
         <var name="tgs" id="7076127368651285715" />
       </scope>
-      <scope id="7076127368651285715" at="15,0,27,0">
+      <scope id="7076127368651285715" at="13,0,20,0">
         <var name="ctx" id="7076127368651285715" />
       </scope>
-      <unit id="7076127368651285715" at="28,0,32,0" name="PrologProxy.textGen.Rule_TextGen$LINKS" />
-      <unit id="7076127368651285715" at="14,0,33,0" name="PrologProxy.textGen.Rule_TextGen" />
+      <unit id="7076127368651285715" at="21,0,25,0" name="PrologProxy.textGen.Rule_TextGen$LINKS" />
+      <unit id="7076127368651285715" at="12,0,26,0" name="PrologProxy.textGen.Rule_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
       <node id="7076127368651285715" at="38,38,39,34" concept="6" />
@@ -205,8 +176,34 @@
       <unit id="7076127368651322493" at="14,0,34,0" name="PrologProxy.textGen.CompoundTerm_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7076127368651322493" at="28,46,29,42" concept="6" />
-      <scope id="7076127368651322493" at="28,46,29,42" />
+      <node id="7076127368651322493" at="30,46,31,42" concept="6" />
+      <scope id="7076127368651322493" at="30,46,31,42" />
+    </file>
+  </root>
+  <root nodeRef="r:5915abd6-195a-45fa-953b-4165218b6bf9(PrologProxy.textGen)/8521472005505307740">
+    <file name="BinaryRuleBody_TextGen.java">
+      <node id="8521472005505307740" at="16,54,17,55" concept="5" />
+      <node id="8521472005505307780" at="17,55,18,86" concept="1" />
+      <node id="8521472005505309111" at="18,86,19,91" concept="1" />
+      <node id="8521472005505310864" at="19,91,20,20" concept="1" />
+      <node id="8521472005505309658" at="20,20,21,87" concept="1" />
+      <node id="8521472005505307740" at="25,0,26,0" concept="8" trace="left$LWQ1" />
+      <node id="8521472005505307740" at="26,0,27,0" concept="8" trace="right$LXk3" />
+      <node id="8521472005505307740" at="30,0,31,0" concept="8" trace="connector$LRsE" />
+      <node id="8521472005505307740" at="15,0,23,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="8521472005505307740" at="16,54,21,87">
+        <var name="tgs" id="8521472005505307740" />
+      </scope>
+      <scope id="8521472005505307740" at="15,0,23,0">
+        <var name="ctx" id="8521472005505307740" />
+      </scope>
+      <unit id="8521472005505307740" at="29,0,32,0" name="PrologProxy.textGen.BinaryRuleBody_TextGen$PROPS" />
+      <unit id="8521472005505307740" at="24,0,28,0" name="PrologProxy.textGen.BinaryRuleBody_TextGen$LINKS" />
+      <unit id="8521472005505307740" at="14,0,33,0" name="PrologProxy.textGen.BinaryRuleBody_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="8521472005505307740" at="28,48,29,44" concept="6" />
+      <scope id="8521472005505307740" at="28,48,29,44" />
     </file>
   </root>
   <root nodeRef="r:5915abd6-195a-45fa-953b-4165218b6bf9(PrologProxy.textGen)/8525279030028434008">
@@ -230,8 +227,8 @@
       <unit id="8525279030028434008" at="12,0,28,0" name="PrologProxy.textGen.FunctionsTerm_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="8525279030028434008" at="32,47,33,43" concept="6" />
-      <scope id="8525279030028434008" at="32,47,33,43" />
+      <node id="8525279030028434008" at="34,47,35,43" concept="6" />
+      <scope id="8525279030028434008" at="34,47,35,43" />
     </file>
   </root>
 </debug-info>

@@ -25,14 +25,14 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
     switch (myIndex.index(concept)) {
       case LanguageConceptSwitch.Atom:
         return new Atom_TextGen();
+      case LanguageConceptSwitch.BinaryRuleBody:
+        return new BinaryRuleBody_TextGen();
       case LanguageConceptSwitch.CompoundTerm:
         return new CompoundTerm_TextGen();
       case LanguageConceptSwitch.Fact:
         return new Fact_TextGen();
       case LanguageConceptSwitch.FunctionsTerm:
         return new FunctionsTerm_TextGen();
-      case LanguageConceptSwitch.NegatedFact:
-        return new NegatedFact_TextGen();
       case LanguageConceptSwitch.PrologFile:
         return new PrologFile_TextGen();
       case LanguageConceptSwitch.Rule:

@@ -10,15 +10,17 @@ import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.smodel.adapter.ids.SConceptId;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.impl.ConceptDescriptorBuilder2;
+import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptAClause = createDescriptorForAClause();
+  /*package*/ final ConceptDescriptor myConceptARuleBody = createDescriptorForARuleBody();
   /*package*/ final ConceptDescriptor myConceptATerm = createDescriptorForATerm();
   /*package*/ final ConceptDescriptor myConceptAtom = createDescriptorForAtom();
+  /*package*/ final ConceptDescriptor myConceptBinaryRuleBody = createDescriptorForBinaryRuleBody();
   /*package*/ final ConceptDescriptor myConceptCompoundTerm = createDescriptorForCompoundTerm();
   /*package*/ final ConceptDescriptor myConceptFact = createDescriptorForFact();
   /*package*/ final ConceptDescriptor myConceptFunctionsTerm = createDescriptorForFunctionsTerm();
-  /*package*/ final ConceptDescriptor myConceptNegatedFact = createDescriptorForNegatedFact();
   /*package*/ final ConceptDescriptor myConceptPrologFile = createDescriptorForPrologFile();
   /*package*/ final ConceptDescriptor myConceptRule = createDescriptorForRule();
   /*package*/ final ConceptDescriptor myConceptVariable = createDescriptorForVariable();
@@ -36,7 +38,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAClause, myConceptATerm, myConceptAtom, myConceptCompoundTerm, myConceptFact, myConceptFunctionsTerm, myConceptNegatedFact, myConceptPrologFile, myConceptRule, myConceptVariable);
+    return Arrays.asList(myConceptAClause, myConceptARuleBody, myConceptATerm, myConceptAtom, myConceptBinaryRuleBody, myConceptCompoundTerm, myConceptFact, myConceptFunctionsTerm, myConceptPrologFile, myConceptRule, myConceptVariable);
   }
 
   @Override
@@ -45,18 +47,20 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     switch (myIndexSwitch.index(id)) {
       case LanguageConceptSwitch.AClause:
         return myConceptAClause;
+      case LanguageConceptSwitch.ARuleBody:
+        return myConceptARuleBody;
       case LanguageConceptSwitch.ATerm:
         return myConceptATerm;
       case LanguageConceptSwitch.Atom:
         return myConceptAtom;
+      case LanguageConceptSwitch.BinaryRuleBody:
+        return myConceptBinaryRuleBody;
       case LanguageConceptSwitch.CompoundTerm:
         return myConceptCompoundTerm;
       case LanguageConceptSwitch.Fact:
         return myConceptFact;
       case LanguageConceptSwitch.FunctionsTerm:
         return myConceptFunctionsTerm;
-      case LanguageConceptSwitch.NegatedFact:
-        return myConceptNegatedFact;
       case LanguageConceptSwitch.PrologFile:
         return myConceptPrologFile;
       case LanguageConceptSwitch.Rule:
@@ -81,9 +85,17 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("head", 0x62337459d1e11563L).target(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e1155aL).optional(false).ordered(true).multiple(false).origin("7076127368651281763").done();
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForARuleBody() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("PrologProxy", "ARuleBody", 0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x764259a3eb925c53L);
+    b.class_(false, true, false);
+    b.origin("r:74317ac3-e87e-4e84-924a-bd83aedc1973(PrologProxy.structure)/8521472005505178707");
+    b.version(2);
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForATerm() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("PrologProxy", "ATerm", 0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e1155aL);
     b.class_(false, true, false);
+    b.super_("PrologProxy.structure.ARuleBody", 0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x764259a3eb925c53L);
     b.origin("r:74317ac3-e87e-4e84-924a-bd83aedc1973(PrologProxy.structure)/7076127368651281754");
     b.version(2);
     return b.create();
@@ -95,6 +107,17 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:74317ac3-e87e-4e84-924a-bd83aedc1973(PrologProxy.structure)/7076127368651281745");
     b.version(2);
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForBinaryRuleBody() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("PrologProxy", "BinaryRuleBody", 0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x764259a3eb925c54L);
+    b.class_(false, false, false);
+    b.super_("PrologProxy.structure.ARuleBody", 0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x764259a3eb925c53L);
+    b.origin("r:74317ac3-e87e-4e84-924a-bd83aedc1973(PrologProxy.structure)/8521472005505178708");
+    b.version(2);
+    b.property("connector", 0x764259a3eb925c55L).type(PrimitiveTypeId.STRING).origin("8521472005505178709").done();
+    b.aggregate("left", 0x764259a3eb925c57L).target(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x764259a3eb925c53L).optional(false).ordered(true).multiple(false).origin("8521472005505178711").done();
+    b.aggregate("right", 0x764259a3eb925c59L).target(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x764259a3eb925c53L).optional(false).ordered(true).multiple(false).origin("8521472005505178713").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForCompoundTerm() {
@@ -125,14 +148,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("right", 0x764fe01be3ee79fcL).target(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e1155aL).optional(false).ordered(true).multiple(false).origin("8525279030028433916").done();
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForNegatedFact() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("PrologProxy", "NegatedFact", 0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x53c7ac1e25fdf6faL);
-    b.class_(false, false, false);
-    b.super_("PrologProxy.structure.AClause", 0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e1155dL);
-    b.origin("r:74317ac3-e87e-4e84-924a-bd83aedc1973(PrologProxy.structure)/6036983070999836410");
-    b.version(2);
-    return b.create();
-  }
   private static ConceptDescriptor createDescriptorForPrologFile() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("PrologProxy", "PrologFile", 0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e11564L);
     b.class_(false, false, true);
@@ -148,7 +163,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.super_("PrologProxy.structure.AClause", 0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e1155dL);
     b.origin("r:74317ac3-e87e-4e84-924a-bd83aedc1973(PrologProxy.structure)/7076127368651281756");
     b.version(2);
-    b.aggregate("body", 0x62337459d1e11561L).target(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e1155aL).optional(false).ordered(true).multiple(true).origin("7076127368651281761").done();
+    b.aggregate("body", 0x62337459d1e11561L).target(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x764259a3eb925c53L).optional(false).ordered(true).multiple(false).origin("7076127368651281761").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForVariable() {

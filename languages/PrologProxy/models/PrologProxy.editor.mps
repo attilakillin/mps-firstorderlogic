@@ -153,10 +153,8 @@
       <node concept="3F0ifn" id="7pfS1JzQ2$w" role="3EZMnx">
         <property role="3F0ifm" value=" :- " />
       </node>
-      <node concept="3F2HdR" id="7pfS1JzQ2$E" role="3EZMnx">
-        <property role="2czwfO" value="," />
+      <node concept="3F1sOY" id="7p2mqfF_4Lu" role="3EZMnx">
         <ref role="1NtTu8" to="kl2v:68Nt5BhShlx" resolve="body" />
-        <node concept="l2Vlx" id="7pfS1JzQ2$G" role="2czzBx" />
       </node>
     </node>
   </node>
@@ -176,18 +174,30 @@
       <node concept="2iRfu4" id="7pfS1JzVBCB" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="5f7F1S_ZvrV">
+  <node concept="24kQdi" id="7p2mqfF$V_j">
     <property role="3GE5qa" value="clauses" />
-    <ref role="1XX52x" to="kl2v:5f7F1S_ZvrU" resolve="NegatedFact" />
-    <node concept="3EZMnI" id="5f7F1S_Zvs0" role="2wV5jI">
-      <node concept="3F0ifn" id="5f7F1S_Zvs9" role="3EZMnx">
-        <property role="3F0ifm" value="negated fact {" />
+    <ref role="1XX52x" to="kl2v:7p2mqfF$_Lk" resolve="BinaryRuleBody" />
+    <node concept="3EZMnI" id="7p2mqfF$V_l" role="2wV5jI">
+      <node concept="2iRfu4" id="7p2mqfF$V_m" role="2iSdaV" />
+      <node concept="3F0ifn" id="7p2mqfF$V_r" role="3EZMnx">
+        <property role="3F0ifm" value="binary {" />
       </node>
-      <node concept="2iRfu4" id="5f7F1S_Zvs1" role="2iSdaV" />
-      <node concept="3F1sOY" id="5f7F1S_ZvrX" role="3EZMnx">
-        <ref role="1NtTu8" to="kl2v:68Nt5BhShlz" resolve="head" />
+      <node concept="3F1sOY" id="7p2mqfF$V_x" role="3EZMnx">
+        <ref role="1NtTu8" to="kl2v:7p2mqfF$_Ln" resolve="left" />
       </node>
-      <node concept="3F0ifn" id="5f7F1S_Zvsh" role="3EZMnx">
+      <node concept="3F0ifn" id="7p2mqfF$V_D" role="3EZMnx">
+        <property role="3F0ifm" value="," />
+      </node>
+      <node concept="3F0A7n" id="7p2mqfF$V_N" role="3EZMnx">
+        <ref role="1NtTu8" to="kl2v:7p2mqfF$_Ll" resolve="connector" />
+      </node>
+      <node concept="3F0ifn" id="7p2mqfF$V_Z" role="3EZMnx">
+        <property role="3F0ifm" value="," />
+      </node>
+      <node concept="3F1sOY" id="7p2mqfF$VAd" role="3EZMnx">
+        <ref role="1NtTu8" to="kl2v:7p2mqfF$_Lp" resolve="right" />
+      </node>
+      <node concept="3F0ifn" id="7p2mqfF$VAt" role="3EZMnx">
         <property role="3F0ifm" value="}" />
       </node>
     </node>

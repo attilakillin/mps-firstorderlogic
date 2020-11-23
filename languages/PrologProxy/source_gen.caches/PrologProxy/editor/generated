@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-7id24qm6zqfsctj05b775ptryavhtwz">
-  <files names="Atom_Editor.java:Atom_EditorBuilder_a.java:CompoundTerm_Editor.java:CompoundTerm_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:Fact_Editor.java:Fact_EditorBuilder_a.java:FunctionsTerm_Editor.java:FunctionsTerm_EditorBuilder_a.java:NegatedFact_Editor.java:NegatedFact_EditorBuilder_a.java:PrologFile_Editor.java:PrologFile_EditorBuilder_a.java:Rule_Editor.java:Rule_EditorBuilder_a.java:Variable_Editor.java:Variable_EditorBuilder_a.java" />
+<product version="3" modelHash="-43swz3ui8bwdr7ah1lhehyzycvly6jm">
+  <files names="Atom_Editor.java:Atom_EditorBuilder_a.java:BinaryRuleBody_Editor.java:BinaryRuleBody_EditorBuilder_a.java:CompoundTerm_Editor.java:CompoundTerm_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:Fact_Editor.java:Fact_EditorBuilder_a.java:FunctionsTerm_Editor.java:FunctionsTerm_EditorBuilder_a.java:PrologFile_Editor.java:PrologFile_EditorBuilder_a.java:Rule_Editor.java:Rule_EditorBuilder_a.java:Variable_Editor.java:Variable_EditorBuilder_a.java" />
 </product>
 

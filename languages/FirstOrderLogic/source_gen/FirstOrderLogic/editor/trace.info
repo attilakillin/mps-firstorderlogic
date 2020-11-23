@@ -25,7 +25,7 @@
       <unit at="26,0,98,0" name="FirstOrderLogic.editor.ConstantReference_SubstituteMenu" />
     </file>
     <file name="EditorAspectDescriptorImpl.java">
-      <unit at="17,0,115,0" name="FirstOrderLogic.editor.EditorAspectDescriptorImpl" />
+      <unit at="17,0,117,0" name="FirstOrderLogic.editor.EditorAspectDescriptorImpl" />
     </file>
     <file name="FunctionReference_SubstituteMenu.java">
       <unit at="90,0,93,0" name="FirstOrderLogic.editor.FunctionReference_SubstituteMenu$CONCEPTS" />
@@ -5732,6 +5732,61 @@
       <unit id="6722602216772099570" at="70,0,122,0" name="FirstOrderLogic.editor.EqualsOperatorStatement_EditorBuilder_a$leftSingleRoleHandler_kx3rio_a0" />
       <unit id="6722602216772099570" at="149,0,201,0" name="FirstOrderLogic.editor.EqualsOperatorStatement_EditorBuilder_a$rightSingleRoleHandler_kx3rio_c0" />
       <unit id="6722602216772099570" at="37,0,211,0" name="FirstOrderLogic.editor.EqualsOperatorStatement_EditorBuilder_a" />
+    </file>
+  </root>
+  <root nodeRef="r:57c81b84-3cd4-45b0-b861-c5121c082b5e(FirstOrderLogic.editor)/7127315390445081015">
+    <file name="ATerm_TransformationMenu.java">
+      <node id="7127315390445081015" at="25,0,26,0" concept="3" trace="myLocations" />
+      <node id="7127315390445081015" at="27,67,28,63" concept="8" />
+      <node id="7127315390445081015" at="33,99,34,49" concept="2" />
+      <node id="7127315390445081015" at="34,49,35,230" concept="2" />
+      <node id="7127315390445081015" at="36,9,37,44" concept="8" />
+      <node id="7127315390445081015" at="38,15,39,50" concept="2" />
+      <node id="7127315390445081015" at="45,124,46,156" concept="7" />
+      <node id="7127315390445372087" at="47,173,48,46" concept="2" />
+      <node id="7127315390445081015" at="49,5,50,18" concept="8" />
+      <node id="7127315390445372087" at="56,97,57,51" concept="2" />
+      <node id="7127315390445372087" at="57,51,58,225" concept="2" />
+      <node id="7127315390445372087" at="59,11,60,42" concept="8" />
+      <node id="7127315390445372087" at="61,17,62,52" concept="2" />
+      <node id="7127315390445372211" at="68,65,69,59" concept="8" />
+      <node id="7127315390445372078" at="46,156,49,5" concept="5" />
+      <node id="7127315390445081015" at="26,0,30,0" concept="6" trace="isApplicableToLocation#(Ljava/lang/String;)Z" />
+      <node id="7127315390445081015" at="35,230,40,5" concept="15" />
+      <node id="7127315390445372087" at="58,225,63,7" concept="15" />
+      <node id="7127315390445372087" at="66,0,71,0" concept="6" trace="getNode#(Ljetbrains/mps/openapi/editor/menus/transformation/TransformationMenuContext;)Lorg/jetbrains/mps/openapi/model/SNode;" />
+      <node id="7127315390445081015" at="43,0,52,0" concept="6" trace="getParts#(Ljetbrains/mps/openapi/editor/menus/transformation/TransformationMenuContext;)Ljava/util/List;" />
+      <node id="7127315390445081015" at="31,0,42,0" concept="6" trace="createMenuItems#(Ljetbrains/mps/openapi/editor/menus/transformation/TransformationMenuContext;)Ljava/util/List;" />
+      <node id="7127315390445372087" at="54,0,65,0" concept="6" trace="createItems#(Ljetbrains/mps/openapi/editor/menus/transformation/TransformationMenuContext;)Ljava/util/List;" />
+      <scope id="7127315390445081015" at="27,67,28,63" />
+      <scope id="7127315390445081015" at="36,9,37,44" />
+      <scope id="7127315390445081015" at="38,15,39,50" />
+      <scope id="7127315390445372078" at="47,173,48,46" />
+      <scope id="7127315390445372087" at="59,11,60,42" />
+      <scope id="7127315390445372087" at="61,17,62,52" />
+      <scope id="7127315390445372090" at="68,65,69,59" />
+      <scope id="7127315390445081015" at="26,0,30,0">
+        <var name="location" id="7127315390445081015" />
+      </scope>
+      <scope id="7127315390445081015" at="45,124,50,18">
+        <var name="result" id="7127315390445081015" />
+      </scope>
+      <scope id="7127315390445372087" at="66,0,71,0">
+        <var name="_context" id="7127315390445372087" />
+      </scope>
+      <scope id="7127315390445081015" at="33,99,40,5" />
+      <scope id="7127315390445372087" at="56,97,63,7" />
+      <scope id="7127315390445081015" at="43,0,52,0">
+        <var name="_context" id="7127315390445081015" />
+      </scope>
+      <scope id="7127315390445081015" at="31,0,42,0">
+        <var name="context" id="7127315390445081015" />
+      </scope>
+      <scope id="7127315390445372087" at="54,0,65,0">
+        <var name="context" id="7127315390445372087" />
+      </scope>
+      <unit id="7127315390445372087" at="53,0,73,0" name="FirstOrderLogic.editor.ATerm_TransformationMenu$TMP_Include_bc5ay5_a0" />
+      <unit id="7127315390445081015" at="24,0,74,0" name="FirstOrderLogic.editor.ATerm_TransformationMenu" />
     </file>
   </root>
   <root nodeRef="r:57c81b84-3cd4-45b0-b861-c5121c082b5e(FirstOrderLogic.editor)/7164943711259514465">

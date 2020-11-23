@@ -7,8 +7,8 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class NegatedFact_Editor extends DefaultNodeEditor {
+public class BinaryRuleBody_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new NegatedFact_EditorBuilder_a(editorContext, node).createCell();
+    return new BinaryRuleBody_EditorBuilder_a(editorContext, node).createCell();
   }
 }
