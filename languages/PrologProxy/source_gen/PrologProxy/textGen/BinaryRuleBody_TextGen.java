@@ -15,10 +15,12 @@ public class BinaryRuleBody_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
+    tgs.append("(");
     tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.left$LWQ1));
     tgs.append(SPropertyOperations.getString(ctx.getPrimaryInput(), PROPS.connector$LRsE));
     tgs.append(" ");
     tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.right$LXk3));
+    tgs.append(")");
   }
 
   private static final class LINKS {
