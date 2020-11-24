@@ -33,6 +33,8 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new Fact_TextGen();
       case LanguageConceptSwitch.FunctionsTerm:
         return new FunctionsTerm_TextGen();
+      case LanguageConceptSwitch.NegatedTerm:
+        return new NegatedTerm_TextGen();
       case LanguageConceptSwitch.PrologFile:
         return new PrologFile_TextGen();
       case LanguageConceptSwitch.Rule:

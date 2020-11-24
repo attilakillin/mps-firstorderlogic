@@ -9,11 +9,11 @@ import org.apache.log4j.LogManager;
 import jetbrains.mps.generator.template.BaseMappingRuleContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.baseLanguage.logging.runtime.model.LoggingRuntime;
 import org.apache.log4j.Level;
 import jetbrains.mps.generator.template.PropertyMacroContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodeContext;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
@@ -47,8 +47,8 @@ import jetbrains.mps.lang.smodel.ConceptSwitchIndex;
 import jetbrains.mps.lang.smodel.ConceptSwitchIndexBuilder;
 import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import org.jetbrains.mps.openapi.language.SConcept;
-import org.jetbrains.mps.openapi.language.SReferenceLink;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
+import org.jetbrains.mps.openapi.language.SReferenceLink;
 
 @Generated
 public class QueriesGenerated extends QueryProviderBase {
@@ -63,14 +63,26 @@ public class QueriesGenerated extends QueryProviderBase {
     return SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(SNodeOperations.getParent(_context.getNode()))), CONCEPTS.KnowledgeBaseEntry$HX);
   }
   public static boolean rule_Condition_18_0(final BaseMappingRuleContext _context) {
-    return SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(SNodeOperations.getParent(_context.getNode()))), CONCEPTS.KnowledgeBaseEntry$HX);
+    return !(SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(SNodeOperations.getParent(_context.getNode()))), CONCEPTS.KnowledgeBaseEntry$HX));
   }
-  public static boolean rule_Condition_21_0(final BaseMappingRuleContext _context) {
+  public static boolean rule_Condition_18_1(final BaseMappingRuleContext _context) {
+    return SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(SNodeOperations.getParent(_context.getNode()))), CONCEPTS.KnowledgeBaseEntry$HX) && SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(SLinkOperations.getTarget(_context.getNode(), LINKS.right$g53S))), CONCEPTS.OrOperatorStatement$L5);
+  }
+  public static boolean rule_Condition_18_2(final BaseMappingRuleContext _context) {
+    return SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(SNodeOperations.getParent(_context.getNode()))), CONCEPTS.KnowledgeBaseEntry$HX) && SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(SLinkOperations.getTarget(_context.getNode(), LINKS.right$g53S))), CONCEPTS.ImpliesOperatorStatement$n3);
+  }
+  public static boolean rule_Condition_18_3(final BaseMappingRuleContext _context) {
+    return SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(SNodeOperations.getParent(_context.getNode()))), CONCEPTS.KnowledgeBaseEntry$HX) && SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(SLinkOperations.getTarget(_context.getNode(), LINKS.right$g53S))), CONCEPTS.NegatedStatement$8l);
+  }
+  public static boolean rule_Condition_20_0(final BaseMappingRuleContext _context) {
     if (SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(SNodeOperations.getParent(_context.getNode()))), CONCEPTS.KnowledgeBaseEntry$HX)) {
       LoggingRuntime.logMsgView(Level.WARN, "Ignoring negated atomic statement! If your knowledge base also contains the positive form of this statement, then the knowledge base may be inconsistent!", QueriesGenerated.class, null, null);
       return true;
     }
     return false;
+  }
+  public static boolean rule_Condition_21_0(final BaseMappingRuleContext _context) {
+    return SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(SNodeOperations.getParent(_context.getNode()))), CONCEPTS.KnowledgeBaseEntry$HX);
   }
   public static Object propertyMacro_GetValue_1_0(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), PROPS.name$MnvL);
@@ -103,16 +115,25 @@ public class QueriesGenerated extends QueryProviderBase {
     return SLinkOperations.getTarget(_context.getNode(), LINKS.term2$Q6gh);
   }
   public static SNode sourceNodeQuery_18_0(final SourceSubstituteMacroNodeContext _context) {
-    return SLinkOperations.getTarget(_context.getNode(), LINKS.left$tEgL);
+    return SLinkOperations.getTarget(SNodeOperations.as(_context.getNode(), CONCEPTS.ImpliesOperatorStatement$n3), LINKS.left$tEgL);
   }
   public static SNode sourceNodeQuery_18_1(final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(SNodeOperations.as(_context.getNode(), CONCEPTS.ImpliesOperatorStatement$n3), LINKS.right$g53S);
+  }
+  public static SNode sourceNodeQuery_19_0(final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), LINKS.left$tEgL);
+  }
+  public static SNode sourceNodeQuery_19_1(final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(_context.getNode(), LINKS.right$g53S);
   }
   public static SNode sourceNodeQuery_20_0(final SourceSubstituteMacroNodeContext _context) {
-    return SLinkOperations.getTarget(_context.getNode(), LINKS.left$tEgL);
+    return SLinkOperations.getTarget(SNodeOperations.as(_context.getNode(), CONCEPTS.NegatedStatement$8l), LINKS.statement$pxjq);
   }
-  public static SNode sourceNodeQuery_20_1(final SourceSubstituteMacroNodeContext _context) {
-    return SLinkOperations.getTarget(_context.getNode(), LINKS.right$g53S);
+  public static SNode sourceNodeQuery_21_0(final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(SNodeOperations.as(_context.getNode(), CONCEPTS.OrOperatorStatement$L5), LINKS.left$tEgL);
+  }
+  public static SNode sourceNodeQuery_21_1(final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(SNodeOperations.as(_context.getNode(), CONCEPTS.OrOperatorStatement$L5), LINKS.right$g53S);
   }
   public static Iterable<SNode> sourceNodesQuery_1_0(final SourceSubstituteMacroNodesContext _context) {
     List<SNode> statements = ListSequence.fromList(new ArrayList<SNode>());
@@ -317,6 +338,7 @@ public class QueriesGenerated extends QueryProviderBase {
         SLinkOperations.setTarget(outer, LINKS.right$g53S, right);
         SNodeOperations.replaceWithAnother(impl, outer);
       }
+
       if (!(show_message) && repeat) {
         show_message = true;
       }
@@ -512,11 +534,128 @@ public class QueriesGenerated extends QueryProviderBase {
       LoggingRuntime.logMsgView(Level.INFO, "Preprocessing: Distributing v over ∧", QueriesGenerated.class, null, null);
     }
   }
+  public static void mappingScript_CodeBlock_22(final MappingScriptContext _context) {
+    LoggingRuntime.logMsgView(Level.INFO, "Preprocessing: Checking for statements that cannot be translated into prolog", QueriesGenerated.class, null, null);
+    boolean used = false;
+
+    for (SNode or : ListSequence.fromList(SModelOperations.nodes(_context.getModel(), CONCEPTS.OrOperatorStatement$L5)).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(SNodeOperations.getParent(it))), CONCEPTS.KnowledgeBaseEntry$HX);
+      }
+    })) {
+      // (a v b) => (¬a ⇒ b). 
+      if (SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(SNodeOperations.getConcept(SLinkOperations.getTarget(or, LINKS.left$tEgL))), CONCEPTS.AAtomicStatement$Vv) && SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(SNodeOperations.getConcept(SLinkOperations.getTarget(or, LINKS.right$g53S))), CONCEPTS.AAtomicStatement$Vv)) {
+        LoggingRuntime.logMsgView(Level.WARN, "Root disjunction statement found in the form of (a v b), which cannot be represented in prolog. Substituting with (¬a ⇒ b), but this is not a perfect alternative, use with caution!", QueriesGenerated.class, null, null);
+        SNode outer = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5d4b7b1928f45d97L, "FirstOrderLogic.structure.ImpliesOperatorStatement"));
+        SLinkOperations.setTarget(outer, LINKS.left$tEgL, SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x36e551eaf2c8dae6L, "FirstOrderLogic.structure.NegatedStatement")));
+        SLinkOperations.setTarget(SNodeOperations.as(SLinkOperations.getTarget(outer, LINKS.left$tEgL), CONCEPTS.NegatedStatement$8l), LINKS.statement$pxjq, SNodeOperations.copyNode(SLinkOperations.getTarget(or, LINKS.left$tEgL)));
+        SLinkOperations.setTarget(outer, LINKS.right$g53S, SNodeOperations.copyNode(SLinkOperations.getTarget(or, LINKS.right$g53S)));
+        SNodeOperations.replaceWithAnother(or, outer);
+        used = true;
+      }
+      // (¬a v b) => (a ⇒ b) and (a v ¬b) => (b ⇒ a). 
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(SLinkOperations.getTarget(or, LINKS.left$tEgL))), CONCEPTS.NegatedStatement$8l) && SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(SNodeOperations.getConcept(SLinkOperations.getTarget(or, LINKS.right$g53S))), CONCEPTS.AAtomicStatement$Vv)) {
+        SNode outer = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5d4b7b1928f45d97L, "FirstOrderLogic.structure.ImpliesOperatorStatement"));
+        SLinkOperations.setTarget(outer, LINKS.left$tEgL, SNodeOperations.copyNode(SLinkOperations.getTarget(SNodeOperations.as(SLinkOperations.getTarget(or, LINKS.left$tEgL), CONCEPTS.NegatedStatement$8l), LINKS.statement$pxjq)));
+        SLinkOperations.setTarget(outer, LINKS.right$g53S, SNodeOperations.copyNode(SLinkOperations.getTarget(or, LINKS.right$g53S)));
+        SNodeOperations.replaceWithAnother(or, outer);
+        used = true;
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(SLinkOperations.getTarget(or, LINKS.right$g53S))), CONCEPTS.NegatedStatement$8l) && SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(SNodeOperations.getConcept(SLinkOperations.getTarget(or, LINKS.left$tEgL))), CONCEPTS.AAtomicStatement$Vv)) {
+        SNode outer = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5d4b7b1928f45d97L, "FirstOrderLogic.structure.ImpliesOperatorStatement"));
+        SLinkOperations.setTarget(outer, LINKS.left$tEgL, SNodeOperations.copyNode(SLinkOperations.getTarget(SNodeOperations.as(SLinkOperations.getTarget(or, LINKS.right$g53S), CONCEPTS.NegatedStatement$8l), LINKS.statement$pxjq)));
+        SLinkOperations.setTarget(outer, LINKS.right$g53S, SNodeOperations.copyNode(SLinkOperations.getTarget(or, LINKS.left$tEgL)));
+        SNodeOperations.replaceWithAnother(or, outer);
+        used = true;
+      }
+      // (¬a v (b ⇒ c)) => ((a & b) ⇒ c). 
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(SLinkOperations.getTarget(or, LINKS.left$tEgL))), CONCEPTS.NegatedStatement$8l) && SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(SLinkOperations.getTarget(or, LINKS.right$g53S))), CONCEPTS.ImpliesOperatorStatement$n3)) {
+        SNode leftish = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x6996afbaab621954L, "FirstOrderLogic.structure.AndOperatorStatement"));
+        SLinkOperations.setTarget(leftish, LINKS.left$tEgL, SNodeOperations.copyNode(SLinkOperations.getTarget(SNodeOperations.as(SLinkOperations.getTarget(or, LINKS.left$tEgL), CONCEPTS.NegatedStatement$8l), LINKS.statement$pxjq)));
+        SLinkOperations.setTarget(leftish, LINKS.right$g53S, SNodeOperations.copyNode(SLinkOperations.getTarget(SNodeOperations.as(SLinkOperations.getTarget(or, LINKS.right$g53S), CONCEPTS.ImpliesOperatorStatement$n3), LINKS.left$tEgL)));
+        SNodeOperations.replaceWithAnother(SLinkOperations.getTarget(SNodeOperations.as(SLinkOperations.getTarget(or, LINKS.right$g53S), CONCEPTS.ImpliesOperatorStatement$n3), LINKS.left$tEgL), leftish);
+        SNodeOperations.replaceWithAnother(or, SLinkOperations.getTarget(or, LINKS.right$g53S));
+        used = true;
+      }
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(SLinkOperations.getTarget(or, LINKS.right$g53S))), CONCEPTS.NegatedStatement$8l) && SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(SLinkOperations.getTarget(or, LINKS.left$tEgL))), CONCEPTS.ImpliesOperatorStatement$n3)) {
+        SNode leftish = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x6996afbaab621954L, "FirstOrderLogic.structure.AndOperatorStatement"));
+        SLinkOperations.setTarget(leftish, LINKS.left$tEgL, SNodeOperations.copyNode(SLinkOperations.getTarget(SNodeOperations.as(SLinkOperations.getTarget(or, LINKS.right$g53S), CONCEPTS.NegatedStatement$8l), LINKS.statement$pxjq)));
+        SLinkOperations.setTarget(leftish, LINKS.right$g53S, SNodeOperations.copyNode(SLinkOperations.getTarget(SNodeOperations.as(SLinkOperations.getTarget(or, LINKS.left$tEgL), CONCEPTS.ImpliesOperatorStatement$n3), LINKS.left$tEgL)));
+        SNodeOperations.replaceWithAnother(SLinkOperations.getTarget(SNodeOperations.as(SLinkOperations.getTarget(or, LINKS.left$tEgL), CONCEPTS.ImpliesOperatorStatement$n3), LINKS.left$tEgL), leftish);
+        SNodeOperations.replaceWithAnother(or, SLinkOperations.getTarget(or, LINKS.left$tEgL));
+        used = true;
+      }
+    }
+    if (used) {
+      LoggingRuntime.logMsgView(Level.INFO, "Preprocessing: Substituting or statements where possible", QueriesGenerated.class, null, null);
+    }
+  }
+  public static void mappingScript_CodeBlock_23(final MappingScriptContext _context) {
+    boolean used = false;
+    for (SNode imp : ListSequence.fromList(SModelOperations.nodes(_context.getModel(), CONCEPTS.ImpliesOperatorStatement$n3)).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(SNodeOperations.getParent(it))), CONCEPTS.KnowledgeBaseEntry$HX);
+      }
+    })) {
+
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(SLinkOperations.getTarget(imp, LINKS.left$tEgL))), CONCEPTS.ImpliesOperatorStatement$n3)) {
+        SNode newleft = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5d4b7b1928d5d80fL, "FirstOrderLogic.structure.OrOperatorStatement"));
+        SNode leftneg = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x36e551eaf2c8dae6L, "FirstOrderLogic.structure.NegatedStatement"));
+        SLinkOperations.setTarget(leftneg, LINKS.statement$pxjq, SLinkOperations.getTarget(SNodeOperations.as(SLinkOperations.getTarget(imp, LINKS.left$tEgL), CONCEPTS.ImpliesOperatorStatement$n3), LINKS.left$tEgL));
+        SLinkOperations.setTarget(newleft, LINKS.left$tEgL, leftneg);
+        SLinkOperations.setTarget(newleft, LINKS.right$g53S, SLinkOperations.getTarget(SNodeOperations.as(SLinkOperations.getTarget(imp, LINKS.left$tEgL), CONCEPTS.ImpliesOperatorStatement$n3), LINKS.right$g53S));
+        SNodeOperations.replaceWithAnother(SLinkOperations.getTarget(imp, LINKS.left$tEgL), newleft);
+        used = true;
+      }
+    }
+
+    if (used) {
+      LoggingRuntime.logMsgView(Level.INFO, "Preprocessing: Substituting complex implications with simpler ones", QueriesGenerated.class, null, null);
+    }
+  }
+  public static void mappingScript_CodeBlock_24(final MappingScriptContext _context) {
+    boolean used = false;
+    for (SNode impl : ListSequence.fromList(SModelOperations.nodes(_context.getModel(), CONCEPTS.ImpliesOperatorStatement$n3)).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(SLinkOperations.getTarget(it, LINKS.right$g53S))), CONCEPTS.NegatedStatement$8l);
+      }
+    })) {
+      // (a ⇒ ¬b) --> ¬a v ¬b 
+      SNode outer = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5d4b7b1928d5d80fL, "FirstOrderLogic.structure.OrOperatorStatement"));
+      SNode leftneg = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x36e551eaf2c8dae6L, "FirstOrderLogic.structure.NegatedStatement"));
+      SLinkOperations.setTarget(leftneg, LINKS.statement$pxjq, SNodeOperations.copyNode(SLinkOperations.getTarget(impl, LINKS.left$tEgL)));
+      SLinkOperations.setTarget(outer, LINKS.left$tEgL, leftneg);
+      SLinkOperations.setTarget(outer, LINKS.right$g53S, SNodeOperations.copyNode(SLinkOperations.getTarget(impl, LINKS.right$g53S)));
+      SNodeOperations.replaceWithAnother(impl, outer);
+      used = true;
+    }
+
+    for (SNode impl : ListSequence.fromList(SModelOperations.nodes(_context.getModel(), CONCEPTS.ImpliesOperatorStatement$n3)).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(SLinkOperations.getTarget(it, LINKS.right$g53S))), CONCEPTS.OrOperatorStatement$L5) || SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(SLinkOperations.getTarget(it, LINKS.right$g53S))), CONCEPTS.ImpliesOperatorStatement$n3);
+      }
+    })) {
+      SNode newleft = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x36e551eaf2c8dae6L, "FirstOrderLogic.structure.NegatedStatement"));
+      SLinkOperations.setTarget(newleft, LINKS.statement$pxjq, SLinkOperations.getTarget(SNodeOperations.as(impl, CONCEPTS.ImpliesOperatorStatement$n3), LINKS.right$g53S));
+      SNode newright = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x36e551eaf2c8dae6L, "FirstOrderLogic.structure.NegatedStatement"));
+      SLinkOperations.setTarget(newright, LINKS.statement$pxjq, SLinkOperations.getTarget(SNodeOperations.as(impl, CONCEPTS.ImpliesOperatorStatement$n3), LINKS.left$tEgL));
+      SNodeOperations.replaceWithAnother(SLinkOperations.getTarget(impl, LINKS.left$tEgL), newleft);
+      SNodeOperations.replaceWithAnother(SLinkOperations.getTarget(impl, LINKS.right$g53S), newright);
+    }
+
+    if (used) {
+      LoggingRuntime.logMsgView(Level.INFO, "Preprocessing: Replacing (a ⇒ ¬b) with (¬a v ¬b)", QueriesGenerated.class, null, null);
+    }
+  }
   private final Map<String, ReductionRuleCondition> rrcMethods = new HashMap<String, ReductionRuleCondition>();
   {
     int i = 0;
     rrcMethods.put("8521472005505097645", new RRC(i++));
+    rrcMethods.put("7771543041057641196", new RRC(i++));
+    rrcMethods.put("7771543041057674386", new RRC(i++));
+    rrcMethods.put("7771543041057677137", new RRC(i++));
     rrcMethods.put("8521472005505657412", new RRC(i++));
+    rrcMethods.put("7771543041056948619", new RRC(i++));
   }
   @Override
   @NotNull
@@ -538,6 +677,14 @@ public class QueriesGenerated extends QueryProviderBase {
         case 0:
           return QueriesGenerated.rule_Condition_18_0(ctx);
         case 1:
+          return QueriesGenerated.rule_Condition_18_1(ctx);
+        case 2:
+          return QueriesGenerated.rule_Condition_18_2(ctx);
+        case 3:
+          return QueriesGenerated.rule_Condition_18_3(ctx);
+        case 4:
+          return QueriesGenerated.rule_Condition_20_0(ctx);
+        case 5:
           return QueriesGenerated.rule_Condition_21_0(ctx);
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no condition method for rule %s (key: #%d)", ctx.getTemplateReference(), methodKey));
@@ -556,6 +703,9 @@ public class QueriesGenerated extends QueryProviderBase {
     mscbMethods.put("8525279030029005393", new SCB(i++));
     mscbMethods.put("8525279030029006133", new SCB(i++));
     mscbMethods.put("7234254527726091017", new SCB(i++));
+    mscbMethods.put("7771543041056044501", new SCB(i++));
+    mscbMethods.put("7771543041057565042", new SCB(i++));
+    mscbMethods.put("7771543041058487634", new SCB(i++));
   }
   @Override
   @NotNull
@@ -601,6 +751,15 @@ public class QueriesGenerated extends QueryProviderBase {
         case 8:
           QueriesGenerated.mappingScript_CodeBlock_17(ctx);
           return;
+        case 9:
+          QueriesGenerated.mappingScript_CodeBlock_22(ctx);
+          return;
+        case 10:
+          QueriesGenerated.mappingScript_CodeBlock_23(ctx);
+          return;
+        case 11:
+          QueriesGenerated.mappingScript_CodeBlock_24(ctx);
+          return;
         default:
           throw new GenerationFailureException(String.format("There's no code block with method index %d ", methodKey));
       }
@@ -613,10 +772,13 @@ public class QueriesGenerated extends QueryProviderBase {
     snqMethods.put("8525279030028486948", new SNQ(i++));
     snqMethods.put("8525279030028656108", new SNQ(i++));
     snqMethods.put("8525279030028656416", new SNQ(i++));
-    snqMethods.put("8521472005505107678", new SNQ(i++));
-    snqMethods.put("8521472005505107388", new SNQ(i++));
+    snqMethods.put("7771543041057630316", new SNQ(i++));
+    snqMethods.put("7771543041057627753", new SNQ(i++));
     snqMethods.put("8521472005505654504", new SNQ(i++));
     snqMethods.put("8521472005505654833", new SNQ(i++));
+    snqMethods.put("7771543041056539736", new SNQ(i++));
+    snqMethods.put("7771543041056954882", new SNQ(i++));
+    snqMethods.put("7771543041056956688", new SNQ(i++));
   }
   @NotNull
   @Override
@@ -648,9 +810,15 @@ public class QueriesGenerated extends QueryProviderBase {
         case 5:
           return QueriesGenerated.sourceNodeQuery_18_1(ctx);
         case 6:
-          return QueriesGenerated.sourceNodeQuery_20_0(ctx);
+          return QueriesGenerated.sourceNodeQuery_19_0(ctx);
         case 7:
-          return QueriesGenerated.sourceNodeQuery_20_1(ctx);
+          return QueriesGenerated.sourceNodeQuery_19_1(ctx);
+        case 8:
+          return QueriesGenerated.sourceNodeQuery_20_0(ctx);
+        case 9:
+          return QueriesGenerated.sourceNodeQuery_21_0(ctx);
+        case 10:
+          return QueriesGenerated.sourceNodeQuery_21_1(ctx);
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no method for query %s (key: #%d)", ctx.getTemplateReference(), methodKey));
       }
@@ -775,37 +943,38 @@ public class QueriesGenerated extends QueryProviderBase {
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept KnowledgeBaseEntry$HX = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x636efe58094cc959L, "FirstOrderLogic.structure.KnowledgeBaseEntry");
+    /*package*/ static final SConcept OrOperatorStatement$L5 = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5d4b7b1928d5d80fL, "FirstOrderLogic.structure.OrOperatorStatement");
+    /*package*/ static final SConcept ImpliesOperatorStatement$n3 = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5d4b7b1928f45d97L, "FirstOrderLogic.structure.ImpliesOperatorStatement");
+    /*package*/ static final SConcept NegatedStatement$8l = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x36e551eaf2c8dae6L, "FirstOrderLogic.structure.NegatedStatement");
     /*package*/ static final SConcept AllQuantifiedStatement$Ex = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x13ba598d20c99906L, "FirstOrderLogic.structure.AllQuantifiedStatement");
     /*package*/ static final SConcept AndOperatorStatement$2T = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x6996afbaab621954L, "FirstOrderLogic.structure.AndOperatorStatement");
     /*package*/ static final SConcept ExistsQuantifiedStatement$jU = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x1bf6498e1734c76cL, "FirstOrderLogic.structure.ExistsQuantifiedStatement");
-    /*package*/ static final SConcept ImpliesOperatorStatement$n3 = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5d4b7b1928f45d97L, "FirstOrderLogic.structure.ImpliesOperatorStatement");
-    /*package*/ static final SConcept NegatedStatement$8l = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x36e551eaf2c8dae6L, "FirstOrderLogic.structure.NegatedStatement");
-    /*package*/ static final SConcept OrOperatorStatement$L5 = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5d4b7b1928d5d80fL, "FirstOrderLogic.structure.OrOperatorStatement");
     /*package*/ static final SConcept ParenthesesStatement$zg = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x36e551eaf2ccfec9L, "FirstOrderLogic.structure.ParenthesesStatement");
     /*package*/ static final SConcept EqualsOperatorStatement$S_ = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5d4b7b1928f45dd7L, "FirstOrderLogic.structure.EqualsOperatorStatement");
     /*package*/ static final SConcept AOperatorStatement$ft = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x13ba598d20c7b087L, "FirstOrderLogic.structure.AOperatorStatement");
     /*package*/ static final SConcept AStatement$1q = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x13ba598d20c7b07fL, "FirstOrderLogic.structure.AStatement");
     /*package*/ static final SConcept VariableReference$al = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x13ba598d20cb7c36L, "FirstOrderLogic.structure.VariableReference");
-  }
-
-  private static final class PROPS {
-    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
+    /*package*/ static final SConcept AAtomicStatement$Vv = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x41354ec0cded1c6cL, "FirstOrderLogic.structure.AAtomicStatement");
   }
 
   private static final class LINKS {
+    /*package*/ static final SContainmentLink right$g53S = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x13ba598d20c7b087L, 0x13ba598d20ca3ae6L, "right");
     /*package*/ static final SReferenceLink ref$3iQK = MetaAdapterFactory.getReferenceLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00b21835L, 0x1474d1fc6f086922L, "ref");
     /*package*/ static final SReferenceLink predicate$FL91 = MetaAdapterFactory.getReferenceLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x523a606984019bbaL, 0x523a606984019bc2L, "predicate");
     /*package*/ static final SContainmentLink term1$Q5Mf = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x636efe58094ad65bL, 0x636efe58094ad65cL, "term1");
     /*package*/ static final SContainmentLink term2$Q6gh = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x636efe58094ad65bL, 0x636efe58094ad65eL, "term2");
     /*package*/ static final SContainmentLink left$tEgL = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x13ba598d20c7b087L, 0x13ba598d20c7b08aL, "left");
-    /*package*/ static final SContainmentLink right$g53S = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x13ba598d20c7b087L, 0x13ba598d20ca3ae6L, "right");
+    /*package*/ static final SContainmentLink statement$pxjq = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x36e551eaf2c8dae6L, 0x36e551eaf2c8dae7L, "statement");
     /*package*/ static final SContainmentLink statements$MO7q = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x636efe58094cc959L, 0x636efe58094cc95aL, "statements");
     /*package*/ static final SContainmentLink content$_J4j = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00ac843eL, 0x5c35fb00ac8464L, "content");
     /*package*/ static final SContainmentLink parameters$Ifhz = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x523a606984019bbaL, 0x523a606984019bc4L, "parameters");
     /*package*/ static final SContainmentLink parameters$Jqsy = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00b2183aL, 0x5c35fb00b7f555L, "parameters");
-    /*package*/ static final SContainmentLink statement$pxjq = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x36e551eaf2c8dae6L, 0x36e551eaf2c8dae7L, "statement");
     /*package*/ static final SContainmentLink quantors$jFRS = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x13ba598d20c998f8L, 0x13ba598d20c99902L, "quantors");
     /*package*/ static final SContainmentLink statement$PMeT = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x13ba598d20c998f8L, 0x13ba598d20ca3aebL, "statement");
     /*package*/ static final SContainmentLink statement$TjGf = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x36e551eaf2ccfec9L, 0x36e551eaf2ccfecaL, "statement");
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
   }
 }

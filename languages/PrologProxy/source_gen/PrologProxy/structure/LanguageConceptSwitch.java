@@ -17,9 +17,10 @@ public final class LanguageConceptSwitch {
   public static final int CompoundTerm = 5;
   public static final int Fact = 6;
   public static final int FunctionsTerm = 7;
-  public static final int PrologFile = 8;
-  public static final int Rule = 9;
-  public static final int Variable = 10;
+  public static final int NegatedTerm = 8;
+  public static final int PrologFile = 9;
+  public static final int Rule = 10;
+  public static final int Variable = 11;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L);
@@ -31,6 +32,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x62337459d1e11557L, CompoundTerm);
     builder.put(0x62337459d1e1155fL, Fact);
     builder.put(0x764fe01be3ee79f9L, FunctionsTerm);
+    builder.put(0x6bda11386ed49dafL, NegatedTerm);
     builder.put(0x62337459d1e11564L, PrologFile);
     builder.put(0x62337459d1e1155cL, Rule);
     builder.put(0x62337459d1e11554L, Variable);

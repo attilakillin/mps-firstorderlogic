@@ -28,10 +28,12 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       case 4:
         return Collections.<ConceptEditor>singletonList(new FunctionsTerm_Editor());
       case 5:
-        return Collections.<ConceptEditor>singletonList(new PrologFile_Editor());
+        return Collections.<ConceptEditor>singletonList(new NegatedTerm_Editor());
       case 6:
-        return Collections.<ConceptEditor>singletonList(new Rule_Editor());
+        return Collections.<ConceptEditor>singletonList(new PrologFile_Editor());
       case 7:
+        return Collections.<ConceptEditor>singletonList(new Rule_Editor());
+      case 8:
         return Collections.<ConceptEditor>singletonList(new Variable_Editor());
       default:
     }
@@ -40,5 +42,5 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
 
 
 
-  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e11551L), MetaIdFactory.conceptId(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x764259a3eb925c54L), MetaIdFactory.conceptId(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e11557L), MetaIdFactory.conceptId(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e1155fL), MetaIdFactory.conceptId(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x764fe01be3ee79f9L), MetaIdFactory.conceptId(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e11564L), MetaIdFactory.conceptId(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e1155cL), MetaIdFactory.conceptId(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e11554L)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e11551L), MetaIdFactory.conceptId(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x764259a3eb925c54L), MetaIdFactory.conceptId(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e11557L), MetaIdFactory.conceptId(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e1155fL), MetaIdFactory.conceptId(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x764fe01be3ee79f9L), MetaIdFactory.conceptId(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x6bda11386ed49dafL), MetaIdFactory.conceptId(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e11564L), MetaIdFactory.conceptId(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e1155cL), MetaIdFactory.conceptId(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e11554L)).seal();
 }

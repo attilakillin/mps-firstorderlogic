@@ -202,5 +202,21 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="6Jq4jxIP9QK">
+    <property role="3GE5qa" value="terms" />
+    <ref role="1XX52x" to="kl2v:6Jq4jxIP9QJ" resolve="NegatedTerm" />
+    <node concept="3EZMnI" id="6Jq4jxIP9QM" role="2wV5jI">
+      <node concept="2iRfu4" id="6Jq4jxIP9QN" role="2iSdaV" />
+      <node concept="3F0ifn" id="6Jq4jxIP9QS" role="3EZMnx">
+        <property role="3F0ifm" value="negated term {" />
+      </node>
+      <node concept="3F1sOY" id="6Jq4jxIP9R0" role="3EZMnx">
+        <ref role="1NtTu8" to="kl2v:6Jq4jxIP9QY" resolve="child" />
+      </node>
+      <node concept="3F0ifn" id="6Jq4jxIP9R8" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+      </node>
+    </node>
+  </node>
 </model>
 

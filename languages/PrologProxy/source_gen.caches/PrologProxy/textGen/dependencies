@@ -49,6 +49,15 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
     <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
   </dependency>
+  <dependency className="PrologProxy.textGen.NegatedTerm_TextGen">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="jetbrains.mps.text.impl.TextGenSupport" />
+    <classNode dependClassName="jetbrains.mps.text.rt.TextGenContext" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SContainmentLink" />
+    <classNode extendsClassName="jetbrains.mps.text.rt.TextGenDescriptorBase" />
+  </dependency>
   <dependency className="PrologProxy.textGen.PrologFile_TextGen">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.internal.collections.runtime.ListSequence" />
@@ -76,6 +85,7 @@
     <classNode dependClassName="PrologProxy.textGen.CompoundTerm_TextGen" />
     <classNode dependClassName="PrologProxy.textGen.Fact_TextGen" />
     <classNode dependClassName="PrologProxy.textGen.FunctionsTerm_TextGen" />
+    <classNode dependClassName="PrologProxy.textGen.NegatedTerm_TextGen" />
     <classNode dependClassName="PrologProxy.textGen.PrologFile_TextGen" />
     <classNode dependClassName="PrologProxy.textGen.Rule_TextGen" />
     <classNode dependClassName="PrologProxy.textGen.Variable_TextGen" />

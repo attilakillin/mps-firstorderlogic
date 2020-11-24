@@ -417,5 +417,29 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="6Jq4jxIP9RB">
+    <property role="3GE5qa" value="terms" />
+    <ref role="WuzLi" to="kl2v:6Jq4jxIP9QJ" resolve="NegatedTerm" />
+    <node concept="11bSqf" id="6Jq4jxIP9RC" role="11c4hB">
+      <node concept="3clFbS" id="6Jq4jxIP9RD" role="2VODD2">
+        <node concept="lc7rE" id="6Jq4jxIP9RV" role="3cqZAp">
+          <node concept="la8eA" id="6Jq4jxIP9Sf" role="lcghm">
+            <property role="lacIc" value="((\\+ " />
+          </node>
+          <node concept="l9hG8" id="6Jq4jxIP9T4" role="lcghm">
+            <node concept="2OqwBi" id="6Jq4jxIPa0U" role="lb14g">
+              <node concept="117lpO" id="6Jq4jxIP9TV" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6Jq4jxIPaaW" role="2OqNvi">
+                <ref role="3Tt5mk" to="kl2v:6Jq4jxIP9QY" resolve="child" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="6Jq4jxIPagd" role="lcghm">
+            <property role="lacIc" value=") -&gt; false; true)" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
