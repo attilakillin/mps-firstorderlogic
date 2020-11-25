@@ -25,6 +25,7 @@ import java.util.Objects;
 import jetbrains.mps.lang.core.behavior.PropertyAttribute__BehaviorDescriptor;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.openapi.editor.update.AttributeKind;
+import jetbrains.mps.nodeEditor.cellLayout.CellLayout_Indent;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
 import jetbrains.mps.lang.editor.cellProviders.RefNodeListHandler;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
@@ -64,6 +65,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     setCellContext(editorCell);
     editorCell.addEditorCell(createCollection_1());
     editorCell.addEditorCell(createCollection_2());
+    editorCell.addEditorCell(createCollection_3());
     return editorCell;
   }
   private EditorCell createCollection_1() {
@@ -105,23 +107,117 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
   }
   private EditorCell createCollection_2() {
-    EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Horizontal());
+    EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
     editorCell.setCellId("Collection_ykyz0s_b0");
+    editorCell.addEditorCell(createConstant_1());
     editorCell.addEditorCell(createRefNodeList_0());
     return editorCell;
   }
+  private EditorCell createConstant_1() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "compounds:");
+    editorCell.setCellId("Constant_ykyz0s_a1a");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
   private EditorCell createRefNodeList_0() {
-    AbstractCellListHandler handler = new clausesListHandler_ykyz0s_a1a(myNode, getEditorContext());
+    AbstractCellListHandler handler = new compoundsListHandler_ykyz0s_b1a(myNode, getEditorContext());
+    EditorCell_Collection editorCell = handler.createCells(new CellLayout_Vertical(), false);
+    editorCell.setCellId("refNodeList_compounds");
+    editorCell.setSRole(handler.getElementSRole());
+    return editorCell;
+  }
+  private static class compoundsListHandler_ykyz0s_b1a extends RefNodeListHandler {
+    @NotNull
+    private SNode myNode;
+
+    public compoundsListHandler_ykyz0s_b1a(SNode ownerNode, EditorContext context) {
+      super(context, false);
+      myNode = ownerNode;
+    }
+
+    @NotNull
+    public SNode getNode() {
+      return myNode;
+    }
+    public SContainmentLink getSLink() {
+      return LINKS.compounds$3TIJ;
+    }
+    public SAbstractConcept getChildSConcept() {
+      return CONCEPTS.UsedCompound$lr;
+    }
+
+    public EditorCell createNodeCell(SNode elementNode) {
+      EditorCell elementCell = getUpdateSession().updateChildNodeCell(elementNode);
+      installElementCellActions(elementNode, elementCell, false);
+      return elementCell;
+    }
+    public EditorCell createEmptyCell() {
+      getCellFactory().pushCellContext();
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(compoundsListHandler_ykyz0s_b1a.this.getNode(), LINKS.compounds$3TIJ));
+      try {
+        EditorCell emptyCell = null;
+        emptyCell = super.createEmptyCell();
+        installElementCellActions(null, emptyCell, true);
+        setCellContext(emptyCell);
+        return emptyCell;
+      } finally {
+        getCellFactory().popCellContext();
+      }
+    }
+
+    private static final Object OBJ = new Object();
+
+    public void installElementCellActions(SNode elementNode, EditorCell elementCell, boolean isEmptyCell) {
+      if (elementCell.getUserObject(AbstractCellListHandler.ELEMENT_CELL_COMPLETE_SET) == null) {
+        if (elementCell.getSubstituteInfo() == null || elementCell.getSubstituteInfo() instanceof DefaultSubstituteInfo) {
+          elementCell.putUserObject(AbstractCellListHandler.ELEMENT_CELL_COMPLETE_SET, OBJ);
+          elementCell.setSubstituteInfo((isEmptyCell ? new SEmptyContainmentSubstituteInfo(elementCell) : new SChildSubstituteInfo(elementCell)));
+        }
+      }
+      if (elementCell.getUserObject(AbstractCellListHandler.ELEMENT_CELL_DELETE_SET) == null) {
+        if (elementNode != null) {
+          elementCell.putUserObject(AbstractCellListHandler.ELEMENT_CELL_DELETE_SET, OBJ);
+          elementCell.setAction(CellActionType.DELETE, new CellAction_DeleteNode(elementNode, CellAction_DeleteNode.DeleteDirection.FORWARD));
+        }
+      }
+      if (elementCell.getUserObject(ELEMENT_CELL_BACKSPACE_SET) == null) {
+        if (elementNode != null) {
+          elementCell.putUserObject(ELEMENT_CELL_BACKSPACE_SET, OBJ);
+          elementCell.setAction(CellActionType.BACKSPACE, new CellAction_DeleteNode(elementNode, CellAction_DeleteNode.DeleteDirection.BACKWARD));
+        }
+      }
+      if (elementCell.getUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET) == null) {
+        if (elementNode != null) {
+          elementCell.putUserObject(AbstractCellListHandler.ELEMENT_CELL_ACTIONS_SET, OBJ);
+        }
+      }
+    }
+  }
+  private EditorCell createCollection_3() {
+    EditorCell_Collection editorCell = new EditorCell_Collection(getEditorContext(), myNode, new CellLayout_Indent());
+    editorCell.setCellId("Collection_ykyz0s_c0");
+    editorCell.addEditorCell(createConstant_2());
+    editorCell.addEditorCell(createRefNodeList_1());
+    return editorCell;
+  }
+  private EditorCell createConstant_2() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "clauses:");
+    editorCell.setCellId("Constant_ykyz0s_a2a");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createRefNodeList_1() {
+    AbstractCellListHandler handler = new clausesListHandler_ykyz0s_b2a(myNode, getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Vertical(), false);
     editorCell.setCellId("refNodeList_clauses");
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class clausesListHandler_ykyz0s_a1a extends RefNodeListHandler {
+  private static class clausesListHandler_ykyz0s_b2a extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public clausesListHandler_ykyz0s_a1a(SNode ownerNode, EditorContext context) {
+    public clausesListHandler_ykyz0s_b2a(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -144,7 +240,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(clausesListHandler_ykyz0s_a1a.this.getNode(), LINKS.clauses$JOWE));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(clausesListHandler_ykyz0s_b2a.this.getNode(), LINKS.clauses$JOWE));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();
@@ -191,10 +287,12 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept PropertyAttribute$Gb = MetaAdapterFactory.getConcept(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2eb1ad060897da56L, "jetbrains.mps.lang.core.structure.PropertyAttribute");
+    /*package*/ static final SConcept UsedCompound$lr = MetaAdapterFactory.getConcept(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x29237bc3276d06d4L, "PrologProxy.structure.UsedCompound");
     /*package*/ static final SConcept AClause$C2 = MetaAdapterFactory.getConcept(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e1155dL, "PrologProxy.structure.AClause");
   }
 
   private static final class LINKS {
+    /*package*/ static final SContainmentLink compounds$3TIJ = MetaAdapterFactory.getContainmentLink(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e11564L, 0x29237bc3276d61b0L, "compounds");
     /*package*/ static final SContainmentLink clauses$JOWE = MetaAdapterFactory.getContainmentLink(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e11564L, 0x62337459d1e11565L, "clauses");
   }
 }

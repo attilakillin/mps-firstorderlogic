@@ -20,6 +20,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_NegatedTerm;
   private ConceptPresentation props_PrologFile;
   private ConceptPresentation props_Rule;
+  private ConceptPresentation props_UsedCompound;
   private ConceptPresentation props_Variable;
 
   @Override
@@ -102,6 +103,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Rule = cpb.create();
         }
         return props_Rule;
+      case LanguageConceptSwitch.UsedCompound:
+        if (props_UsedCompound == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("UsedCompound");
+          props_UsedCompound = cpb.create();
+        }
+        return props_UsedCompound;
       case LanguageConceptSwitch.Variable:
         if (props_Variable == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

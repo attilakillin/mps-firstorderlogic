@@ -5,25 +5,105 @@ package PrologProxy.textGen;
 import jetbrains.mps.text.rt.TextGenDescriptorBase;
 import jetbrains.mps.text.rt.TextGenContext;
 import jetbrains.mps.text.impl.TextGenSupport;
+import java.util.List;
 import org.jetbrains.mps.openapi.model.SNode;
+import java.util.ArrayList;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import java.util.Comparator;
+import org.jetbrains.mps.openapi.language.SAbstractConcept;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.internal.collections.runtime.Sequence;
+import jetbrains.mps.lang.smodel.ConceptSwitchIndex;
+import jetbrains.mps.lang.smodel.ConceptSwitchIndexBuilder;
+import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SConcept;
+import org.jetbrains.mps.openapi.language.SProperty;
 
 public class PrologFile_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
+    List<SNode> content = new ArrayList<SNode>();
+    ListSequence.fromList(content).addSequence(ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.compounds$3TIJ)));
+    ListSequence.fromList(content).addSequence(ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.clauses$JOWE)));
+    Iterable<SNode> sorted = ListSequence.fromList(content).sort(new Comparator<SNode>() {
+      public int compare(SNode a, SNode b) {
+        String aname;
+        String bname;
+        SAbstractConcept cncpt = SNodeOperations.getConcept(SLinkOperations.getTarget(a, LINKS.head$JOh4));
+        switch (conceptIndex.index(cncpt)) {
+          case 0:
+            if (true) {
+              aname = SPropertyOperations.getString(SNodeOperations.as(SLinkOperations.getTarget(a, LINKS.head$JOh4), CONCEPTS.Atom$o3), PROPS.name$MnvL);
+            }
+            break;
+          case 1:
+            if (true) {
+              aname = SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.as(SLinkOperations.getTarget(a, LINKS.head$JOh4), CONCEPTS.CompoundTerm$_8), LINKS.functor$JGHE), PROPS.name$MnvL);
+            }
+            break;
+          case 2:
+            if (true) {
+              aname = "equals";
+            }
+            break;
+          default:
+            throw new RuntimeException(SNodeOperations.getConcept(SLinkOperations.getTarget(a, LINKS.head$JOh4)).toString());
+        }
+        SAbstractConcept cncpt1 = SNodeOperations.getConcept(SLinkOperations.getTarget(b, LINKS.head$JOh4));
+        switch (conceptIndex1.index(cncpt1)) {
+          case 0:
+            if (true) {
+              bname = SPropertyOperations.getString(SNodeOperations.as(SLinkOperations.getTarget(b, LINKS.head$JOh4), CONCEPTS.Atom$o3), PROPS.name$MnvL);
+            }
+            break;
+          case 1:
+            if (true) {
+              bname = SPropertyOperations.getString(SLinkOperations.getTarget(SNodeOperations.as(SLinkOperations.getTarget(b, LINKS.head$JOh4), CONCEPTS.CompoundTerm$_8), LINKS.functor$JGHE), PROPS.name$MnvL);
+            }
+            break;
+          case 2:
+            if (true) {
+              bname = "equals";
+            }
+            break;
+          default:
+            throw new RuntimeException(SNodeOperations.getConcept(SLinkOperations.getTarget(b, LINKS.head$JOh4)).toString());
+        }
+        return aname.compareTo(bname);
+      }
+    }, true);
 
-    for (SNode clause : ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.clauses$JOWE))) {
+    tgs.append("% Clauses are in alphabetical order, as required by certain prolog implementations.");
+    tgs.newLine();
+    tgs.append("% Initializer clauses were inserted for every compound term to prevent \"undefined procedure\" errors.");
+    tgs.newLine();
+    for (SNode clause : Sequence.fromIterable(sorted)) {
       tgs.appendNode(clause);
       tgs.append(".");
       tgs.newLine();
     }
   }
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e11551L), MetaIdFactory.conceptId(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e11557L), MetaIdFactory.conceptId(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x764fe01be3ee79f9L)).seal();
+  private static final ConceptSwitchIndex conceptIndex1 = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e11551L), MetaIdFactory.conceptId(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e11557L), MetaIdFactory.conceptId(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x764fe01be3ee79f9L)).seal();
 
   private static final class LINKS {
+    /*package*/ static final SContainmentLink compounds$3TIJ = MetaAdapterFactory.getContainmentLink(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e11564L, 0x29237bc3276d61b0L, "compounds");
     /*package*/ static final SContainmentLink clauses$JOWE = MetaAdapterFactory.getContainmentLink(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e11564L, 0x62337459d1e11565L, "clauses");
+    /*package*/ static final SContainmentLink head$JOh4 = MetaAdapterFactory.getContainmentLink(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e1155dL, 0x62337459d1e11563L, "head");
+    /*package*/ static final SContainmentLink functor$JGHE = MetaAdapterFactory.getContainmentLink(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e11557L, 0x62337459d1e11558L, "functor");
+  }
+
+  private static final class CONCEPTS {
+    /*package*/ static final SConcept Atom$o3 = MetaAdapterFactory.getConcept(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e11551L, "PrologProxy.structure.Atom");
+    /*package*/ static final SConcept CompoundTerm$_8 = MetaAdapterFactory.getConcept(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e11557L, "PrologProxy.structure.CompoundTerm");
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
   }
 }

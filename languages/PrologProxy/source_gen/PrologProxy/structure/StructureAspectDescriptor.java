@@ -24,6 +24,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptNegatedTerm = createDescriptorForNegatedTerm();
   /*package*/ final ConceptDescriptor myConceptPrologFile = createDescriptorForPrologFile();
   /*package*/ final ConceptDescriptor myConceptRule = createDescriptorForRule();
+  /*package*/ final ConceptDescriptor myConceptUsedCompound = createDescriptorForUsedCompound();
   /*package*/ final ConceptDescriptor myConceptVariable = createDescriptorForVariable();
   private final LanguageConceptSwitch myIndexSwitch;
 
@@ -39,7 +40,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAClause, myConceptARuleBody, myConceptATerm, myConceptAtom, myConceptBinaryRuleBody, myConceptCompoundTerm, myConceptFact, myConceptFunctionsTerm, myConceptNegatedTerm, myConceptPrologFile, myConceptRule, myConceptVariable);
+    return Arrays.asList(myConceptAClause, myConceptARuleBody, myConceptATerm, myConceptAtom, myConceptBinaryRuleBody, myConceptCompoundTerm, myConceptFact, myConceptFunctionsTerm, myConceptNegatedTerm, myConceptPrologFile, myConceptRule, myConceptUsedCompound, myConceptVariable);
   }
 
   @Override
@@ -68,6 +69,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptPrologFile;
       case LanguageConceptSwitch.Rule:
         return myConceptRule;
+      case LanguageConceptSwitch.UsedCompound:
+        return myConceptUsedCompound;
       case LanguageConceptSwitch.Variable:
         return myConceptVariable;
       default:
@@ -166,6 +169,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:74317ac3-e87e-4e84-924a-bd83aedc1973(PrologProxy.structure)/7076127368651281764");
     b.version(2);
+    b.aggregate("compounds", 0x29237bc3276d61b0L).target(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x29237bc3276d06d4L).optional(true).ordered(true).multiple(true).origin("2964349057850237360").done();
     b.aggregate("clauses", 0x62337459d1e11565L).target(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e1155dL).optional(true).ordered(true).multiple(true).origin("7076127368651281765").done();
     return b.create();
   }
@@ -176,6 +180,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:74317ac3-e87e-4e84-924a-bd83aedc1973(PrologProxy.structure)/7076127368651281756");
     b.version(2);
     b.aggregate("body", 0x62337459d1e11561L).target(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x764259a3eb925c53L).optional(false).ordered(true).multiple(false).origin("7076127368651281761").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForUsedCompound() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("PrologProxy", "UsedCompound", 0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x29237bc3276d06d4L);
+    b.class_(false, false, false);
+    b.super_("PrologProxy.structure.AClause", 0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e1155dL);
+    b.origin("r:74317ac3-e87e-4e84-924a-bd83aedc1973(PrologProxy.structure)/2964349057850214100");
+    b.version(2);
+    b.property("arity", 0x29237bc3277744f9L).type(PrimitiveTypeId.INTEGER).origin("2964349057850885369").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForVariable() {

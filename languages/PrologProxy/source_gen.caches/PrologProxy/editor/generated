@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-e67s4ytted8ftov78mqzfbvi066ub76">
-  <files names="Atom_Editor.java:Atom_EditorBuilder_a.java:BinaryRuleBody_Editor.java:BinaryRuleBody_EditorBuilder_a.java:CompoundTerm_Editor.java:CompoundTerm_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:Fact_Editor.java:Fact_EditorBuilder_a.java:FunctionsTerm_Editor.java:FunctionsTerm_EditorBuilder_a.java:NegatedTerm_Editor.java:NegatedTerm_EditorBuilder_a.java:PrologFile_Editor.java:PrologFile_EditorBuilder_a.java:Rule_Editor.java:Rule_EditorBuilder_a.java:Variable_Editor.java:Variable_EditorBuilder_a.java" />
+<product version="3" modelHash="1cvygunclpk267kfp9o6709cy9d4vov">
+  <files names="Atom_Editor.java:Atom_EditorBuilder_a.java:BinaryRuleBody_Editor.java:BinaryRuleBody_EditorBuilder_a.java:CompoundTerm_Editor.java:CompoundTerm_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:Fact_Editor.java:Fact_EditorBuilder_a.java:FunctionsTerm_Editor.java:FunctionsTerm_EditorBuilder_a.java:NegatedTerm_Editor.java:NegatedTerm_EditorBuilder_a.java:PrologFile_Editor.java:PrologFile_EditorBuilder_a.java:Rule_Editor.java:Rule_EditorBuilder_a.java:UsedCompound_Editor.java:UsedCompound_EditorBuilder_a.java:Variable_Editor.java:Variable_EditorBuilder_a.java" />
 </product>
 

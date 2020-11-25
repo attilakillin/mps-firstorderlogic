@@ -129,6 +129,13 @@
     <property role="TrG5h" value="PrologFile" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2$zuWcBrm6K" role="1TKVEi">
+      <property role="IQ2ns" value="2964349057850237360" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="compounds" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2$zuWcBrgrk" resolve="UsedCompound" />
+    </node>
     <node concept="1TJgyj" id="68Nt5BhShl_" role="1TKVEi">
       <property role="IQ2ns" value="7076127368651281765" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -204,6 +211,16 @@
       <property role="20kJfa" value="child" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="68Nt5BhShlq" resolve="ATerm" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2$zuWcBrgrk">
+    <property role="EcuMT" value="2964349057850214100" />
+    <property role="TrG5h" value="UsedCompound" />
+    <ref role="1TJDcQ" node="68Nt5BhShlt" resolve="AClause" />
+    <node concept="1TJgyi" id="2$zuWcBtOjT" role="1TKVEl">
+      <property role="IQ2nx" value="2964349057850885369" />
+      <property role="TrG5h" value="arity" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
 </model>

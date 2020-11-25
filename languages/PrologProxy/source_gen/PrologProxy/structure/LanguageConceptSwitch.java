@@ -20,7 +20,8 @@ public final class LanguageConceptSwitch {
   public static final int NegatedTerm = 8;
   public static final int PrologFile = 9;
   public static final int Rule = 10;
-  public static final int Variable = 11;
+  public static final int UsedCompound = 11;
+  public static final int Variable = 12;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L);
@@ -35,6 +36,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x6bda11386ed49dafL, NegatedTerm);
     builder.put(0x62337459d1e11564L, PrologFile);
     builder.put(0x62337459d1e1155cL, Rule);
+    builder.put(0x29237bc3276d06d4L, UsedCompound);
     builder.put(0x62337459d1e11554L, Variable);
     myIndex = builder.seal();
   }

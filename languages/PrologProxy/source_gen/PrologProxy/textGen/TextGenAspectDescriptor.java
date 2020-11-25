@@ -39,6 +39,8 @@ public class TextGenAspectDescriptor extends TextGenAspectBase {
         return new PrologFile_TextGen();
       case LanguageConceptSwitch.Rule:
         return new Rule_TextGen();
+      case LanguageConceptSwitch.UsedCompound:
+        return new UsedCompound_TextGen();
       case LanguageConceptSwitch.Variable:
         return new Variable_TextGen();
     }

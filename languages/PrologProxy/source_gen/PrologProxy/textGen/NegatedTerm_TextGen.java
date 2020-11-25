@@ -15,7 +15,7 @@ public class NegatedTerm_TextGen extends TextGenDescriptorBase {
     final TextGenSupport tgs = new TextGenSupport(ctx);
     tgs.append("((\\+ ");
     tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.child$lBzH));
-    tgs.append(") -> false; true)");
+    tgs.append(") -> true; false)");
   }
 
   private static final class LINKS {

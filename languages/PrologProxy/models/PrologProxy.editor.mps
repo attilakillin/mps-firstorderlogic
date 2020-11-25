@@ -114,8 +114,21 @@
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>
-      <node concept="3EZMnI" id="7pfS1JzORH4" role="3EZMnx">
-        <node concept="2iRfu4" id="7pfS1JzORH5" role="2iSdaV" />
+      <node concept="3EZMnI" id="2$zuWcBrn2x" role="3EZMnx">
+        <node concept="l2Vlx" id="2$zuWcBrn2y" role="2iSdaV" />
+        <node concept="3F0ifn" id="2$zuWcBrn2P" role="3EZMnx">
+          <property role="3F0ifm" value="compounds:" />
+        </node>
+        <node concept="3F2HdR" id="2$zuWcBrn1U" role="3EZMnx">
+          <ref role="1NtTu8" to="kl2v:2$zuWcBrm6K" resolve="compounds" />
+          <node concept="2iRkQZ" id="2$zuWcBrn1W" role="2czzBx" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="2$zuWcBrn3i" role="3EZMnx">
+        <node concept="l2Vlx" id="2$zuWcBrn3j" role="2iSdaV" />
+        <node concept="3F0ifn" id="2$zuWcBrn3B" role="3EZMnx">
+          <property role="3F0ifm" value="clauses:" />
+        </node>
         <node concept="3F2HdR" id="7pfS1JzORHh" role="3EZMnx">
           <ref role="1NtTu8" to="kl2v:68Nt5BhShl_" resolve="clauses" />
           <node concept="2iRkQZ" id="7pfS1JzQeUy" role="2czzBx" />
@@ -214,6 +227,27 @@
         <ref role="1NtTu8" to="kl2v:6Jq4jxIP9QY" resolve="child" />
       </node>
       <node concept="3F0ifn" id="6Jq4jxIP9R8" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2$zuWcBrgrl">
+    <ref role="1XX52x" to="kl2v:2$zuWcBrgrk" resolve="UsedCompound" />
+    <node concept="3EZMnI" id="2$zuWcBrgrn" role="2wV5jI">
+      <node concept="2iRfu4" id="2$zuWcBrgro" role="2iSdaV" />
+      <node concept="3F0ifn" id="2$zuWcBrgrt" role="3EZMnx">
+        <property role="3F0ifm" value="used compound {" />
+      </node>
+      <node concept="3F1sOY" id="2$zuWcBtOk5" role="3EZMnx">
+        <ref role="1NtTu8" to="kl2v:68Nt5BhShlz" resolve="head" />
+      </node>
+      <node concept="3F0ifn" id="2$zuWcBrgrV" role="3EZMnx">
+        <property role="3F0ifm" value=", arity:" />
+      </node>
+      <node concept="3F0A7n" id="2$zuWcBrgs7" role="3EZMnx">
+        <ref role="1NtTu8" to="kl2v:2$zuWcBtOjT" resolve="arity" />
+      </node>
+      <node concept="3F0ifn" id="2$zuWcBrgrB" role="3EZMnx">
         <property role="3F0ifm" value="}" />
       </node>
     </node>
