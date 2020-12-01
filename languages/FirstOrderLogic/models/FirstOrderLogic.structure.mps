@@ -463,5 +463,33 @@
     <property role="34LRSv" value="equivalent" />
     <ref role="1TJDcQ" node="1eUmoOwLV27" resolve="AOperatorStatement" />
   </node>
+  <node concept="1TIwiD" id="3Xhz2slINJ9">
+    <property role="EcuMT" value="4562581996999228361" />
+    <property role="3GE5qa" value="model.statements.comments" />
+    <property role="TrG5h" value="CommentStatement" />
+    <property role="34LRSv" value="#" />
+    <property role="R4oN_" value="Comment root statement" />
+    <ref role="1TJDcQ" node="1eUmoOwLV1Z" resolve="AStatement" />
+    <node concept="1TJgyj" id="3Xhz2slINJd" role="1TKVEi">
+      <property role="IQ2ns" value="4562581996999228365" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="statement" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="1eUmoOwLV1Z" resolve="AStatement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3Xhz2slINJa">
+    <property role="EcuMT" value="4562581996999228362" />
+    <property role="3GE5qa" value="model.statements.comments" />
+    <property role="TrG5h" value="CommentText" />
+    <property role="34LRSv" value="#" />
+    <property role="R4oN_" value="Insert a comment" />
+    <ref role="1TJDcQ" node="1eUmoOwLV1Z" resolve="AStatement" />
+    <node concept="1TJgyi" id="3Xhz2slINJb" role="1TKVEl">
+      <property role="IQ2nx" value="4562581996999228363" />
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
 </model>
 

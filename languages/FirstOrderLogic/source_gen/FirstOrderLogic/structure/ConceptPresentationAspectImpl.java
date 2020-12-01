@@ -18,6 +18,8 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_AllQuantifiedStatement;
   private ConceptPresentation props_AndOperatorStatement;
   private ConceptPresentation props_Comment;
+  private ConceptPresentation props_CommentStatement;
+  private ConceptPresentation props_CommentText;
   private ConceptPresentation props_Constant;
   private ConceptPresentation props_ConstantListEntry;
   private ConceptPresentation props_ConstantReference;
@@ -106,6 +108,22 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Comment = cpb.create();
         }
         return props_Comment;
+      case LanguageConceptSwitch.CommentStatement:
+        if (props_CommentStatement == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Comment root statement");
+          cpb.rawPresentation("#");
+          props_CommentStatement = cpb.create();
+        }
+        return props_CommentStatement;
+      case LanguageConceptSwitch.CommentText:
+        if (props_CommentText == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Insert a comment");
+          cpb.rawPresentation("#");
+          props_CommentText = cpb.create();
+        }
+        return props_CommentText;
       case LanguageConceptSwitch.Constant:
         if (props_Constant == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

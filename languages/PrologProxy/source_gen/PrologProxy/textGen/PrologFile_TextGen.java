@@ -10,26 +10,45 @@ import org.jetbrains.mps.openapi.model.SNode;
 import java.util.ArrayList;
 import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import java.util.Comparator;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.internal.collections.runtime.Sequence;
 import jetbrains.mps.lang.smodel.ConceptSwitchIndex;
 import jetbrains.mps.lang.smodel.ConceptSwitchIndexBuilder;
 import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import org.jetbrains.mps.openapi.language.SConcept;
 import org.jetbrains.mps.openapi.language.SProperty;
+import org.jetbrains.mps.openapi.language.SConcept;
 
 public class PrologFile_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
+    tgs.append("% Generated rule that makes equality commutative.");
+    tgs.newLine();
+    tgs.append("% To test for equality, always use is_equal(), not equals()!");
+    tgs.newLine();
+    tgs.append("is_equal(INIT1__, INIT2__) :- equals(INIT1__, INIT2__); equals(INIT2__, INIT1__).");
+    tgs.newLine();
+
     List<SNode> content = new ArrayList<SNode>();
     ListSequence.fromList(content).addSequence(ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.compounds$3TIJ)));
     ListSequence.fromList(content).addSequence(ListSequence.fromList(SLinkOperations.getChildren(ctx.getPrimaryInput(), LINKS.clauses$JOWE)));
+
+    SNode selfequals = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x764fe01be3ee79f9L, "PrologProxy.structure.FunctionsTerm"));
+    SNode self = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e11554L, "PrologProxy.structure.Variable"));
+    SPropertyOperations.assign(self, PROPS.name$MnvL, "Initializer__");
+    SLinkOperations.setTarget(selfequals, LINKS.left$R4Ha, SNodeOperations.copyNode(self));
+    SLinkOperations.setTarget(selfequals, LINKS.right$R5bc, SNodeOperations.copyNode(self));
+    SNode wrapper = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e1155fL, "PrologProxy.structure.Fact"));
+    SLinkOperations.setTarget(wrapper, LINKS.head$JOh4, selfequals);
+
+    ListSequence.fromList(content).addElement(wrapper);
+
     Iterable<SNode> sorted = ListSequence.fromList(content).sort(new Comparator<SNode>() {
       public int compare(SNode a, SNode b) {
         String aname;
@@ -94,16 +113,18 @@ public class PrologFile_TextGen extends TextGenDescriptorBase {
   private static final class LINKS {
     /*package*/ static final SContainmentLink compounds$3TIJ = MetaAdapterFactory.getContainmentLink(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e11564L, 0x29237bc3276d61b0L, "compounds");
     /*package*/ static final SContainmentLink clauses$JOWE = MetaAdapterFactory.getContainmentLink(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e11564L, 0x62337459d1e11565L, "clauses");
+    /*package*/ static final SContainmentLink left$R4Ha = MetaAdapterFactory.getContainmentLink(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x764fe01be3ee79f9L, 0x764fe01be3ee79faL, "left");
+    /*package*/ static final SContainmentLink right$R5bc = MetaAdapterFactory.getContainmentLink(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x764fe01be3ee79f9L, 0x764fe01be3ee79fcL, "right");
     /*package*/ static final SContainmentLink head$JOh4 = MetaAdapterFactory.getContainmentLink(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e1155dL, 0x62337459d1e11563L, "head");
     /*package*/ static final SContainmentLink functor$JGHE = MetaAdapterFactory.getContainmentLink(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e11557L, 0x62337459d1e11558L, "functor");
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
   }
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept Atom$o3 = MetaAdapterFactory.getConcept(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e11551L, "PrologProxy.structure.Atom");
     /*package*/ static final SConcept CompoundTerm$_8 = MetaAdapterFactory.getConcept(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e11557L, "PrologProxy.structure.CompoundTerm");
-  }
-
-  private static final class PROPS {
-    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
   }
 }

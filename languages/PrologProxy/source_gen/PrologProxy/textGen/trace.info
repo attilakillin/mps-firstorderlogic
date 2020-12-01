@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081855346303:jetbrains.mps.baseLanguage.structure.BreakStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082113931046:jetbrains.mps.baseLanguage.structure.ContinueStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
@@ -22,21 +23,21 @@
   </root>
   <root nodeRef="r:5915abd6-195a-45fa-953b-4165218b6bf9(PrologProxy.textGen)/2964349057850214210">
     <file name="TextGenAspectDescriptor.java">
-      <node id="2964349057850214210" at="42,46,43,42" concept="8" />
+      <node id="2964349057850214210" at="42,46,43,42" concept="9" />
       <scope id="2964349057850214210" at="42,46,43,42" />
     </file>
     <file name="UsedCompound_TextGen.java">
-      <node id="2964349057850214210" at="16,54,17,55" concept="7" />
-      <node id="2964349057850214250" at="17,55,18,86" concept="2" />
-      <node id="2964349057850215350" at="18,86,19,20" concept="2" />
-      <node id="2964349057850221834" at="20,103,21,34" concept="2" />
-      <node id="2964349057850230551" at="22,93,23,25" concept="2" />
-      <node id="2964349057850237247" at="25,5,26,29" concept="2" />
-      <node id="2964349057850214210" at="30,0,31,0" concept="10" trace="head$JOh4" />
-      <node id="2964349057850214210" at="34,0,35,0" concept="10" trace="arity$IdAI" />
-      <node id="2964349057850221871" at="21,34,24,7" concept="5" />
-      <node id="2964349057850215601" at="19,20,25,5" concept="3" />
-      <node id="2964349057850214210" at="15,0,28,0" concept="6" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <node id="2964349057850214210" at="16,54,17,55" concept="8" />
+      <node id="2964349057850214250" at="17,55,18,86" concept="3" />
+      <node id="2964349057850215350" at="18,86,19,20" concept="3" />
+      <node id="2964349057850221834" at="20,103,21,34" concept="3" />
+      <node id="2964349057850230551" at="22,93,23,25" concept="3" />
+      <node id="2964349057850237247" at="25,5,26,29" concept="3" />
+      <node id="2964349057850214210" at="30,0,31,0" concept="11" trace="head$JOh4" />
+      <node id="2964349057850214210" at="34,0,35,0" concept="11" trace="arity$IdAI" />
+      <node id="2964349057850221871" at="21,34,24,7" concept="6" />
+      <node id="2964349057850215601" at="19,20,25,5" concept="4" />
+      <node id="2964349057850214210" at="15,0,28,0" concept="7" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
       <scope id="2964349057850221873" at="22,93,23,25" />
       <scope id="2964349057850215603" at="20,103,24,7" />
       <scope id="2964349057850215601" at="19,20,25,5">
@@ -55,111 +56,134 @@
   </root>
   <root nodeRef="r:5915abd6-195a-45fa-953b-4165218b6bf9(PrologProxy.textGen)/7076127368651281792">
     <file name="PrologFile_TextGen.java">
-      <node id="7076127368651281792" at="28,54,29,55" concept="7" />
-      <node id="2964349057850884842" at="29,55,30,49" concept="7" />
-      <node id="2964349057850897397" at="30,49,31,144" concept="2" />
-      <node id="2964349057850928584" at="31,144,32,142" concept="2" />
-      <node id="2964349057851103630" at="34,44,35,21" concept="7" />
-      <node id="2964349057851104025" at="35,21,36,21" concept="7" />
-      <node id="2964349057851100162" at="36,21,37,107" concept="7" />
-      <node id="2964349057851106831" at="40,23,41,154" concept="2" />
-      <node id="2964349057851100162" at="42,13,43,18" concept="0" />
-      <node id="2964349057851119789" at="45,23,46,209" concept="2" />
-      <node id="2964349057851100162" at="47,13,48,18" concept="0" />
-      <node id="2964349057851129215" at="50,23,51,31" concept="2" />
-      <node id="2964349057851100162" at="52,13,53,18" concept="0" />
-      <node id="2964349057851557899" at="54,18,55,125" concept="13" />
-      <node id="2964349057851100162" at="56,9,57,108" concept="7" />
-      <node id="2964349057851146475" at="60,23,61,154" concept="2" />
-      <node id="2964349057851100162" at="62,13,63,18" concept="0" />
-      <node id="2964349057851146488" at="65,23,66,209" concept="2" />
-      <node id="2964349057851100162" at="67,13,68,18" concept="0" />
-      <node id="2964349057851146503" at="70,23,71,31" concept="2" />
-      <node id="2964349057851100162" at="72,13,73,18" concept="0" />
-      <node id="2964349057851572673" at="74,18,75,125" concept="13" />
-      <node id="2964349057851115808" at="76,9,77,38" concept="8" />
-      <node id="2964349057850882057" at="79,13,80,0" concept="9" />
-      <node id="2964349057851938698" at="80,0,81,102" concept="2" />
-      <node id="2964349057851938736" at="81,102,82,18" concept="2" />
-      <node id="2964349057851950971" at="82,18,83,121" concept="2" />
-      <node id="2964349057851951009" at="83,121,84,18" concept="2" />
-      <node id="7076127368651283973" at="85,56,86,29" concept="2" />
-      <node id="7076127368651284195" at="86,29,87,22" concept="2" />
-      <node id="7076127368651284240" at="87,22,88,20" concept="2" />
-      <node id="2964349057851104513" at="91,0,92,0" concept="10" trace="conceptIndex" />
-      <node id="2964349057851146471" at="92,0,93,0" concept="10" trace="conceptIndex1" />
-      <node id="7076127368651281792" at="95,0,96,0" concept="10" trace="compounds$3TIJ" />
-      <node id="7076127368651281792" at="96,0,97,0" concept="10" trace="clauses$JOWE" />
-      <node id="7076127368651281792" at="97,0,98,0" concept="10" trace="head$JOh4" />
-      <node id="7076127368651281792" at="98,0,99,0" concept="10" trace="functor$JGHE" />
-      <node id="7076127368651281792" at="102,0,103,0" concept="10" trace="Atom$o3" />
-      <node id="7076127368651281792" at="103,0,104,0" concept="10" trace="CompoundTerm$_8" />
-      <node id="7076127368651281792" at="107,0,108,0" concept="10" trace="name$MnvL" />
-      <node id="2964349057851100162" at="39,17,42,13" concept="5" />
-      <node id="2964349057851100162" at="44,17,47,13" concept="5" />
-      <node id="2964349057851100162" at="49,17,52,13" concept="5" />
-      <node id="2964349057851100162" at="59,17,62,13" concept="5" />
-      <node id="2964349057851100162" at="64,17,67,13" concept="5" />
-      <node id="2964349057851100162" at="69,17,72,13" concept="5" />
-      <node id="7076127368651282701" at="84,18,89,5" concept="4" />
-      <node id="2964349057851100162" at="37,107,56,9" concept="12" />
-      <node id="2964349057851100162" at="57,108,76,9" concept="12" />
-      <node id="2964349057851100161" at="34,0,79,0" concept="6" trace="compare#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)I" />
-      <node id="2964349057851752382" at="32,142,79,13" concept="7" />
-      <node id="7076127368651281792" at="27,0,91,0" concept="6" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
-      <scope id="2964349057851100162" at="40,23,41,154" />
-      <scope id="2964349057851100162" at="45,23,46,209" />
-      <scope id="2964349057851100162" at="50,23,51,31" />
-      <scope id="2964349057851100162" at="54,18,55,125" />
-      <scope id="2964349057851100162" at="60,23,61,154" />
-      <scope id="2964349057851100162" at="65,23,66,209" />
-      <scope id="2964349057851100162" at="70,23,71,31" />
-      <scope id="2964349057851100162" at="74,18,75,125" />
-      <scope id="7076127368651282704" at="85,56,88,20" />
-      <scope id="2964349057851100162" at="39,17,43,18" />
-      <scope id="2964349057851100162" at="44,17,48,18" />
-      <scope id="2964349057851100162" at="49,17,53,18" />
-      <scope id="2964349057851100162" at="59,17,63,18" />
-      <scope id="2964349057851100162" at="64,17,68,18" />
-      <scope id="2964349057851100162" at="69,17,73,18" />
-      <scope id="7076127368651282701" at="84,18,89,5">
+      <node id="7076127368651281792" at="29,54,30,55" concept="8" />
+      <node id="6131481572219599194" at="30,55,31,68" concept="3" />
+      <node id="6131481572219599232" at="31,68,32,18" concept="3" />
+      <node id="6131481572219602644" at="32,18,33,79" concept="3" />
+      <node id="6131481572219602712" at="33,79,34,18" concept="3" />
+      <node id="6131481572219618453" at="34,18,35,100" concept="3" />
+      <node id="6131481572219618809" at="35,100,36,18" concept="3" />
+      <node id="6131481572219588033" at="36,18,37,0" concept="10" />
+      <node id="2964349057850884842" at="37,0,38,49" concept="8" />
+      <node id="2964349057850897397" at="38,49,39,144" concept="3" />
+      <node id="2964349057850928584" at="39,144,40,142" concept="3" />
+      <node id="6131481572219800960" at="40,142,41,0" concept="10" />
+      <node id="6131481572219816571" at="41,0,42,189" concept="8" />
+      <node id="6131481572219850899" at="42,189,43,178" concept="8" />
+      <node id="6131481572219854858" at="43,178,44,71" concept="3" />
+      <node id="6131481572219837088" at="44,71,45,91" concept="3" />
+      <node id="6131481572219874259" at="45,91,46,92" concept="3" />
+      <node id="6131481572219884431" at="46,92,47,177" concept="8" />
+      <node id="6131481572219904843" at="47,177,48,68" concept="3" />
+      <node id="6131481572219806715" at="48,68,49,0" concept="10" />
+      <node id="6131481572219773099" at="49,0,50,55" concept="3" />
+      <node id="6131481572219765466" at="50,55,51,0" concept="10" />
+      <node id="2964349057851103630" at="53,44,54,21" concept="8" />
+      <node id="2964349057851104025" at="54,21,55,21" concept="8" />
+      <node id="2964349057851100162" at="55,21,56,107" concept="8" />
+      <node id="2964349057851106831" at="59,23,60,154" concept="3" />
+      <node id="2964349057851100162" at="61,13,62,18" concept="1" />
+      <node id="2964349057851119789" at="64,23,65,209" concept="3" />
+      <node id="2964349057851100162" at="66,13,67,18" concept="1" />
+      <node id="2964349057851129215" at="69,23,70,31" concept="3" />
+      <node id="2964349057851100162" at="71,13,72,18" concept="1" />
+      <node id="2964349057851557899" at="73,18,74,125" concept="14" />
+      <node id="2964349057851100162" at="75,9,76,108" concept="8" />
+      <node id="2964349057851146475" at="79,23,80,154" concept="3" />
+      <node id="2964349057851100162" at="81,13,82,18" concept="1" />
+      <node id="2964349057851146488" at="84,23,85,209" concept="3" />
+      <node id="2964349057851100162" at="86,13,87,18" concept="1" />
+      <node id="2964349057851146503" at="89,23,90,31" concept="3" />
+      <node id="2964349057851100162" at="91,13,92,18" concept="1" />
+      <node id="2964349057851572673" at="93,18,94,125" concept="14" />
+      <node id="2964349057851115808" at="95,9,96,38" concept="9" />
+      <node id="2964349057850882057" at="98,13,99,0" concept="10" />
+      <node id="2964349057851938698" at="99,0,100,102" concept="3" />
+      <node id="2964349057851938736" at="100,102,101,18" concept="3" />
+      <node id="2964349057851950971" at="101,18,102,121" concept="3" />
+      <node id="2964349057851951009" at="102,121,103,18" concept="3" />
+      <node id="7076127368651283973" at="104,56,105,29" concept="3" />
+      <node id="7076127368651284195" at="105,29,106,22" concept="3" />
+      <node id="7076127368651284240" at="106,22,107,20" concept="3" />
+      <node id="2964349057851104513" at="110,0,111,0" concept="11" trace="conceptIndex" />
+      <node id="2964349057851146471" at="111,0,112,0" concept="11" trace="conceptIndex1" />
+      <node id="7076127368651281792" at="114,0,115,0" concept="11" trace="compounds$3TIJ" />
+      <node id="7076127368651281792" at="115,0,116,0" concept="11" trace="clauses$JOWE" />
+      <node id="7076127368651281792" at="116,0,117,0" concept="11" trace="left$R4Ha" />
+      <node id="7076127368651281792" at="117,0,118,0" concept="11" trace="right$R5bc" />
+      <node id="7076127368651281792" at="118,0,119,0" concept="11" trace="head$JOh4" />
+      <node id="7076127368651281792" at="119,0,120,0" concept="11" trace="functor$JGHE" />
+      <node id="7076127368651281792" at="123,0,124,0" concept="11" trace="name$MnvL" />
+      <node id="7076127368651281792" at="127,0,128,0" concept="11" trace="Atom$o3" />
+      <node id="7076127368651281792" at="128,0,129,0" concept="11" trace="CompoundTerm$_8" />
+      <node id="2964349057851100162" at="58,17,61,13" concept="6" />
+      <node id="2964349057851100162" at="63,17,66,13" concept="6" />
+      <node id="2964349057851100162" at="68,17,71,13" concept="6" />
+      <node id="2964349057851100162" at="78,17,81,13" concept="6" />
+      <node id="2964349057851100162" at="83,17,86,13" concept="6" />
+      <node id="2964349057851100162" at="88,17,91,13" concept="6" />
+      <node id="7076127368651282701" at="103,18,108,5" concept="5" />
+      <node id="2964349057851100162" at="56,107,75,9" concept="13" />
+      <node id="2964349057851100162" at="76,108,95,9" concept="13" />
+      <node id="2964349057851100161" at="53,0,98,0" concept="7" trace="compare#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;)I" />
+      <node id="2964349057851752382" at="51,0,98,13" concept="8" />
+      <node id="7076127368651281792" at="28,0,110,0" concept="7" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="2964349057851100162" at="59,23,60,154" />
+      <scope id="2964349057851100162" at="64,23,65,209" />
+      <scope id="2964349057851100162" at="69,23,70,31" />
+      <scope id="2964349057851100162" at="73,18,74,125" />
+      <scope id="2964349057851100162" at="79,23,80,154" />
+      <scope id="2964349057851100162" at="84,23,85,209" />
+      <scope id="2964349057851100162" at="89,23,90,31" />
+      <scope id="2964349057851100162" at="93,18,94,125" />
+      <scope id="7076127368651282704" at="104,56,107,20" />
+      <scope id="2964349057851100162" at="58,17,62,18" />
+      <scope id="2964349057851100162" at="63,17,67,18" />
+      <scope id="2964349057851100162" at="68,17,72,18" />
+      <scope id="2964349057851100162" at="78,17,82,18" />
+      <scope id="2964349057851100162" at="83,17,87,18" />
+      <scope id="2964349057851100162" at="88,17,92,18" />
+      <scope id="7076127368651282701" at="103,18,108,5">
         <var name="clause" id="7076127368651282702" />
       </scope>
-      <scope id="2964349057851100162" at="34,44,77,38">
+      <scope id="2964349057851100162" at="53,44,96,38">
         <var name="aname" id="2964349057851103633" />
         <var name="bname" id="2964349057851104028" />
         <var name="cncpt" id="2964349057851100162" />
         <var name="cncpt1" id="2964349057851100162" />
       </scope>
-      <scope id="2964349057851100161" at="34,0,79,0">
+      <scope id="2964349057851100161" at="53,0,98,0">
         <var name="a" id="2964349057851100161" />
         <var name="b" id="2964349057851100161" />
       </scope>
-      <scope id="7076127368651281792" at="28,54,89,5">
+      <scope id="7076127368651281792" at="29,54,108,5">
         <var name="content" id="2964349057850884845" />
+        <var name="self" id="6131481572219850902" />
+        <var name="selfequals" id="6131481572219816574" />
         <var name="sorted" id="2964349057851752383" />
         <var name="tgs" id="7076127368651281792" />
+        <var name="wrapper" id="6131481572219884434" />
       </scope>
-      <scope id="7076127368651281792" at="27,0,91,0">
+      <scope id="7076127368651281792" at="28,0,110,0">
         <var name="ctx" id="7076127368651281792" />
       </scope>
-      <unit id="7076127368651281792" at="106,0,109,0" name="PrologProxy.textGen.PrologFile_TextGen$PROPS" />
-      <unit id="7076127368651281792" at="101,0,105,0" name="PrologProxy.textGen.PrologFile_TextGen$CONCEPTS" />
-      <unit id="7076127368651281792" at="94,0,100,0" name="PrologProxy.textGen.PrologFile_TextGen$LINKS" />
-      <unit id="2964349057851100161" at="33,69,79,5" name="PrologProxy.textGen.PrologFile_TextGen$1" />
-      <unit id="7076127368651281792" at="26,0,110,0" name="PrologProxy.textGen.PrologFile_TextGen" />
+      <unit id="7076127368651281792" at="122,0,125,0" name="PrologProxy.textGen.PrologFile_TextGen$PROPS" />
+      <unit id="7076127368651281792" at="126,0,130,0" name="PrologProxy.textGen.PrologFile_TextGen$CONCEPTS" />
+      <unit id="7076127368651281792" at="113,0,121,0" name="PrologProxy.textGen.PrologFile_TextGen$LINKS" />
+      <unit id="2964349057851100161" at="52,69,98,5" name="PrologProxy.textGen.PrologFile_TextGen$1" />
+      <unit id="7076127368651281792" at="27,0,131,0" name="PrologProxy.textGen.PrologFile_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7076127368651281792" at="38,44,39,40" concept="8" />
-      <node id="7076127368651281792" at="53,61,54,52" concept="7" />
-      <node id="7076127368651281792" at="54,52,55,55" concept="7" />
-      <node id="7076127368651281792" at="55,55,56,84" concept="2" />
-      <node id="7076127368651281792" at="56,84,57,17" concept="1" />
-      <node id="7076127368651281792" at="61,60,62,26" concept="8" />
-      <node id="7076127368651282183" at="64,65,65,16" concept="8" />
-      <node id="7076127368651281792" at="61,0,64,0" concept="11" trace="getFileName_PrologFile#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="7076127368651281792" at="64,0,67,0" concept="11" trace="getFileExtension_PrologFile#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
-      <node id="7076127368651281792" at="52,58,58,7" concept="5" />
+      <node id="7076127368651281792" at="38,44,39,40" concept="9" />
+      <node id="7076127368651281792" at="53,61,54,52" concept="8" />
+      <node id="7076127368651281792" at="54,52,55,55" concept="8" />
+      <node id="7076127368651281792" at="55,55,56,84" concept="3" />
+      <node id="7076127368651281792" at="56,84,57,17" concept="2" />
+      <node id="7076127368651281792" at="61,60,62,26" concept="9" />
+      <node id="7076127368651282183" at="64,65,65,16" concept="9" />
+      <node id="7076127368651281792" at="61,0,64,0" concept="12" trace="getFileName_PrologFile#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="7076127368651281792" at="64,0,67,0" concept="12" trace="getFileExtension_PrologFile#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="7076127368651281792" at="52,58,58,7" concept="6" />
       <scope id="7076127368651281792" at="38,44,39,40" />
       <scope id="7076127368651281792" at="61,60,62,26" />
       <scope id="7076127368651281792" at="64,65,65,16" />
@@ -177,10 +201,10 @@
   </root>
   <root nodeRef="r:5915abd6-195a-45fa-953b-4165218b6bf9(PrologProxy.textGen)/7076127368651284288">
     <file name="Fact_TextGen.java">
-      <node id="7076127368651284288" at="14,54,15,55" concept="7" />
-      <node id="7076127368651284330" at="15,55,16,86" concept="2" />
-      <node id="7076127368651284288" at="20,0,21,0" concept="10" trace="head$JOh4" />
-      <node id="7076127368651284288" at="13,0,18,0" concept="6" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <node id="7076127368651284288" at="14,54,15,55" concept="8" />
+      <node id="7076127368651284330" at="15,55,16,86" concept="3" />
+      <node id="7076127368651284288" at="20,0,21,0" concept="11" trace="head$JOh4" />
+      <node id="7076127368651284288" at="13,0,18,0" concept="7" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
       <scope id="7076127368651284288" at="14,54,16,86">
         <var name="tgs" id="7076127368651284288" />
       </scope>
@@ -191,19 +215,19 @@
       <unit id="7076127368651284288" at="12,0,23,0" name="PrologProxy.textGen.Fact_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7076127368651284288" at="32,38,33,34" concept="8" />
+      <node id="7076127368651284288" at="32,38,33,34" concept="9" />
       <scope id="7076127368651284288" at="32,38,33,34" />
     </file>
   </root>
   <root nodeRef="r:5915abd6-195a-45fa-953b-4165218b6bf9(PrologProxy.textGen)/7076127368651285715">
     <file name="Rule_TextGen.java">
-      <node id="7076127368651285715" at="14,54,15,55" concept="7" />
-      <node id="7076127368651285755" at="15,55,16,86" concept="2" />
-      <node id="7076127368651287039" at="16,86,17,23" concept="2" />
-      <node id="8521472005505306633" at="17,23,18,86" concept="2" />
-      <node id="7076127368651285715" at="22,0,23,0" concept="10" trace="head$JOh4" />
-      <node id="7076127368651285715" at="23,0,24,0" concept="10" trace="body$JNMz" />
-      <node id="7076127368651285715" at="13,0,20,0" concept="6" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <node id="7076127368651285715" at="14,54,15,55" concept="8" />
+      <node id="7076127368651285755" at="15,55,16,86" concept="3" />
+      <node id="7076127368651287039" at="16,86,17,23" concept="3" />
+      <node id="8521472005505306633" at="17,23,18,86" concept="3" />
+      <node id="7076127368651285715" at="22,0,23,0" concept="11" trace="head$JOh4" />
+      <node id="7076127368651285715" at="23,0,24,0" concept="11" trace="body$JNMz" />
+      <node id="7076127368651285715" at="13,0,20,0" concept="7" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
       <scope id="7076127368651285715" at="14,54,18,86">
         <var name="tgs" id="7076127368651285715" />
       </scope>
@@ -214,16 +238,16 @@
       <unit id="7076127368651285715" at="12,0,26,0" name="PrologProxy.textGen.Rule_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7076127368651285715" at="40,38,41,34" concept="8" />
+      <node id="7076127368651285715" at="40,38,41,34" concept="9" />
       <scope id="7076127368651285715" at="40,38,41,34" />
     </file>
   </root>
   <root nodeRef="r:5915abd6-195a-45fa-953b-4165218b6bf9(PrologProxy.textGen)/7076127368651304660">
     <file name="Atom_TextGen.java">
-      <node id="7076127368651304660" at="14,54,15,55" concept="7" />
-      <node id="7076127368651304700" at="15,55,16,121" concept="2" />
-      <node id="7076127368651304660" at="20,0,21,0" concept="10" trace="name$MnvL" />
-      <node id="7076127368651304660" at="13,0,18,0" concept="6" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <node id="7076127368651304660" at="14,54,15,55" concept="8" />
+      <node id="7076127368651304700" at="15,55,16,121" concept="3" />
+      <node id="7076127368651304660" at="20,0,21,0" concept="11" trace="name$MnvL" />
+      <node id="7076127368651304660" at="13,0,18,0" concept="7" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
       <scope id="7076127368651304660" at="14,54,16,121">
         <var name="tgs" id="7076127368651304660" />
       </scope>
@@ -234,20 +258,20 @@
       <unit id="7076127368651304660" at="12,0,23,0" name="PrologProxy.textGen.Atom_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7076127368651304660" at="26,38,27,34" concept="8" />
+      <node id="7076127368651304660" at="26,38,27,34" concept="9" />
       <scope id="7076127368651304660" at="26,38,27,34" />
     </file>
   </root>
   <root nodeRef="r:5915abd6-195a-45fa-953b-4165218b6bf9(PrologProxy.textGen)/7076127368651306040">
     <file name="TextGenAspectDescriptor.java">
-      <node id="7076127368651306040" at="44,42,45,38" concept="8" />
+      <node id="7076127368651306040" at="44,42,45,38" concept="9" />
       <scope id="7076127368651306040" at="44,42,45,38" />
     </file>
     <file name="Variable_TextGen.java">
-      <node id="7076127368651306040" at="14,54,15,55" concept="7" />
-      <node id="7076127368651306080" at="15,55,16,121" concept="2" />
-      <node id="7076127368651306040" at="20,0,21,0" concept="10" trace="name$MnvL" />
-      <node id="7076127368651306040" at="13,0,18,0" concept="6" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <node id="7076127368651306040" at="14,54,15,55" concept="8" />
+      <node id="7076127368651306080" at="15,55,16,121" concept="3" />
+      <node id="7076127368651306040" at="20,0,21,0" concept="11" trace="name$MnvL" />
+      <node id="7076127368651306040" at="13,0,18,0" concept="7" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
       <scope id="7076127368651306040" at="14,54,16,121">
         <var name="tgs" id="7076127368651306040" />
       </scope>
@@ -260,17 +284,17 @@
   </root>
   <root nodeRef="r:5915abd6-195a-45fa-953b-4165218b6bf9(PrologProxy.textGen)/7076127368651322493">
     <file name="CompoundTerm_TextGen.java">
-      <node id="7076127368651322493" at="16,54,17,55" concept="7" />
-      <node id="7076127368651322533" at="17,55,18,89" concept="2" />
-      <node id="7076127368651324204" at="18,89,19,20" concept="2" />
-      <node id="7076127368651325826" at="20,119,21,26" concept="2" />
-      <node id="7076127368651347986" at="22,122,23,25" concept="2" />
-      <node id="8525279030026523828" at="25,5,26,20" concept="2" />
-      <node id="7076127368651322493" at="30,0,31,0" concept="10" trace="functor$JGHE" />
-      <node id="7076127368651322493" at="31,0,32,0" concept="10" trace="arguments$JGWF" />
-      <node id="7076127368651326000" at="21,26,24,7" concept="5" />
-      <node id="7076127368651324471" at="19,20,25,5" concept="4" />
-      <node id="7076127368651322493" at="15,0,28,0" concept="6" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <node id="7076127368651322493" at="16,54,17,55" concept="8" />
+      <node id="7076127368651322533" at="17,55,18,89" concept="3" />
+      <node id="7076127368651324204" at="18,89,19,20" concept="3" />
+      <node id="7076127368651325826" at="20,119,21,26" concept="3" />
+      <node id="7076127368651347986" at="22,122,23,25" concept="3" />
+      <node id="8525279030026523828" at="25,5,26,20" concept="3" />
+      <node id="7076127368651322493" at="30,0,31,0" concept="11" trace="functor$JGHE" />
+      <node id="7076127368651322493" at="31,0,32,0" concept="11" trace="arguments$JGWF" />
+      <node id="7076127368651326000" at="21,26,24,7" concept="6" />
+      <node id="7076127368651324471" at="19,20,25,5" concept="5" />
+      <node id="7076127368651322493" at="15,0,28,0" concept="7" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
       <scope id="7076127368651326002" at="22,122,23,25" />
       <scope id="7076127368651324477" at="20,119,24,7" />
       <scope id="7076127368651324471" at="19,20,25,5">
@@ -286,18 +310,18 @@
       <unit id="7076127368651322493" at="14,0,34,0" name="PrologProxy.textGen.CompoundTerm_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7076127368651322493" at="30,46,31,42" concept="8" />
+      <node id="7076127368651322493" at="30,46,31,42" concept="9" />
       <scope id="7076127368651322493" at="30,46,31,42" />
     </file>
   </root>
   <root nodeRef="r:5915abd6-195a-45fa-953b-4165218b6bf9(PrologProxy.textGen)/7771543041056480743">
     <file name="NegatedTerm_TextGen.java">
-      <node id="7771543041056480743" at="14,54,15,55" concept="7" />
-      <node id="7771543041056480783" at="15,55,16,25" concept="2" />
-      <node id="7771543041056480836" at="16,25,17,87" concept="2" />
-      <node id="7771543041056482317" at="17,87,18,36" concept="2" />
-      <node id="7771543041056480743" at="22,0,23,0" concept="10" trace="child$lBzH" />
-      <node id="7771543041056480743" at="13,0,20,0" concept="6" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <node id="7771543041056480743" at="14,54,15,55" concept="8" />
+      <node id="7771543041056480783" at="15,55,16,25" concept="3" />
+      <node id="7771543041056480836" at="16,25,17,87" concept="3" />
+      <node id="7771543041056482317" at="17,87,18,36" concept="3" />
+      <node id="7771543041056480743" at="22,0,23,0" concept="11" trace="child$lBzH" />
+      <node id="7771543041056480743" at="13,0,20,0" concept="7" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
       <scope id="7771543041056480743" at="14,54,18,36">
         <var name="tgs" id="7771543041056480743" />
       </scope>
@@ -308,23 +332,23 @@
       <unit id="7771543041056480743" at="12,0,25,0" name="PrologProxy.textGen.NegatedTerm_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="7771543041056480743" at="36,45,37,41" concept="8" />
+      <node id="7771543041056480743" at="36,45,37,41" concept="9" />
       <scope id="7771543041056480743" at="36,45,37,41" />
     </file>
   </root>
   <root nodeRef="r:5915abd6-195a-45fa-953b-4165218b6bf9(PrologProxy.textGen)/8521472005505307740">
     <file name="BinaryRuleBody_TextGen.java">
-      <node id="8521472005505307740" at="16,54,17,55" concept="7" />
-      <node id="7771543041062801040" at="17,55,18,20" concept="2" />
-      <node id="8521472005505307780" at="18,20,19,86" concept="2" />
-      <node id="8521472005505309111" at="19,86,20,91" concept="2" />
-      <node id="8521472005505310864" at="20,91,21,20" concept="2" />
-      <node id="8521472005505309658" at="21,20,22,87" concept="2" />
-      <node id="7771543041062801257" at="22,87,23,20" concept="2" />
-      <node id="8521472005505307740" at="27,0,28,0" concept="10" trace="left$LWQ1" />
-      <node id="8521472005505307740" at="28,0,29,0" concept="10" trace="right$LXk3" />
-      <node id="8521472005505307740" at="32,0,33,0" concept="10" trace="connector$LRsE" />
-      <node id="8521472005505307740" at="15,0,25,0" concept="6" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <node id="8521472005505307740" at="16,54,17,55" concept="8" />
+      <node id="7771543041062801040" at="17,55,18,20" concept="3" />
+      <node id="8521472005505307780" at="18,20,19,86" concept="3" />
+      <node id="8521472005505309111" at="19,86,20,91" concept="3" />
+      <node id="8521472005505310864" at="20,91,21,20" concept="3" />
+      <node id="8521472005505309658" at="21,20,22,87" concept="3" />
+      <node id="7771543041062801257" at="22,87,23,20" concept="3" />
+      <node id="8521472005505307740" at="27,0,28,0" concept="11" trace="left$LWQ1" />
+      <node id="8521472005505307740" at="28,0,29,0" concept="11" trace="right$LXk3" />
+      <node id="8521472005505307740" at="32,0,33,0" concept="11" trace="connector$LRsE" />
+      <node id="8521472005505307740" at="15,0,25,0" concept="7" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
       <scope id="8521472005505307740" at="16,54,23,20">
         <var name="tgs" id="8521472005505307740" />
       </scope>
@@ -336,32 +360,42 @@
       <unit id="8521472005505307740" at="14,0,35,0" name="PrologProxy.textGen.BinaryRuleBody_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="8521472005505307740" at="28,48,29,44" concept="8" />
+      <node id="8521472005505307740" at="28,48,29,44" concept="9" />
       <scope id="8521472005505307740" at="28,48,29,44" />
     </file>
   </root>
   <root nodeRef="r:5915abd6-195a-45fa-953b-4165218b6bf9(PrologProxy.textGen)/8525279030028434008">
     <file name="FunctionsTerm_TextGen.java">
-      <node id="8525279030028434008" at="14,54,15,55" concept="7" />
-      <node id="8525279030028434945" at="15,55,16,26" concept="2" />
-      <node id="8525279030028435135" at="16,26,17,86" concept="2" />
-      <node id="8525279030028436486" at="17,86,18,21" concept="2" />
-      <node id="8525279030028436595" at="18,21,19,87" concept="2" />
-      <node id="8525279030028437145" at="19,87,20,20" concept="2" />
-      <node id="8525279030028434008" at="24,0,25,0" concept="10" trace="left$R4Ha" />
-      <node id="8525279030028434008" at="25,0,26,0" concept="10" trace="right$R5bc" />
-      <node id="8525279030028434008" at="13,0,22,0" concept="6" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
-      <scope id="8525279030028434008" at="14,54,20,20">
+      <node id="8525279030028434008" at="18,54,19,55" concept="8" />
+      <node id="6131481572218840776" at="19,55,20,104" concept="8" />
+      <node id="6131481572218857964" at="21,240,22,30" concept="3" />
+      <node id="6131481572218858638" at="23,12,24,28" concept="3" />
+      <node id="8525279030028435135" at="25,5,26,86" concept="3" />
+      <node id="8525279030028436486" at="26,86,27,21" concept="3" />
+      <node id="8525279030028436595" at="27,21,28,87" concept="3" />
+      <node id="8525279030028437145" at="28,87,29,20" concept="3" />
+      <node id="8525279030028434008" at="33,0,34,0" concept="11" trace="Rule$Bz" />
+      <node id="8525279030028434008" at="37,0,38,0" concept="11" trace="body$JNMz" />
+      <node id="8525279030028434008" at="38,0,39,0" concept="11" trace="left$R4Ha" />
+      <node id="8525279030028434008" at="39,0,40,0" concept="11" trace="right$R5bc" />
+      <node id="6131481572218858016" at="23,10,25,5" concept="0" />
+      <node id="6131481572218797918" at="20,104,25,5" concept="6" />
+      <node id="8525279030028434008" at="17,0,31,0" concept="7" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="6131481572218797920" at="21,240,22,30" />
+      <scope id="6131481572218858017" at="23,12,24,28" />
+      <scope id="8525279030028434008" at="18,54,29,20">
+        <var name="rule" id="6131481572218840779" />
         <var name="tgs" id="8525279030028434008" />
       </scope>
-      <scope id="8525279030028434008" at="13,0,22,0">
+      <scope id="8525279030028434008" at="17,0,31,0">
         <var name="ctx" id="8525279030028434008" />
       </scope>
-      <unit id="8525279030028434008" at="23,0,27,0" name="PrologProxy.textGen.FunctionsTerm_TextGen$LINKS" />
-      <unit id="8525279030028434008" at="12,0,28,0" name="PrologProxy.textGen.FunctionsTerm_TextGen" />
+      <unit id="8525279030028434008" at="32,0,35,0" name="PrologProxy.textGen.FunctionsTerm_TextGen$CONCEPTS" />
+      <unit id="8525279030028434008" at="36,0,41,0" name="PrologProxy.textGen.FunctionsTerm_TextGen$LINKS" />
+      <unit id="8525279030028434008" at="16,0,42,0" name="PrologProxy.textGen.FunctionsTerm_TextGen" />
     </file>
     <file name="TextGenAspectDescriptor.java">
-      <node id="8525279030028434008" at="34,47,35,43" concept="8" />
+      <node id="8525279030028434008" at="34,47,35,43" concept="9" />
       <scope id="8525279030028434008" at="34,47,35,43" />
     </file>
   </root>

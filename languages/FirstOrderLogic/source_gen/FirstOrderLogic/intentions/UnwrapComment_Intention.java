@@ -10,24 +10,26 @@ import jetbrains.mps.openapi.intentions.Kind;
 import jetbrains.mps.smodel.SNodePointer;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.openapi.editor.EditorContext;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.internal.collections.runtime.IWhereFilter;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import java.util.Collections;
 import jetbrains.mps.intentions.AbstractIntentionExecutable;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 import org.jetbrains.mps.openapi.language.SConcept;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 
-public final class SurroundWithParentheses_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
+public final class UnwrapComment_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
   private Collection<IntentionExecutable> myCachedExecutable;
-  public SurroundWithParentheses_Intention() {
-    super(Kind.NORMAL, true, new SNodePointer("r:0bc695ba-2642-444d-b0d3-8d035594714a(FirstOrderLogic.intentions)", "3955657917252627748"));
+  public UnwrapComment_Intention() {
+    super(Kind.NORMAL, true, new SNodePointer("r:0bc695ba-2642-444d-b0d3-8d035594714a(FirstOrderLogic.intentions)", "4562581996999873243"));
   }
   @Override
   public String getPresentation() {
-    return "SurroundWithParentheses";
+    return "UnwrapComment";
   }
   @Override
   public boolean isApplicable(final SNode node, final EditorContext editorContext) {
@@ -37,7 +39,11 @@ public final class SurroundWithParentheses_Intention extends AbstractIntentionDe
     return true;
   }
   private boolean isApplicableToNode(final SNode node, final EditorContext editorContext) {
-    return !(SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(node)), CONCEPTS.ParenthesesStatement$zg)) && !(SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(SNodeOperations.getParent(node))), CONCEPTS.ParenthesesStatement$zg));
+    return ListSequence.fromList(SNodeOperations.getNodeAncestors(node, null, false)).where(new IWhereFilter<SNode>() {
+      public boolean accept(SNode it) {
+        return SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(it)), CONCEPTS.CommentStatement$jL);
+      }
+    }).isNotEmpty() || SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(node)), CONCEPTS.CommentStatement$jL);
   }
   @Override
   public boolean isSurroundWith() {
@@ -54,25 +60,28 @@ public final class SurroundWithParentheses_Intention extends AbstractIntentionDe
     }
     @Override
     public String getDescription(final SNode node, final EditorContext editorContext) {
-      return "Surround with Parentheses";
+      return "Unwrap Statement from Comment";
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      SNode pnode = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x36e551eaf2ccfec9L, "FirstOrderLogic.structure.ParenthesesStatement"));
-      SLinkOperations.setTarget(pnode, LINKS.statement$TjGf, SNodeOperations.copyNode(node));
-      SNodeOperations.replaceWithAnother(node, pnode);
+      if (SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(node)), CONCEPTS.CommentStatement$jL)) {
+        SNodeOperations.replaceWithAnother(node, SLinkOperations.getTarget(SNodeOperations.as(node, CONCEPTS.CommentStatement$jL), LINKS.statement$i7It));
+      } else {
+        SNode cmt = SNodeOperations.getNodeAncestor(node, CONCEPTS.CommentStatement$jL, false, false);
+        SNodeOperations.replaceWithAnother(cmt, SLinkOperations.getTarget(cmt, LINKS.statement$i7It));
+      }
     }
     @Override
     public IntentionDescriptor getDescriptor() {
-      return SurroundWithParentheses_Intention.this;
+      return UnwrapComment_Intention.this;
     }
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept ParenthesesStatement$zg = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x36e551eaf2ccfec9L, "FirstOrderLogic.structure.ParenthesesStatement");
+    /*package*/ static final SConcept CommentStatement$jL = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x3f518c2715bb3bc9L, "FirstOrderLogic.structure.CommentStatement");
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink statement$TjGf = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x36e551eaf2ccfec9L, 0x36e551eaf2ccfecaL, "statement");
+    /*package*/ static final SContainmentLink statement$i7It = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x3f518c2715bb3bc9L, 0x3f518c2715bb3bcdL, "statement");
   }
 }

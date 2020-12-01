@@ -62,14 +62,14 @@ public class QueriesGenerated extends QueryProviderBase {
   public static boolean rule_Condition_0_1(final BaseMappingRuleContext _context) {
     return SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(SNodeOperations.getParent(_context.getNode()))), CONCEPTS.KnowledgeBaseEntry$HX);
   }
-  public static boolean rule_Condition_16_0(final BaseMappingRuleContext _context) {
+  public static boolean rule_Condition_15_0(final BaseMappingRuleContext _context) {
     if (SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(SNodeOperations.getParent(_context.getNode()))), CONCEPTS.KnowledgeBaseEntry$HX)) {
       LoggingRuntime.logMsgView(Level.WARN, "Ignoring negated atomic statement stated as fact! If your knowledge base also contains the positive form of this statement, then the knowledge base may be inconsistent!", QueriesGenerated.class, null, null);
       return true;
     }
     return false;
   }
-  public static boolean rule_Condition_17_0(final BaseMappingRuleContext _context) {
+  public static boolean rule_Condition_16_0(final BaseMappingRuleContext _context) {
     return SConceptOperations.isExactly(SNodeOperations.asSConcept(SNodeOperations.getConcept(SNodeOperations.getParent(_context.getNode()))), CONCEPTS.KnowledgeBaseEntry$HX);
   }
   public static Object propertyMacro_GetValue_0_0(final PropertyMacroContext _context) {
@@ -108,6 +108,12 @@ public class QueriesGenerated extends QueryProviderBase {
   public static SNode sourceNodeQuery_0_1(final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(_context.getNode(), LINKS.right$g53S);
   }
+  public static SNode sourceNodeQuery_0_2(final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), LINKS.left$tEgL);
+  }
+  public static SNode sourceNodeQuery_0_3(final SourceSubstituteMacroNodeContext _context) {
+    return SLinkOperations.getTarget(_context.getNode(), LINKS.right$g53S);
+  }
   public static SNode sourceNodeQuery_8_0(final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(_context.getNode(), LINKS.term1$Q5Mf);
   }
@@ -121,18 +127,12 @@ public class QueriesGenerated extends QueryProviderBase {
     return SLinkOperations.getTarget(_context.getNode(), LINKS.term2$Q6gh);
   }
   public static SNode sourceNodeQuery_15_0(final SourceSubstituteMacroNodeContext _context) {
-    return SLinkOperations.getTarget(_context.getNode(), LINKS.left$tEgL);
-  }
-  public static SNode sourceNodeQuery_15_1(final SourceSubstituteMacroNodeContext _context) {
-    return SLinkOperations.getTarget(_context.getNode(), LINKS.right$g53S);
-  }
-  public static SNode sourceNodeQuery_16_0(final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(SNodeOperations.as(_context.getNode(), CONCEPTS.NegatedStatement$8l), LINKS.statement$pxjq);
   }
-  public static SNode sourceNodeQuery_17_0(final SourceSubstituteMacroNodeContext _context) {
+  public static SNode sourceNodeQuery_16_0(final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(SNodeOperations.as(_context.getNode(), CONCEPTS.OrOperatorStatement$L5), LINKS.left$tEgL);
   }
-  public static SNode sourceNodeQuery_17_1(final SourceSubstituteMacroNodeContext _context) {
+  public static SNode sourceNodeQuery_16_1(final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(SNodeOperations.as(_context.getNode(), CONCEPTS.OrOperatorStatement$L5), LINKS.right$g53S);
   }
   public static Iterable<SNode> sourceNodesQuery_0_0(final SourceSubstituteMacroNodesContext _context) {
@@ -509,7 +509,7 @@ public class QueriesGenerated extends QueryProviderBase {
       LoggingRuntime.logMsgView(Level.INFO, "Preprocessing: Distributing v over ∧", QueriesGenerated.class, null, null);
     }
   }
-  public static void mappingScript_CodeBlock_18(final MappingScriptContext _context) {
+  public static void mappingScript_CodeBlock_17(final MappingScriptContext _context) {
     boolean show_message = false;
     boolean repeat;
     do {
@@ -533,7 +533,7 @@ public class QueriesGenerated extends QueryProviderBase {
     }
 
   }
-  public static void mappingScript_CodeBlock_19(final MappingScriptContext _context) {
+  public static void mappingScript_CodeBlock_18(final MappingScriptContext _context) {
     LoggingRuntime.logMsgView(Level.INFO, "Preprocessing: Building implications from CNF clauses where possible", QueriesGenerated.class, null, null);
 
     for (SNode root : ListSequence.fromList(SModelOperations.nodes(_context.getModel(), CONCEPTS.AStatement$1q)).where(new IWhereFilter<SNode>() {
@@ -608,9 +608,9 @@ public class QueriesGenerated extends QueryProviderBase {
     public boolean check(ReductionRuleQueryContext ctx) throws GenerationFailureException {
       switch (methodKey) {
         case 0:
-          return QueriesGenerated.rule_Condition_16_0(ctx);
+          return QueriesGenerated.rule_Condition_15_0(ctx);
         case 1:
-          return QueriesGenerated.rule_Condition_17_0(ctx);
+          return QueriesGenerated.rule_Condition_16_0(ctx);
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no condition method for rule %s (key: #%d)", ctx.getTemplateReference(), methodKey));
       }
@@ -676,10 +676,10 @@ public class QueriesGenerated extends QueryProviderBase {
           QueriesGenerated.mappingScript_CodeBlock_14(ctx);
           return;
         case 9:
-          QueriesGenerated.mappingScript_CodeBlock_18(ctx);
+          QueriesGenerated.mappingScript_CodeBlock_17(ctx);
           return;
         case 10:
-          QueriesGenerated.mappingScript_CodeBlock_19(ctx);
+          QueriesGenerated.mappingScript_CodeBlock_18(ctx);
           return;
         default:
           throw new GenerationFailureException(String.format("There's no code block with method index %d ", methodKey));
@@ -689,14 +689,14 @@ public class QueriesGenerated extends QueryProviderBase {
   private final Map<String, SourceNodeQuery> snqMethods = new HashMap<String, SourceNodeQuery>();
   {
     int i = 0;
+    snqMethods.put("4562581997000241790", new SNQ(i++));
+    snqMethods.put("4562581997000242097", new SNQ(i++));
     snqMethods.put("7771543041061947826", new SNQ(i++));
     snqMethods.put("7771543041061947531", new SNQ(i++));
     snqMethods.put("8525279030028484266", new SNQ(i++));
     snqMethods.put("8525279030028486948", new SNQ(i++));
     snqMethods.put("8525279030028656108", new SNQ(i++));
     snqMethods.put("8525279030028656416", new SNQ(i++));
-    snqMethods.put("8521472005505654504", new SNQ(i++));
-    snqMethods.put("8521472005505654833", new SNQ(i++));
     snqMethods.put("7771543041056539736", new SNQ(i++));
     snqMethods.put("7771543041056954882", new SNQ(i++));
     snqMethods.put("7771543041056956688", new SNQ(i++));
@@ -723,23 +723,23 @@ public class QueriesGenerated extends QueryProviderBase {
         case 1:
           return QueriesGenerated.sourceNodeQuery_0_1(ctx);
         case 2:
-          return QueriesGenerated.sourceNodeQuery_8_0(ctx);
+          return QueriesGenerated.sourceNodeQuery_0_2(ctx);
         case 3:
-          return QueriesGenerated.sourceNodeQuery_8_1(ctx);
+          return QueriesGenerated.sourceNodeQuery_0_3(ctx);
         case 4:
-          return QueriesGenerated.sourceNodeQuery_10_0(ctx);
+          return QueriesGenerated.sourceNodeQuery_8_0(ctx);
         case 5:
-          return QueriesGenerated.sourceNodeQuery_10_1(ctx);
+          return QueriesGenerated.sourceNodeQuery_8_1(ctx);
         case 6:
-          return QueriesGenerated.sourceNodeQuery_15_0(ctx);
+          return QueriesGenerated.sourceNodeQuery_10_0(ctx);
         case 7:
-          return QueriesGenerated.sourceNodeQuery_15_1(ctx);
+          return QueriesGenerated.sourceNodeQuery_10_1(ctx);
         case 8:
-          return QueriesGenerated.sourceNodeQuery_16_0(ctx);
+          return QueriesGenerated.sourceNodeQuery_15_0(ctx);
         case 9:
-          return QueriesGenerated.sourceNodeQuery_17_0(ctx);
+          return QueriesGenerated.sourceNodeQuery_16_0(ctx);
         case 10:
-          return QueriesGenerated.sourceNodeQuery_17_1(ctx);
+          return QueriesGenerated.sourceNodeQuery_16_1(ctx);
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no method for query %s (key: #%d)", ctx.getTemplateReference(), methodKey));
       }

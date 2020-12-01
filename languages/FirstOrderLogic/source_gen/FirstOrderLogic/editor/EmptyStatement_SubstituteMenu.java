@@ -12,32 +12,35 @@ import java.util.ArrayList;
 import jetbrains.mps.lang.editor.menus.substitute.ConstraintsFilteringSubstituteMenuPartDecorator;
 import jetbrains.mps.lang.editor.menus.EditorMenuDescriptorBase;
 import jetbrains.mps.smodel.SNodePointer;
-import jetbrains.mps.lang.editor.menus.substitute.SingleItemSubstituteMenuPart;
+import jetbrains.mps.lang.editor.menus.ParameterizedMenuPart;
+import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.annotations.Nullable;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
+import jetbrains.mps.internal.collections.runtime.IWhereFilter;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.lang.editor.menus.substitute.SingleItemSubstituteMenuPart;
 import org.apache.log4j.Logger;
 import jetbrains.mps.lang.editor.menus.substitute.DefaultSubstituteMenuItem;
 import jetbrains.mps.openapi.editor.menus.EditorMenuTraceInfo;
-import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.editor.runtime.completion.CompletionItemInformation;
+import jetbrains.mps.smodel.presentation.NodePresentationUtil;
+import jetbrains.mps.smodel.runtime.IconResource;
+import jetbrains.mps.smodel.runtime.IconResourceUtil;
 import org.jetbrains.mps.openapi.language.SConcept;
-import jetbrains.mps.internal.collections.runtime.ListSequence;
-import jetbrains.mps.internal.collections.runtime.IWhereFilter;
-import jetbrains.mps.internal.collections.runtime.Sequence;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SModelOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import org.jetbrains.mps.openapi.language.SReferenceLink;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
-import org.jetbrains.mps.openapi.language.SProperty;
 
 public class EmptyStatement_SubstituteMenu extends SubstituteMenuBase {
   @NotNull
   @Override
   protected List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> getParts(final SubstituteMenuContext _context) {
     List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> result = new ArrayList<MenuPart<SubstituteMenuItem, SubstituteMenuContext>>();
-    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_Action_ehxzqj_a(), CONCEPTS.TermEqualsAtomicStatement$7s));
-    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_Action_ehxzqj_b(), CONCEPTS.PredicateAtomicStatement$$I));
+    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_Param_ehxzqj_a(), CONCEPTS.PredicateAtomicStatement$$I));
+    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_Param_ehxzqj_b(), CONCEPTS.TermEqualsAtomicStatement$7s));
     return result;
   }
 
@@ -45,7 +48,7 @@ public class EmptyStatement_SubstituteMenu extends SubstituteMenuBase {
   @Override
   public List<SubstituteMenuItem> createMenuItems(@NotNull SubstituteMenuContext context) {
     context.getEditorMenuTrace().pushTraceInfo();
-    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("default substitute menu for " + "EmptyStatement", new SNodePointer("r:57c81b84-3cd4-45b0-b861-c5121c082b5e(FirstOrderLogic.editor)", "3890291824004693204")));
+    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("default substitute menu for " + "EmptyStatement", new SNodePointer("r:57c81b84-3cd4-45b0-b861-c5121c082b5e(FirstOrderLogic.editor)", "8839271311500826989")));
     try {
       return super.createMenuItems(context);
     } finally {
@@ -54,220 +57,273 @@ public class EmptyStatement_SubstituteMenu extends SubstituteMenuBase {
   }
 
 
-  private class SMP_Action_ehxzqj_a extends SingleItemSubstituteMenuPart {
-
+  private class SMP_Param_ehxzqj_a extends ParameterizedMenuPart<SNode, SubstituteMenuItem, SubstituteMenuContext> {
+    @NotNull
+    @Override
+    protected List<SubstituteMenuItem> createItems(SNode parameter, SubstituteMenuContext context) {
+      return new SMP_Action_ehxzqj_a0(parameter).createItems(context);
+    }
+    @NotNull
+    @Override
+    public List<SubstituteMenuItem> createItems(@NotNull SubstituteMenuContext context) {
+      context.getEditorMenuTrace().pushTraceInfo();
+      context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("parameterized substitute menu part", new SNodePointer("r:57c81b84-3cd4-45b0-b861-c5121c082b5e(FirstOrderLogic.editor)", "8839271311500826994")));
+      try {
+        return super.createItems(context);
+      } finally {
+        context.getEditorMenuTrace().popTraceInfo();
+      }
+    }
     @Nullable
     @Override
-    protected SubstituteMenuItem createItem(SubstituteMenuContext _context) {
-      Item item = new Item(_context);
-      String description;
-      try {
-        description = "Substitute item: " + item.getMatchingText("");
-      } catch (Throwable t) {
-        Logger.getLogger(getClass()).error("Exception while executing getMatchingText() of the item " + item, t);
-        return null;
-      }
-
-      _context.getEditorMenuTrace().pushTraceInfo();
-      try {
-        _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase(description, new SNodePointer("r:57c81b84-3cd4-45b0-b861-c5121c082b5e(FirstOrderLogic.editor)", "6722602216775751733")));
-        item.setTraceInfo(_context.getEditorMenuTrace().getTraceInfo());
-      } finally {
-        _context.getEditorMenuTrace().popTraceInfo();
-      }
-
-      return item;
+    protected Iterable<? extends SNode> getParameters(final SubstituteMenuContext _context) {
+      return ListSequence.fromList(SModelOperations.nodes(_context.getModel(), CONCEPTS.Predicate$8h)).where(new IWhereFilter<SNode>() {
+        public boolean accept(SNode it) {
+          return SNodeOperations.getNodeAncestor(it, CONCEPTS.Sheet$F5, false, false) == SNodeOperations.getNodeAncestor(_context.getCurrentTargetNode(), CONCEPTS.Sheet$F5, false, false);
+        }
+      });
     }
-    private class Item extends DefaultSubstituteMenuItem {
-      private final SubstituteMenuContext _context;
-      private EditorMenuTraceInfo myTraceInfo;
-      public Item(SubstituteMenuContext context) {
-        super(CONCEPTS.TermEqualsAtomicStatement$7s, context);
-        _context = context;
-      }
-
-      private void setTraceInfo(EditorMenuTraceInfo traceInfo) {
-        myTraceInfo = traceInfo;
+    private class SMP_Action_ehxzqj_a0 extends SingleItemSubstituteMenuPart {
+      private final SNode myParameterObject;
+      public SMP_Action_ehxzqj_a0(SNode parameterObject) {
+        myParameterObject = parameterObject;
       }
 
       @Nullable
       @Override
-      public SNode createNode(@NotNull String pattern) {
-        SNode teas = SNodeOperations.replaceWithNewChild(_context.getCurrentTargetNode(), CONCEPTS.TermEqualsAtomicStatement$7s);
-        SLinkOperations.setTarget(teas, LINKS.term1$Q5Mf, SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00b21835L, "FirstOrderLogic.structure.ATerm")));
-        SLinkOperations.setTarget(teas, LINKS.term2$Q6gh, SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00b21835L, "FirstOrderLogic.structure.ATerm")));
-        return teas;
-      }
+      protected SubstituteMenuItem createItem(SubstituteMenuContext _context) {
+        Item item = new Item(_context);
+        String description;
+        try {
+          description = "Substitute item: " + item.getMatchingText("");
+          description += ". Parameter object: " + myParameterObject;
+        } catch (Throwable t) {
+          Logger.getLogger(getClass()).error("Exception while executing getMatchingText() of the item " + item, t);
+          return null;
+        }
 
-      @Override
-      public EditorMenuTraceInfo getTraceInfo() {
-        return myTraceInfo;
-      }
-      @Override
-      public boolean canExecute(@NotNull String pattern) {
-        return canExecute_internal(pattern, false);
-      }
-      @Override
-      public boolean canExecuteStrictly(@NotNull String pattern) {
-        return canExecute_internal(pattern, true);
-      }
-      public boolean canExecute_internal(@NotNull final String pattern, boolean strictly) {
-        if (pattern.isEmpty()) {
-          return false;
+        _context.getEditorMenuTrace().pushTraceInfo();
+        try {
+          _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase(description, new SNodePointer("r:57c81b84-3cd4-45b0-b861-c5121c082b5e(FirstOrderLogic.editor)", "8839271311500832289")));
+          item.setTraceInfo(_context.getEditorMenuTrace().getTraceInfo());
+        } finally {
+          _context.getEditorMenuTrace().popTraceInfo();
         }
-        Iterable<SConcept> concepts = ListSequence.fromList(SConceptOperations.getAllSubConcepts2(CONCEPTS.AStatement$1q, _context.getModel())).where(new IWhereFilter<SConcept>() {
-          public boolean accept(SConcept it) {
-            return !(it.isAbstract());
-          }
-        });
-        boolean aliasMatch = Sequence.fromIterable(concepts).any(new IWhereFilter<SConcept>() {
-          public boolean accept(SConcept it) {
-            return SConceptOperations.conceptAlias(it).startsWith(pattern);
-          }
-        });
-        if (aliasMatch) {
-          return false;
+
+        return item;
+      }
+      private class Item extends DefaultSubstituteMenuItem {
+        private final SubstituteMenuContext _context;
+        private EditorMenuTraceInfo myTraceInfo;
+        public Item(SubstituteMenuContext context) {
+          super(CONCEPTS.PredicateAtomicStatement$$I, context);
+          _context = context;
         }
-        boolean functions = ListSequence.fromList(SModelOperations.nodes(SNodeOperations.getModel(_context.getCurrentTargetNode()), CONCEPTS.Function$Uy)).any(new IWhereFilter<SNode>() {
-          public boolean accept(SNode it) {
-            return SPropertyOperations.getString(it, PROPS.name$MnvL).startsWith(pattern);
+
+        private void setTraceInfo(EditorMenuTraceInfo traceInfo) {
+          myTraceInfo = traceInfo;
+        }
+
+        @Nullable
+        @Override
+        public SNode createNode(@NotNull String pattern) {
+          SNode pas = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x523a606984019bbaL, "FirstOrderLogic.structure.PredicateAtomicStatement"));
+          SLinkOperations.setTarget(pas, LINKS.predicate$FL91, myParameterObject);
+          SLinkOperations.addNewChild(pas, LINKS.parameters$Ifhz, CONCEPTS.ATerm$N9);
+          return pas;
+        }
+
+        @Override
+        public EditorMenuTraceInfo getTraceInfo() {
+          return myTraceInfo;
+        }
+        @NotNull
+        protected CompletionItemInformation createInformation(String pattern) {
+          return new CompletionItemInformation(myParameterObject, CONCEPTS.PredicateAtomicStatement$$I, getMatchingText(pattern), getDescriptionText(pattern));
+        }
+        @Nullable
+        @Override
+        public String getMatchingText(@NotNull String pattern) {
+          if (myParameterObject instanceof SNode) {
+            return NodePresentationUtil.visibleMatchingText((SNode) myParameterObject, null);
           }
-        });
-        boolean constants = ListSequence.fromList(SModelOperations.nodes(SNodeOperations.getModel(_context.getCurrentTargetNode()), CONCEPTS.Constant$96)).any(new IWhereFilter<SNode>() {
-          public boolean accept(SNode it) {
-            return SPropertyOperations.getString(it, PROPS.name$MnvL).startsWith(pattern);
+          return "" + myParameterObject;
+        }
+        @Nullable
+        @Override
+        public String getDescriptionText(@NotNull String pattern) {
+          if (myParameterObject instanceof SNode) {
+            return NodePresentationUtil.descriptionText((SNode) myParameterObject);
           }
-        });
-        boolean variables = ListSequence.fromList(SModelOperations.nodes(SNodeOperations.getModel(_context.getCurrentTargetNode()), CONCEPTS.Variable$8o)).any(new IWhereFilter<SNode>() {
-          public boolean accept(SNode it) {
-            return SPropertyOperations.getString(it, PROPS.name$MnvL).startsWith(pattern);
+          return "" + myParameterObject;
+        }
+        @Nullable
+        @Override
+        public IconResource getIcon(@NotNull String pattern) {
+          if (myParameterObject instanceof SNode) {
+            return IconResourceUtil.getIconResourceForNode(((SNode) myParameterObject));
           }
-        });
-        boolean predicates = ListSequence.fromList(SModelOperations.nodes(SNodeOperations.getModel(_context.getCurrentTargetNode()), CONCEPTS.Predicate$8h)).any(new IWhereFilter<SNode>() {
-          public boolean accept(SNode it) {
-            return SPropertyOperations.getString(it, PROPS.name$MnvL).startsWith(pattern);
-          }
-        });
-        return !(predicates) && (functions || constants || variables);
+          return null;
+        }
       }
     }
+
   }
-  private class SMP_Action_ehxzqj_b extends SingleItemSubstituteMenuPart {
-
+  private class SMP_Param_ehxzqj_b extends ParameterizedMenuPart<SNode, SubstituteMenuItem, SubstituteMenuContext> {
+    @NotNull
+    @Override
+    protected List<SubstituteMenuItem> createItems(SNode parameter, SubstituteMenuContext context) {
+      return new SMP_Action_ehxzqj_a1(parameter).createItems(context);
+    }
+    @NotNull
+    @Override
+    public List<SubstituteMenuItem> createItems(@NotNull SubstituteMenuContext context) {
+      context.getEditorMenuTrace().pushTraceInfo();
+      context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("parameterized substitute menu part", new SNodePointer("r:57c81b84-3cd4-45b0-b861-c5121c082b5e(FirstOrderLogic.editor)", "8839271311501299922")));
+      try {
+        return super.createItems(context);
+      } finally {
+        context.getEditorMenuTrace().popTraceInfo();
+      }
+    }
     @Nullable
     @Override
-    protected SubstituteMenuItem createItem(SubstituteMenuContext _context) {
-      Item item = new Item(_context);
-      String description;
-      try {
-        description = "Substitute item: " + item.getMatchingText("");
-      } catch (Throwable t) {
-        Logger.getLogger(getClass()).error("Exception while executing getMatchingText() of the item " + item, t);
-        return null;
+    protected Iterable<? extends SNode> getParameters(final SubstituteMenuContext _context) {
+      List<SNode> list = ListSequence.fromList(new ArrayList<SNode>());
+      for (SNode constant : ListSequence.fromList(SModelOperations.nodes(_context.getModel(), CONCEPTS.Constant$96)).where(new IWhereFilter<SNode>() {
+        public boolean accept(SNode it) {
+          return SNodeOperations.getNodeAncestor(it, CONCEPTS.Sheet$F5, false, false) == SNodeOperations.getNodeAncestor(_context.getCurrentTargetNode(), CONCEPTS.Sheet$F5, false, false);
+        }
+      })) {
+        SNode ref = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00b9b606L, "FirstOrderLogic.structure.ConstantReference"));
+        SLinkOperations.setTarget(ref, LINKS.ref$3iQK, constant);
+        ListSequence.fromList(list).addElement(ref);
       }
-
-      _context.getEditorMenuTrace().pushTraceInfo();
-      try {
-        _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase(description, new SNodePointer("r:57c81b84-3cd4-45b0-b861-c5121c082b5e(FirstOrderLogic.editor)", "7127315390445525921")));
-        item.setTraceInfo(_context.getEditorMenuTrace().getTraceInfo());
-      } finally {
-        _context.getEditorMenuTrace().popTraceInfo();
+      for (SNode function : ListSequence.fromList(SModelOperations.nodes(_context.getModel(), CONCEPTS.Function$Uy)).where(new IWhereFilter<SNode>() {
+        public boolean accept(SNode it) {
+          return SNodeOperations.getNodeAncestor(it, CONCEPTS.Sheet$F5, false, false) == SNodeOperations.getNodeAncestor(_context.getCurrentTargetNode(), CONCEPTS.Sheet$F5, false, false);
+        }
+      })) {
+        SNode ref = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00b2183aL, "FirstOrderLogic.structure.FunctionReference"));
+        SLinkOperations.setTarget(ref, LINKS.ref$3iQK, function);
+        SLinkOperations.addNewChild(ref, LINKS.parameters$Jqsy, CONCEPTS.ATerm$N9);
+        ListSequence.fromList(list).addElement(ref);
       }
-
-      return item;
+      for (SNode var : ListSequence.fromList(SModelOperations.nodes(_context.getModel(), CONCEPTS.Variable$8o)).where(new IWhereFilter<SNode>() {
+        public boolean accept(SNode it) {
+          return ListSequence.fromList(SNodeOperations.getNodeAncestors(_context.getCurrentTargetNode(), null, false)).contains(SNodeOperations.getParent(it));
+        }
+      })) {
+        SNode ref = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x13ba598d20cb7c36L, "FirstOrderLogic.structure.VariableReference"));
+        SLinkOperations.setTarget(ref, LINKS.ref$3iQK, var);
+        ListSequence.fromList(list).addElement(ref);
+      }
+      return list;
     }
-    private class Item extends DefaultSubstituteMenuItem {
-      private final SubstituteMenuContext _context;
-      private EditorMenuTraceInfo myTraceInfo;
-      public Item(SubstituteMenuContext context) {
-        super(CONCEPTS.PredicateAtomicStatement$$I, context);
-        _context = context;
-      }
-
-      private void setTraceInfo(EditorMenuTraceInfo traceInfo) {
-        myTraceInfo = traceInfo;
+    private class SMP_Action_ehxzqj_a1 extends SingleItemSubstituteMenuPart {
+      private final SNode myParameterObject;
+      public SMP_Action_ehxzqj_a1(SNode parameterObject) {
+        myParameterObject = parameterObject;
       }
 
       @Nullable
       @Override
-      public SNode createNode(@NotNull String pattern) {
-        SNode pas = SNodeOperations.replaceWithNewChild(_context.getCurrentTargetNode(), CONCEPTS.PredicateAtomicStatement$$I);
-        SLinkOperations.addNewChild(pas, LINKS.parameters$Ifhz, CONCEPTS.ATerm$N9);
-        return pas;
-      }
+      protected SubstituteMenuItem createItem(SubstituteMenuContext _context) {
+        Item item = new Item(_context);
+        String description;
+        try {
+          description = "Substitute item: " + item.getMatchingText("");
+          description += ". Parameter object: " + myParameterObject;
+        } catch (Throwable t) {
+          Logger.getLogger(getClass()).error("Exception while executing getMatchingText() of the item " + item, t);
+          return null;
+        }
 
-      @Override
-      public EditorMenuTraceInfo getTraceInfo() {
-        return myTraceInfo;
-      }
-      @Override
-      public boolean canExecute(@NotNull String pattern) {
-        return canExecute_internal(pattern, false);
-      }
-      @Override
-      public boolean canExecuteStrictly(@NotNull String pattern) {
-        return canExecute_internal(pattern, true);
-      }
-      public boolean canExecute_internal(@NotNull final String pattern, boolean strictly) {
-        if (pattern.isEmpty()) {
-          return false;
+        _context.getEditorMenuTrace().pushTraceInfo();
+        try {
+          _context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase(description, new SNodePointer("r:57c81b84-3cd4-45b0-b861-c5121c082b5e(FirstOrderLogic.editor)", "8839271311501338291")));
+          item.setTraceInfo(_context.getEditorMenuTrace().getTraceInfo());
+        } finally {
+          _context.getEditorMenuTrace().popTraceInfo();
         }
-        Iterable<SConcept> concepts = ListSequence.fromList(SConceptOperations.getAllSubConcepts2(CONCEPTS.AStatement$1q, _context.getModel())).where(new IWhereFilter<SConcept>() {
-          public boolean accept(SConcept it) {
-            return !(it.isAbstract());
-          }
-        });
-        boolean aliasMatch = Sequence.fromIterable(concepts).any(new IWhereFilter<SConcept>() {
-          public boolean accept(SConcept it) {
-            return SConceptOperations.conceptAlias(it).startsWith(pattern);
-          }
-        });
-        if (aliasMatch) {
-          return false;
+
+        return item;
+      }
+      private class Item extends DefaultSubstituteMenuItem {
+        private final SubstituteMenuContext _context;
+        private EditorMenuTraceInfo myTraceInfo;
+        public Item(SubstituteMenuContext context) {
+          super(CONCEPTS.TermEqualsAtomicStatement$7s, context);
+          _context = context;
         }
-        boolean functions = ListSequence.fromList(SModelOperations.nodes(SNodeOperations.getModel(_context.getCurrentTargetNode()), CONCEPTS.Function$Uy)).any(new IWhereFilter<SNode>() {
-          public boolean accept(SNode it) {
-            return SPropertyOperations.getString(it, PROPS.name$MnvL).startsWith(pattern);
+
+        private void setTraceInfo(EditorMenuTraceInfo traceInfo) {
+          myTraceInfo = traceInfo;
+        }
+
+        @Nullable
+        @Override
+        public SNode createNode(@NotNull String pattern) {
+          SNode teas = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x636efe58094ad65bL, "FirstOrderLogic.structure.TermEqualsAtomicStatement"));
+          SLinkOperations.setTarget(teas, LINKS.term1$Q5Mf, myParameterObject);
+          SLinkOperations.setTarget(teas, LINKS.term2$Q6gh, SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00b21835L, "FirstOrderLogic.structure.ATerm")));
+          return teas;
+        }
+
+        @Override
+        public EditorMenuTraceInfo getTraceInfo() {
+          return myTraceInfo;
+        }
+        @NotNull
+        protected CompletionItemInformation createInformation(String pattern) {
+          return new CompletionItemInformation(myParameterObject, CONCEPTS.TermEqualsAtomicStatement$7s, getMatchingText(pattern), getDescriptionText(pattern));
+        }
+        @Nullable
+        @Override
+        public String getMatchingText(@NotNull String pattern) {
+          if (myParameterObject instanceof SNode) {
+            return NodePresentationUtil.visibleMatchingText((SNode) myParameterObject, null);
           }
-        });
-        boolean constants = ListSequence.fromList(SModelOperations.nodes(SNodeOperations.getModel(_context.getCurrentTargetNode()), CONCEPTS.Constant$96)).any(new IWhereFilter<SNode>() {
-          public boolean accept(SNode it) {
-            return SPropertyOperations.getString(it, PROPS.name$MnvL).startsWith(pattern);
+          return "" + myParameterObject;
+        }
+        @Nullable
+        @Override
+        public String getDescriptionText(@NotNull String pattern) {
+          if (myParameterObject instanceof SNode) {
+            return NodePresentationUtil.descriptionText((SNode) myParameterObject);
           }
-        });
-        boolean variables = ListSequence.fromList(SModelOperations.nodes(SNodeOperations.getModel(_context.getCurrentTargetNode()), CONCEPTS.Variable$8o)).any(new IWhereFilter<SNode>() {
-          public boolean accept(SNode it) {
-            return SPropertyOperations.getString(it, PROPS.name$MnvL).startsWith(pattern);
+          return "" + myParameterObject;
+        }
+        @Nullable
+        @Override
+        public IconResource getIcon(@NotNull String pattern) {
+          if (myParameterObject instanceof SNode) {
+            return IconResourceUtil.getIconResourceForNode(((SNode) myParameterObject));
           }
-        });
-        boolean predicates = ListSequence.fromList(SModelOperations.nodes(SNodeOperations.getModel(_context.getCurrentTargetNode()), CONCEPTS.Predicate$8h)).any(new IWhereFilter<SNode>() {
-          public boolean accept(SNode it) {
-            return SPropertyOperations.getString(it, PROPS.name$MnvL).startsWith(pattern);
-          }
-        });
-        return predicates && !((functions || constants || variables));
+          return null;
+        }
       }
     }
+
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept TermEqualsAtomicStatement$7s = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x636efe58094ad65bL, "FirstOrderLogic.structure.TermEqualsAtomicStatement");
     /*package*/ static final SConcept PredicateAtomicStatement$$I = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x523a606984019bbaL, "FirstOrderLogic.structure.PredicateAtomicStatement");
-    /*package*/ static final SConcept AStatement$1q = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x13ba598d20c7b07fL, "FirstOrderLogic.structure.AStatement");
-    /*package*/ static final SConcept Function$Uy = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00b217e4L, "FirstOrderLogic.structure.Function");
-    /*package*/ static final SConcept Constant$96 = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00abee10L, "FirstOrderLogic.structure.Constant");
-    /*package*/ static final SConcept Variable$8o = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00b08382L, "FirstOrderLogic.structure.Variable");
+    /*package*/ static final SConcept TermEqualsAtomicStatement$7s = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x636efe58094ad65bL, "FirstOrderLogic.structure.TermEqualsAtomicStatement");
     /*package*/ static final SConcept Predicate$8h = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x41354ec0cdeac250L, "FirstOrderLogic.structure.Predicate");
+    /*package*/ static final SConcept Sheet$F5 = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00ac843eL, "FirstOrderLogic.structure.Sheet");
     /*package*/ static final SConcept ATerm$N9 = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00b21835L, "FirstOrderLogic.structure.ATerm");
+    /*package*/ static final SConcept Constant$96 = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00abee10L, "FirstOrderLogic.structure.Constant");
+    /*package*/ static final SConcept Function$Uy = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00b217e4L, "FirstOrderLogic.structure.Function");
+    /*package*/ static final SConcept Variable$8o = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00b08382L, "FirstOrderLogic.structure.Variable");
   }
 
   private static final class LINKS {
+    /*package*/ static final SReferenceLink predicate$FL91 = MetaAdapterFactory.getReferenceLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x523a606984019bbaL, 0x523a606984019bc2L, "predicate");
+    /*package*/ static final SContainmentLink parameters$Ifhz = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x523a606984019bbaL, 0x523a606984019bc4L, "parameters");
+    /*package*/ static final SReferenceLink ref$3iQK = MetaAdapterFactory.getReferenceLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00b21835L, 0x1474d1fc6f086922L, "ref");
+    /*package*/ static final SContainmentLink parameters$Jqsy = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00b2183aL, 0x5c35fb00b7f555L, "parameters");
     /*package*/ static final SContainmentLink term1$Q5Mf = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x636efe58094ad65bL, 0x636efe58094ad65cL, "term1");
     /*package*/ static final SContainmentLink term2$Q6gh = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x636efe58094ad65bL, 0x636efe58094ad65eL, "term2");
-    /*package*/ static final SContainmentLink parameters$Ifhz = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x523a606984019bbaL, 0x523a606984019bc4L, "parameters");
-  }
-
-  private static final class PROPS {
-    /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
   }
 }

@@ -34,8 +34,10 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
       case 0:
         if (true) {
           // concept 
-          intentions = new IntentionFactory[1];
+          intentions = new IntentionFactory[3];
           intentions[0] = new SurroundWithParentheses_Intention();
+          intentions[1] = new SurroundWithComment_Intention();
+          intentions[2] = new UnwrapComment_Intention();
         }
         break;
       default:
@@ -47,8 +49,10 @@ public final class IntentionsDescriptor extends AbstractIntentionAspectDescripto
   @NotNull
   @Override
   public Collection<IntentionFactory> getAllIntentions() {
-    IntentionFactory[] rv = new IntentionFactory[1];
+    IntentionFactory[] rv = new IntentionFactory[3];
     rv[0] = new SurroundWithParentheses_Intention();
+    rv[1] = new SurroundWithComment_Intention();
+    rv[2] = new UnwrapComment_Intention();
     return Arrays.asList(rv);
   }
   private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x13ba598d20c7b07fL)).seal();

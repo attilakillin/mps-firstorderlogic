@@ -5,22 +5,36 @@ package PrologProxy.textGen;
 import jetbrains.mps.text.rt.TextGenDescriptorBase;
 import jetbrains.mps.text.rt.TextGenContext;
 import jetbrains.mps.text.impl.TextGenSupport;
+import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import org.jetbrains.mps.openapi.language.SContainmentLink;
+import jetbrains.mps.internal.collections.runtime.ListSequence;
+import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
 
 public class FunctionsTerm_TextGen extends TextGenDescriptorBase {
   @Override
   public void generateText(final TextGenContext ctx) {
     final TextGenSupport tgs = new TextGenSupport(ctx);
-    tgs.append("equals(");
+    SNode rule = SNodeOperations.getNodeAncestor(ctx.getPrimaryInput(), CONCEPTS.Rule$Bz, false, false);
+    if ((rule != null) && (SLinkOperations.getTarget(rule, LINKS.body$JNMz) == ctx.getPrimaryInput() || ListSequence.fromList(SNodeOperations.getChildren(SLinkOperations.getTarget(rule, LINKS.body$JNMz))).contains(ctx.getPrimaryInput()))) {
+      tgs.append("is_equal(");
+    } else {
+      tgs.append("equals(");
+    }
     tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.left$R4Ha));
     tgs.append(", ");
     tgs.appendNode(SLinkOperations.getTarget(ctx.getPrimaryInput(), LINKS.right$R5bc));
     tgs.append(")");
   }
 
+  private static final class CONCEPTS {
+    /*package*/ static final SConcept Rule$Bz = MetaAdapterFactory.getConcept(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e1155cL, "PrologProxy.structure.Rule");
+  }
+
   private static final class LINKS {
+    /*package*/ static final SContainmentLink body$JNMz = MetaAdapterFactory.getContainmentLink(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x62337459d1e1155cL, 0x62337459d1e11561L, "body");
     /*package*/ static final SContainmentLink left$R4Ha = MetaAdapterFactory.getContainmentLink(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x764fe01be3ee79f9L, 0x764fe01be3ee79faL, "left");
     /*package*/ static final SContainmentLink right$R5bc = MetaAdapterFactory.getContainmentLink(0xc89da2859ac54e3cL, 0x9fcfeb4b39236f25L, 0x764fe01be3ee79f9L, 0x764fe01be3ee79fcL, "right");
   }

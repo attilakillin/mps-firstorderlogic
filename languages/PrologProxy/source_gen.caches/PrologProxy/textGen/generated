@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-36pffo4ton2cihogkpyc72n85qox0vu">
+<product version="3" modelHash="-b4thlakb143b2hllulfo2xoz1j97yzw">
   <files names="Atom_TextGen.java:BinaryRuleBody_TextGen.java:CompoundTerm_TextGen.java:Fact_TextGen.java:FunctionsTerm_TextGen.java:NegatedTerm_TextGen.java:PrologFile_TextGen.java:Rule_TextGen.java:TextGenAspectDescriptor.java:UsedCompound_TextGen.java:Variable_TextGen.java" />
 </product>
 
