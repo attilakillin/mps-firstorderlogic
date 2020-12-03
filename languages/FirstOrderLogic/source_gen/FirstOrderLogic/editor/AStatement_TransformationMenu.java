@@ -22,11 +22,7 @@ import org.apache.log4j.Logger;
 import jetbrains.mps.openapi.editor.menus.transformation.ActionItemBase;
 import jetbrains.mps.nodeEditor.cellMenu.SideTransformCompletionActionItem;
 import jetbrains.mps.openapi.editor.menus.EditorMenuTraceInfo;
-import org.jetbrains.mps.openapi.model.SNode;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.smodel.action.SNodeFactoryOperations;
 import jetbrains.mps.openapi.editor.menus.style.EditorMenuItemStyle;
 import jetbrains.mps.editor.runtime.menus.EditorMenuItemModifyingCustomizationContext;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
@@ -36,11 +32,17 @@ import jetbrains.mps.editor.runtime.completion.CompletionItemInformation;
 import jetbrains.mps.openapi.editor.menus.style.EditorMenuItemCustomizer;
 import jetbrains.mps.internal.collections.runtime.CollectionSequence;
 import jetbrains.mps.lang.editor.menus.ParameterizedMenuPart;
+import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
+import FirstOrderLogic.behavior.AOperatorStatement__BehaviorDescriptor;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.editor.runtime.selection.SelectionUtil;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.openapi.editor.selection.SelectionManager;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
-import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SConcept;
+import org.jetbrains.mps.openapi.language.SContainmentLink;
 
 public class AStatement_TransformationMenu extends TransformationMenuBase {
   private final Set<String> myLocations = SetSequence.fromSetAndArray(new HashSet<String>(), MenuLocations.LEFT_SIDE_TRANSFORM, MenuLocations.RIGHT_SIDE_TRANSFORM);
@@ -117,9 +119,7 @@ public class AStatement_TransformationMenu extends TransformationMenuBase {
 
       @Override
       public void execute(@NotNull String pattern) {
-        SNode pnode = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x36e551eaf2ccfec9L, "FirstOrderLogic.structure.ParenthesesStatement"));
-        SLinkOperations.setTarget(pnode, LINKS.statement$TjGf, SNodeOperations.copyNode(_context.getNode()));
-        SNodeOperations.replaceWithAnother(_context.getNode(), pnode);
+        SNodeFactoryOperations.replaceWithNewChild(_context.getNode(), CONCEPTS.ParenthesesStatement$zg);
       }
 
 
@@ -220,8 +220,7 @@ public class AStatement_TransformationMenu extends TransformationMenuBase {
           } else {
             throw new IllegalArgumentException("Invalid operator argument");
           }
-          SLinkOperations.setTarget(op, LINKS.right$g53S, SNodeOperations.copyNode(_context.getNode()));
-          SLinkOperations.setTarget(op, LINKS.left$tEgL, SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x13ba598d20c7b07fL, "FirstOrderLogic.structure.AStatement")));
+          AOperatorStatement__BehaviorDescriptor.wrap_id2OoHKWxzX3R.invoke(op, SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x13ba598d20c7b07fL, "FirstOrderLogic.structure.AStatement")), SNodeOperations.copyNode(_context.getNode()));
           SNodeOperations.replaceWithAnother(_context.getNode(), op);
           SelectionUtil.selectLabelCellAnSetCaret(_context.getEditorContext(), SLinkOperations.getTarget(op, LINKS.left$tEgL), SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL, -1);
         }
@@ -385,9 +384,7 @@ public class AStatement_TransformationMenu extends TransformationMenuBase {
 
       @Override
       public void execute(@NotNull String pattern) {
-        SNode neg = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x36e551eaf2c8dae6L, "FirstOrderLogic.structure.NegatedStatement"));
-        SLinkOperations.setTarget(neg, LINKS.statement$pxjq, SNodeOperations.copyNode(_context.getNode()));
-        SNodeOperations.replaceWithAnother(_context.getNode(), neg);
+        SNodeFactoryOperations.replaceWithNewChild(_context.getNode(), CONCEPTS.NegatedStatement$8l);
       }
 
 
@@ -521,9 +518,7 @@ public class AStatement_TransformationMenu extends TransformationMenuBase {
 
       @Override
       public void execute(@NotNull String pattern) {
-        SNode pnode = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x36e551eaf2ccfec9L, "FirstOrderLogic.structure.ParenthesesStatement"));
-        SLinkOperations.setTarget(pnode, LINKS.statement$TjGf, SNodeOperations.copyNode(_context.getNode()));
-        SNodeOperations.replaceWithAnother(_context.getNode(), pnode);
+        SNodeFactoryOperations.replaceWithNewChild(_context.getNode(), CONCEPTS.ParenthesesStatement$zg);
       }
 
 
@@ -624,8 +619,7 @@ public class AStatement_TransformationMenu extends TransformationMenuBase {
           } else {
             throw new IllegalArgumentException("Invalid operator argument");
           }
-          SLinkOperations.setTarget(op, LINKS.left$tEgL, SNodeOperations.copyNode(_context.getNode()));
-          SLinkOperations.setTarget(op, LINKS.right$g53S, SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x13ba598d20c7b07fL, "FirstOrderLogic.structure.AStatement")));
+          AOperatorStatement__BehaviorDescriptor.wrap_id2OoHKWxzX3R.invoke(op, SNodeOperations.copyNode(_context.getNode()), SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x13ba598d20c7b07fL, "FirstOrderLogic.structure.AStatement")));
           SNodeOperations.replaceWithAnother(_context.getNode(), op);
           SelectionUtil.selectLabelCellAnSetCaret(_context.getEditorContext(), SLinkOperations.getTarget(op, LINKS.right$g53S), SelectionManager.FIRST_ERROR_CELL + "|" + SelectionManager.FOCUS_POLICY_CELL + "|" + SelectionManager.FIRST_EDITABLE_CELL + "|" + SelectionManager.FIRST_CELL, -1);
         }
@@ -651,20 +645,20 @@ public class AStatement_TransformationMenu extends TransformationMenuBase {
     }
   }
 
-  private static final class LINKS {
-    /*package*/ static final SContainmentLink statement$TjGf = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x36e551eaf2ccfec9L, 0x36e551eaf2ccfecaL, "statement");
-    /*package*/ static final SContainmentLink right$g53S = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x13ba598d20c7b087L, 0x13ba598d20ca3ae6L, "right");
-    /*package*/ static final SContainmentLink left$tEgL = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x13ba598d20c7b087L, 0x13ba598d20c7b08aL, "left");
-    /*package*/ static final SContainmentLink statement$PMeT = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x13ba598d20c998f8L, 0x13ba598d20ca3aebL, "statement");
-    /*package*/ static final SContainmentLink quantors$jFRS = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x13ba598d20c998f8L, 0x13ba598d20c99902L, "quantors");
-    /*package*/ static final SContainmentLink statement$pxjq = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x36e551eaf2c8dae6L, 0x36e551eaf2c8dae7L, "statement");
-    /*package*/ static final SContainmentLink statement$i7It = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x3f518c2715bb3bc9L, 0x3f518c2715bb3bcdL, "statement");
-  }
-
   private static final class CONCEPTS {
+    /*package*/ static final SConcept ParenthesesStatement$zg = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x36e551eaf2ccfec9L, "FirstOrderLogic.structure.ParenthesesStatement");
     /*package*/ static final SConcept Variable$8o = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00b08382L, "FirstOrderLogic.structure.Variable");
+    /*package*/ static final SConcept NegatedStatement$8l = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x36e551eaf2c8dae6L, "FirstOrderLogic.structure.NegatedStatement");
     /*package*/ static final SConcept AStatement$1q = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x13ba598d20c7b07fL, "FirstOrderLogic.structure.AStatement");
     /*package*/ static final SConcept KnowledgeBaseEntry$HX = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x636efe58094cc959L, "FirstOrderLogic.structure.KnowledgeBaseEntry");
     /*package*/ static final SConcept CommentStatement$jL = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x3f518c2715bb3bc9L, "FirstOrderLogic.structure.CommentStatement");
+  }
+
+  private static final class LINKS {
+    /*package*/ static final SContainmentLink left$tEgL = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x13ba598d20c7b087L, 0x13ba598d20c7b08aL, "left");
+    /*package*/ static final SContainmentLink statement$PMeT = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x13ba598d20c998f8L, 0x13ba598d20ca3aebL, "statement");
+    /*package*/ static final SContainmentLink quantors$jFRS = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x13ba598d20c998f8L, 0x13ba598d20c99902L, "quantors");
+    /*package*/ static final SContainmentLink statement$i7It = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x3f518c2715bb3bc9L, 0x3f518c2715bb3bcdL, "statement");
+    /*package*/ static final SContainmentLink right$g53S = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x13ba598d20c7b087L, 0x13ba598d20ca3ae6L, "right");
   }
 }

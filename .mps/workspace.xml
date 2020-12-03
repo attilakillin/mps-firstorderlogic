@@ -10,17 +10,44 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc982716-13a2-445c-918c-7d724cff1647" name="Default Changelist" comment="Smaller fixes for the generator and textgen">
-      <change afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/CommentStatement_Editor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/CommentStatement_EditorBuilder_a.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/CommentStatement_SubstituteMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/CommentStatement_UnwrapActions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/CommentText_Editor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/CommentText_EditorBuilder_a.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/intentions/SurroundWithComment_Intention.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/intentions/UnwrapComment_Intention.java" afterDir="false" />
+    <list default="true" id="bc982716-13a2-445c-918c-7d724cff1647" name="Default Changelist" comment="Finally created proper predicate/term substitution/insertion menu">
+      <change afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/actions/NegatedStatement_Factory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/actions/ParenthesesStatement_Factory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/behavior/AOperatorStatement__BehaviorDescriptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/behavior/Constant__BehaviorDescriptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/behavior/Function__BehaviorDescriptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/behavior/NegatedStatement__BehaviorDescriptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/behavior/Variable__BehaviorDescriptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/constraints/Function_Constraints.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/constraints/Predicate_Constraints.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/AAtomicStatement_SubstituteMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/AStatement_SubstituteMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/ParenthesesStatement_SubstituteMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/actions/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/actions/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/behavior/BehaviorAspectDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/behavior/BehaviorAspectDescriptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/behavior/Sheet__BehaviorDescriptor$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/behavior/Sheet__BehaviorDescriptor$LINKS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/behavior/Sheet__BehaviorDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/behavior/Sheet__BehaviorDescriptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/behavior/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/behavior/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/constraints/ConstraintsAspectDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/constraints/ConstraintsAspectDescriptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/constraints/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/constraints/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/constraints/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/constraints/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/editor/Comment_Editor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/editor/Comment_EditorBuilder_a$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/editor/Comment_EditorBuilder_a$CONCEPTS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/editor/Comment_EditorBuilder_a$PROPS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/editor/Comment_EditorBuilder_a.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/editor/ConstantListEntry_EditorBuilder_a$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/editor/ConstantListEntry_EditorBuilder_a$LINKS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/editor/ConstantListEntry_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/editor/ConstantListEntry_EditorBuilder_a.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/editor/EditorAspectDescriptorImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/editor/EditorAspectDescriptorImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/editor/EmptyLine_Editor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/editor/EmptyLine_EditorBuilder_a.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/editor/EmptyLine_SubstituteMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/editor/FunctionListEntry_EditorBuilder_a$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/editor/FunctionListEntry_EditorBuilder_a$LINKS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/editor/FunctionListEntry_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/editor/FunctionListEntry_EditorBuilder_a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/editor/PredicateListEntry_EditorBuilder_a$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/editor/PredicateListEntry_EditorBuilder_a$LINKS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/editor/PredicateListEntry_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/editor/PredicateListEntry_EditorBuilder_a.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/editor/Sheet_EditorBuilder_a$contentListHandler_1fw85i_b0.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/editor/Sheet_EditorBuilder_a$contentListHandler_1fw85i_b0.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/editor/trace.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/intentions/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/intentions/trace.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/structure/ConceptPresentationAspectImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/structure/ConceptPresentationAspectImpl.class" afterDir="false" />
@@ -29,25 +56,51 @@
       <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/classes_gen/FirstOrderLogic/structure/trace.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/generator/source_gen.caches/FirstOrderLogic/generator/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/generator/source_gen.caches/FirstOrderLogic/generator/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/generator/source_gen.caches/FirstOrderLogic/generator/generator/translate/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/generator/source_gen.caches/FirstOrderLogic/generator/generator/translate/dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/generator/source_gen.caches/FirstOrderLogic/generator/generator/translate/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/generator/source_gen.caches/FirstOrderLogic/generator/generator/translate/generated" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/generator/source_gen/FirstOrderLogic/generator/generator/translate/QueriesGenerated.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/generator/source_gen/FirstOrderLogic/generator/generator/translate/QueriesGenerated.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/generator/source_gen/FirstOrderLogic/generator/generator/translate/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/generator/source_gen/FirstOrderLogic/generator/generator/translate/trace.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/generator/templates/FirstOrderLogic.generator.generator.translate@generator.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/generator/templates/FirstOrderLogic.generator.generator.translate@generator.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/models/FirstOrderLogic.actions.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/models/FirstOrderLogic.actions.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/models/FirstOrderLogic.behavior.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/models/FirstOrderLogic.behavior.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/models/FirstOrderLogic.constraints.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/models/FirstOrderLogic.constraints.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/models/FirstOrderLogic.editor.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/models/FirstOrderLogic.editor.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/models/FirstOrderLogic.intentions.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/models/FirstOrderLogic.intentions.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/models/FirstOrderLogic.structure.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/models/FirstOrderLogic.structure.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/sandbox/models/FirstOrderLogic.sandbox.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/sandbox/models/FirstOrderLogic.sandbox.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen.caches/FirstOrderLogic/actions/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen.caches/FirstOrderLogic/actions/dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen.caches/FirstOrderLogic/actions/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen.caches/FirstOrderLogic/actions/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen.caches/FirstOrderLogic/behavior/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen.caches/FirstOrderLogic/behavior/dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen.caches/FirstOrderLogic/behavior/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen.caches/FirstOrderLogic/behavior/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen.caches/FirstOrderLogic/constraints/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen.caches/FirstOrderLogic/constraints/dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen.caches/FirstOrderLogic/constraints/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen.caches/FirstOrderLogic/constraints/generated" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen.caches/FirstOrderLogic/editor/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen.caches/FirstOrderLogic/editor/dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen.caches/FirstOrderLogic/editor/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen.caches/FirstOrderLogic/editor/generated" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen.caches/FirstOrderLogic/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen.caches/FirstOrderLogic/generated" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen.caches/FirstOrderLogic/intentions/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen.caches/FirstOrderLogic/intentions/dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen.caches/FirstOrderLogic/intentions/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen.caches/FirstOrderLogic/intentions/generated" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen.caches/FirstOrderLogic/structure/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen.caches/FirstOrderLogic/structure/generated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/actions/ActionAspectDescriptorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/actions/ActionAspectDescriptorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/actions/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/actions/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/behavior/BehaviorAspectDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/behavior/BehaviorAspectDescriptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/behavior/Sheet__BehaviorDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/behavior/Sheet__BehaviorDescriptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/behavior/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/behavior/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/constraints/ConstraintsAspectDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/constraints/ConstraintsAspectDescriptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/constraints/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/constraints/aspectcps-descriptorclasses.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/constraints/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/constraints/trace.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/AStatement_TransformationMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/AStatement_TransformationMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/Comment_Editor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/EmptyLineEntry_Editor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/Comment_EditorBuilder_a.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/ConstantListEntry_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/ConstantListEntry_EditorBuilder_a.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/EditorAspectDescriptorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/EditorAspectDescriptorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/EmptyLine_Editor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/EmptyLine_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/EmptyLineEntry_EditorBuilder_a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/EmptyLine_SubstituteMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/EmptyLineEntry_SubstituteMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/EmptyStatement_SubstituteMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/EmptyStatement_SubstituteMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/FunctionListEntry_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/FunctionListEntry_EditorBuilder_a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/PredicateListEntry_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/PredicateListEntry_EditorBuilder_a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/Sheet_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/Sheet_EditorBuilder_a.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/editor/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/intentions/IntentionsDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/intentions/IntentionsDescriptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/intentions/SurroundWithParentheses_Intention.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/intentions/SurroundWithParentheses_Intention.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/intentions/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/intentions/trace.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/structure/ConceptPresentationAspectImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/structure/ConceptPresentationAspectImpl.java" afterDir="false" />
@@ -55,16 +108,7 @@
       <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/structure/StructureAspectDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/structure/StructureAspectDescriptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/source_gen/FirstOrderLogic/structure/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/PrologProxy/models/PrologProxy.behavior.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/PrologProxy/models/PrologProxy.behavior.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/PrologProxy/models/PrologProxy.textGen.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/PrologProxy/models/PrologProxy.textGen.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen.caches/PrologProxy/behavior/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/PrologProxy/source_gen.caches/PrologProxy/behavior/generated" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen.caches/PrologProxy/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/PrologProxy/source_gen.caches/PrologProxy/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen.caches/PrologProxy/textGen/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/PrologProxy/source_gen.caches/PrologProxy/textGen/dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen.caches/PrologProxy/textGen/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/PrologProxy/source_gen.caches/PrologProxy/textGen/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/textGen/FunctionsTerm_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/textGen/FunctionsTerm_TextGen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/textGen/PrologFile_TextGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/textGen/PrologFile_TextGen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/textGen/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/textGen/aspectcps-descriptorclasses.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/textGen/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/textGen/trace.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +121,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="5c1293ed-63ec-4485-9cd5-e75970656ed8/r:882248dd-f5e7-4b8b-a458-1c8b12374cee(TempModule5c1293ed-63ec-4485-9cd5-e75970656ed8/ConsoleModel_71340851084)">
+            <model ref="2dd9dbb2-427d-4fe3-a495-30722b4a1013/r:9fa9419d-1e14-4e29-bffb-aff3ac932d72(TempModule2dd9dbb2-427d-4fe3-a495-30722b4a1013/ConsoleModel_103404991992)">
               <persistence version="9" />
               <languages>
                 <devkit ref="70d3d6da-af63-483d-a75f-9c8acf8de332(jetbrains.mps.console.devkit)" />
@@ -97,11 +141,11 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="7EFpANzjqeP">
-                <node concept="3balQm" id="7EFpANzjqeQ" role="aymYE" />
-                <node concept="2Clz$F" id="7EFpANzjqeR" role="aymYO" />
-                <node concept="2_V_lH" id="7EFpANzjqeS" role="1PhJh3">
-                  <ref role="2_V_lI" node="7EFpANzjqeR" resolve="CommandHolder" />
+              <node concept="aymSD" id="3xeUha4lpVd">
+                <node concept="3balQm" id="3xeUha4lpVe" role="aymYE" />
+                <node concept="2Clz$F" id="3xeUha4lpVf" role="aymYO" />
+                <node concept="2_V_lH" id="3xeUha4lpVg" role="1PhJh3">
+                  <ref role="2_V_lI" node="3xeUha4lpVf" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -230,7 +274,6 @@
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" />
     <panes>
-      <pane id="FileSystem" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -242,32 +285,6 @@
               <option name="myItemId" value="5d8a3d04-c5e5-47e4-806d-03da42a8c2cb(FirstOrderLogic)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FirstOrderLogic.generator" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FirstOrderLogic" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:d10a8a23-5e3f-455c-bbc1-e889e2e1bf3f(FirstOrderLogic.generator.generator.translate@generator) in IdeaFile[path: /home/attila/University/Témalabor/FirstOrderLogic/languages/FirstOrderLogic/generator/templates/FirstOrderLogic.generator.generator.translate@generator.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="b652e673-8536-4769-bfa6-45ef50c1c44d" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FirstOrderLogic" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -279,15 +296,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:57c81b84-3cd4-45b0-b861-c5121c082b5e(FirstOrderLogic.editor) in IdeaFile[path: /home/attila/University/Témalabor/FirstOrderLogic/languages/FirstOrderLogic/models/FirstOrderLogic.editor.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="statements" />
+              <option name="myItemId" value="r:5389c23f-8d86-4868-bd96-51d0f09aae8a(FirstOrderLogic.structure) in IdeaFile[path: /home/attila/University/Témalabor/FirstOrderLogic/languages/FirstOrderLogic/models/FirstOrderLogic.structure.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -315,31 +324,11 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="5d8a3d04-c5e5-47e4-806d-03da42a8c2cb(FirstOrderLogic)" />
+              <option name="myItemId" value="b652e673-8536-4769-bfa6-45ef50c1c44d" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:57c81b84-3cd4-45b0-b861-c5121c082b5e(FirstOrderLogic.editor) in IdeaFile[path: /home/attila/University/Témalabor/FirstOrderLogic/languages/FirstOrderLogic/models/FirstOrderLogic.editor.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="5d8a3d04-c5e5-47e4-806d-03da42a8c2cb(FirstOrderLogic)" />
+              <option name="myItemId" value="FirstOrderLogic" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -358,32 +347,6 @@
               <option name="myItemId" value="Project" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="5d8a3d04-c5e5-47e4-806d-03da42a8c2cb(FirstOrderLogic)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:57c81b84-3cd4-45b0-b861-c5121c082b5e(FirstOrderLogic.editor) in IdeaFile[path: /home/attila/University/Témalabor/FirstOrderLogic/languages/FirstOrderLogic/models/FirstOrderLogic.editor.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="5d8a3d04-c5e5-47e4-806d-03da42a8c2cb(FirstOrderLogic)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FirstOrderLogic.generator" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FirstOrderLogic" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -396,32 +359,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="r:57c81b84-3cd4-45b0-b861-c5121c082b5e(FirstOrderLogic.editor) in IdeaFile[path: /home/attila/University/Témalabor/FirstOrderLogic/languages/FirstOrderLogic/models/FirstOrderLogic.editor.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="statements" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="atomics" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="5d8a3d04-c5e5-47e4-806d-03da42a8c2cb(FirstOrderLogic)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FirstOrderLogic.generator" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -431,12 +368,25 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="5d8a3d04-c5e5-47e4-806d-03da42a8c2cb(FirstOrderLogic)" />
+              <option name="myItemId" value="b652e673-8536-4769-bfa6-45ef50c1c44d" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FirstOrderLogic" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:9b6ec50d-f7ec-4b64-879f-5d3819edc76e(FirstOrderLogic.sandbox) in IdeaFile[path: /home/attila/University/Témalabor/FirstOrderLogic/languages/FirstOrderLogic/sandbox/models/FirstOrderLogic.sandbox.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2964349057849318103" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>
         </subPane>
       </pane>
+      <pane id="FileSystem" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -553,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606327202949</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Finally created proper predicate/term substitution/insertion menu">
+      <created>1606817533626</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1606817533626</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="UsagesViewTool">
@@ -568,7 +525,7 @@
         <query>
           <scope scope_class="jetbrains.mps.ide.findusages.model.scopes.ProjectScope" />
           <holder holder_class="jetbrains.mps.ide.findusages.model.holders.NodeHolder">
-            <node ref="r:5389c23f-8d86-4868-bd96-51d0f09aae8a(FirstOrderLogic.structure)/4698748376226522701" title="PredicateAtomicStatement" />
+            <node ref="r:5389c23f-8d86-4868-bd96-51d0f09aae8a(FirstOrderLogic.structure)/7164943711259514459" title="TermEqualsAtomicStatement" />
           </holder>
         </query>
         <usage_view>
@@ -590,7 +547,7 @@
                     <child caption="FirstOrderLogic.structure" excluded="false" isresult="false" results_section="false">
                       <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" />
                       <role name="model" />
-                      <child caption="PredicateAtomicStatement" info="" excluded="false" isresult="true" results_section="false" nodePtr="r:5389c23f-8d86-4868-bd96-51d0f09aae8a(FirstOrderLogic.structure)/4698748376226522701" isRoot="true">
+                      <child caption="TermEqualsAtomicStatement" info="" excluded="false" isresult="true" results_section="false" nodePtr="r:5389c23f-8d86-4868-bd96-51d0f09aae8a(FirstOrderLogic.structure)/7164943711259514459" isRoot="true">
                         <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
                         <role name="target" />
                       </child>
@@ -611,11 +568,56 @@
                     <child caption="FirstOrderLogic.editor" excluded="false" isresult="false" results_section="true">
                       <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" />
                       <role name="model" />
-                      <child caption="PredicateAtomicStatement_Editor" info="" excluded="false" isresult="true" results_section="true" nodePtr="r:57c81b84-3cd4-45b0-b861-c5121c082b5e(FirstOrderLogic.editor)/4698748376226522707" isRoot="true">
+                      <child caption="EmptyStatement_SubstituteMenu" info="" excluded="false" isresult="false" results_section="true" nodePtr="r:57c81b84-3cd4-45b0-b861-c5121c082b5e(FirstOrderLogic.editor)/8839271311500826989" isRoot="true">
+                        <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                        <role name="root" />
+                        <child caption="substitute action" info="(role: part in: parameterized)" excluded="false" isresult="true" results_section="true" nodePtr="r:57c81b84-3cd4-45b0-b861-c5121c082b5e(FirstOrderLogic.editor)/8839271311501338291">
+                          <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                          <role name="target" />
+                        </child>
+                        <child caption="teas" info="(role: localVariableDeclaration in: &lt;type&gt; &lt;var&gt;;)" excluded="false" isresult="false" results_section="true" nodePtr="r:57c81b84-3cd4-45b0-b861-c5121c082b5e(FirstOrderLogic.editor)/8839271311501339170">
+                          <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                          <role name="root to target" />
+                          <child caption="node&lt;TermEqualsAtomicStatement&gt;" info="(role: type in: teas)" excluded="false" isresult="true" results_section="true" nodePtr="r:57c81b84-3cd4-45b0-b861-c5121c082b5e(FirstOrderLogic.editor)/8839271311501339166">
+                            <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                            <role name="target" />
+                          </child>
+                          <child caption="node&lt;TermEqualsAtomicStatement&gt;" info="(role: createdType in: node&lt;&gt;)" excluded="false" isresult="true" results_section="true" nodePtr="r:57c81b84-3cd4-45b0-b861-c5121c082b5e(FirstOrderLogic.editor)/8839271311501339448">
+                            <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                            <role name="target" />
+                          </child>
+                        </child>
+                      </child>
+                      <child caption="TermEqualsAtomicStatement_Editor" info="" excluded="false" isresult="true" results_section="true" nodePtr="r:57c81b84-3cd4-45b0-b861-c5121c082b5e(FirstOrderLogic.editor)/7164943711259514465" isRoot="true">
                         <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
                         <role name="target" />
                       </child>
                       <model uid="r:57c81b84-3cd4-45b0-b861-c5121c082b5e(FirstOrderLogic.editor)" />
+                    </child>
+                  </child>
+                  <child caption="FirstOrderLogic.generator" excluded="false" isresult="false" results_section="true" module_ref="7065faf9-7550-4e9b-8bbb-a5f71556d863(FirstOrderLogic.generator)">
+                    <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModuleNodeData" />
+                    <role name="module" />
+                    <child caption="FirstOrderLogic.generator.generator.translate@generator" excluded="false" isresult="false" results_section="true">
+                      <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.ModelNodeData" />
+                      <role name="model" />
+                      <child caption="main" info="" excluded="false" isresult="false" results_section="true" nodePtr="r:d10a8a23-5e3f-455c-bbc1-e889e2e1bf3f(FirstOrderLogic.generator.generator.translate@generator)/7076127368651361442" isRoot="true">
+                        <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                        <role name="root" />
+                        <child caption="reduce TermEqualsAtomicStatement" info="(role: reductionMappingRule in: main)" excluded="false" isresult="true" results_section="true" nodePtr="r:d10a8a23-5e3f-455c-bbc1-e889e2e1bf3f(FirstOrderLogic.generator.generator.translate@generator)/8525279030028483603">
+                          <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                          <role name="target" />
+                        </child>
+                      </child>
+                      <child caption="map_TermEqualsAtomicStatement" info="" excluded="false" isresult="true" results_section="true" nodePtr="r:d10a8a23-5e3f-455c-bbc1-e889e2e1bf3f(FirstOrderLogic.generator.generator.translate@generator)/8525279030028484252" isRoot="true">
+                        <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                        <role name="target" />
+                      </child>
+                      <child caption="map_TermEqualsAtomicStatement_root" info="" excluded="false" isresult="true" results_section="true" nodePtr="r:d10a8a23-5e3f-455c-bbc1-e889e2e1bf3f(FirstOrderLogic.generator.generator.translate@generator)/8525279030028656085" isRoot="true">
+                        <instance qcn="jetbrains.mps.ide.findusages.view.treeholder.tree.nodedatatypes.NodeNodeData" />
+                        <role name="target" />
+                      </child>
+                      <model uid="r:d10a8a23-5e3f-455c-bbc1-e889e2e1bf3f(FirstOrderLogic.generator.generator.translate@generator)" />
                     </child>
                   </child>
                 </child>
@@ -655,22 +657,27 @@
     <MESSAGE value="Safety commit" />
     <MESSAGE value="Alternative solution: Proper CNF first, build implications later.&#10;It just works." />
     <MESSAGE value="Smaller fixes for the generator and textgen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Smaller fixes for the generator and textgen" />
+    <MESSAGE value="Finally created proper predicate/term substitution/insertion menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finally created proper predicate/term substitution/insertion menu" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="567" y="177" width="916" height="582" key="#MPSPropertiesConfigurable" timestamp="1605969670249">
+    <state x="567" y="177" width="916" height="582" key="#MPSPropertiesConfigurable" timestamp="1606914655953">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="567" y="177" width="916" height="582" key="#MPSPropertiesConfigurable/0.0.1600.860@0.0.1600.860" timestamp="1605969670249" />
+    <state x="567" y="177" width="916" height="582" key="#MPSPropertiesConfigurable/0.0.1600.860@0.0.1600.860" timestamp="1606914655953" />
     <state x="337" y="285" width="916" height="437" key="#MPSPropertiesConfigurable/0.76.1600.900/1600.0.1920.1080@0.76.1600.900" timestamp="1603180803235" />
+    <state x="531" y="239" width="527" height="377" key="#Notifications" timestamp="1606998621901">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="531" y="239" width="527" height="377" key="#Notifications/0.0.1600.860@0.0.1600.860" timestamp="1606998621901" />
     <state x="483" y="188" width="708" height="480" key="#jetbrains.mps.ide.migration.MigrationAssistantWizard" timestamp="1605973281604">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="483" y="188" width="708" height="480" key="#jetbrains.mps.ide.migration.MigrationAssistantWizard/0.0.1600.860@0.0.1600.860" timestamp="1605973281604" />
-    <state x="608" y="134" width="374" height="587" key="#jetbrains.mps.ide.util.NodesChooser" timestamp="1604578444366">
+    <state x="608" y="134" width="374" height="587" key="#jetbrains.mps.ide.util.NodesChooser" timestamp="1606916966662">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="608" y="134" width="374" height="587" key="#jetbrains.mps.ide.util.NodesChooser/0.0.1600.860@0.0.1600.860" timestamp="1604578444366" />
+    <state x="608" y="134" width="374" height="587" key="#jetbrains.mps.ide.util.NodesChooser/0.0.1600.860@0.0.1600.860" timestamp="1606916966662" />
     <state x="500" y="330" width="600" height="200" key="#jetbrains.mps.vcs.mergedriver.MergeDriverOptionDialog" timestamp="1604580471862">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -706,10 +713,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="588" y="342" width="424" height="176" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860@0.0.1600.860" timestamp="1605284081361" />
-    <state x="551" y="330" width="520" height="304" key="jetbrains.mps.ide.ui.dialogs.properties.choosers.ChooserDialog" timestamp="1605968245850">
+    <state x="551" y="330" width="520" height="304" key="jetbrains.mps.ide.ui.dialogs.properties.choosers.ChooserDialog" timestamp="1606914654575">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="551" y="330" width="520" height="304" key="jetbrains.mps.ide.ui.dialogs.properties.choosers.ChooserDialog/0.0.1600.860@0.0.1600.860" timestamp="1605968245850" />
+    <state x="551" y="330" width="520" height="304" key="jetbrains.mps.ide.ui.dialogs.properties.choosers.ChooserDialog/0.0.1600.860@0.0.1600.860" timestamp="1606914654575" />
     <state x="595" y="349" width="390" height="304" key="jetbrains.mps.ide.ui.dialogs.properties.choosers.ChooserDialog/0.76.1600.900/1600.0.1920.1080@0.76.1600.900" timestamp="1603180802564" />
   </component>
 </project>

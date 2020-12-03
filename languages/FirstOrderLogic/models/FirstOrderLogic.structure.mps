@@ -18,9 +18,7 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
-        <child id="1169127546356" name="extends" index="PrDN$" />
-      </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -68,7 +66,7 @@
     <node concept="1TJgyj" id="1sdvG0F8dq" role="1TKVEi">
       <property role="IQ2ns" value="25955050021749594" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="constants" />
+      <property role="20kJfa" value="constant" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="1sdvG0EYSg" resolve="Constant" />
     </node>
@@ -167,7 +165,7 @@
     <node concept="1TJgyj" id="1sdvG0GMi9" role="1TKVEi">
       <property role="IQ2ns" value="25955050022184073" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="functions" />
+      <property role="20kJfa" value="function" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="1sdvG0Gxv$" resolve="Function" />
     </node>
@@ -210,7 +208,7 @@
     <node concept="1TJgyj" id="44PjG3dUJky" role="1TKVEi">
       <property role="IQ2ns" value="4698748376226395426" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="predicates" />
+      <property role="20kJfa" value="predicate" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="44PjG3dUG9g" resolve="Predicate" />
     </node>
@@ -266,41 +264,17 @@
   </node>
   <node concept="1TIwiD" id="4bJulCWMeWE">
     <property role="EcuMT" value="4823207154410909482" />
-    <property role="3GE5qa" value="common" />
-    <property role="TrG5h" value="EmptyLine" />
+    <property role="3GE5qa" value="entries" />
+    <property role="TrG5h" value="EmptyLineEntry" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="4bJulCWNm04" role="PzmwI">
-      <ref role="PrY4T" node="4bJulCWNm01" resolve="ICommonPattern" />
+    <node concept="PrWs8" id="3xeUha4lpW9" role="PzmwI">
+      <ref role="PrY4T" node="4bJulCWNd4o" resolve="ISheetEntry" />
     </node>
   </node>
   <node concept="PlHQZ" id="4bJulCWNd4o">
     <property role="TrG5h" value="ISheetEntry" />
     <property role="3GE5qa" value="entries.interface" />
     <property role="EcuMT" value="25955050021749859" />
-  </node>
-  <node concept="PlHQZ" id="4bJulCWNm01">
-    <property role="EcuMT" value="4823207154411200513" />
-    <property role="3GE5qa" value="common.interface" />
-    <property role="TrG5h" value="ICommonPattern" />
-    <node concept="PrWs8" id="4bJulCWNm02" role="PrDN$">
-      <ref role="PrY4T" node="4bJulCWNd4o" resolve="ISheetEntry" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="4bJulCWNm07">
-    <property role="EcuMT" value="4823207154411200519" />
-    <property role="3GE5qa" value="common" />
-    <property role="TrG5h" value="Comment" />
-    <property role="34LRSv" value="#" />
-    <property role="R4oN_" value="Insert comment" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="4bJulCWNm08" role="PzmwI">
-      <ref role="PrY4T" node="4bJulCWNm01" resolve="ICommonPattern" />
-    </node>
-    <node concept="1TJgyi" id="4bJulCWNm0a" role="1TKVEl">
-      <property role="IQ2nx" value="4823207154411200522" />
-      <property role="TrG5h" value="text" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
   </node>
   <node concept="1TIwiD" id="58Uo6A40pIU">
     <property role="EcuMT" value="5925154266061839290" />
@@ -354,6 +328,7 @@
     <property role="EcuMT" value="1421547095064064247" />
     <property role="3GE5qa" value="model.statements" />
     <property role="TrG5h" value="EmptyStatement" />
+    <property role="R4oN_" value="An empty statement" />
     <ref role="1TJDcQ" node="1eUmoOwLV1Z" resolve="AStatement" />
   </node>
   <node concept="1TIwiD" id="1eUmoOwMpzS">
@@ -385,6 +360,7 @@
     <property role="3GE5qa" value="model.statements.quantified" />
     <property role="TrG5h" value="AllQuantifiedStatement" />
     <property role="34LRSv" value="all" />
+    <property role="R4oN_" value="(∀x: a)" />
     <ref role="1TJDcQ" node="1eUmoOwMpzS" resolve="AQuantifiedStatement" />
   </node>
   <node concept="1TIwiD" id="1eUmoOwMRKQ">
@@ -405,6 +381,7 @@
     <property role="3GE5qa" value="model.statements.quantified" />
     <property role="TrG5h" value="ExistsQuantifiedStatement" />
     <property role="34LRSv" value="exists" />
+    <property role="R4oN_" value="(∃x: a)" />
     <ref role="1TJDcQ" node="1eUmoOwMpzS" resolve="AQuantifiedStatement" />
   </node>
   <node concept="1TIwiD" id="3r_kuFMMdFA">
@@ -412,6 +389,7 @@
     <property role="3GE5qa" value="model.statements" />
     <property role="TrG5h" value="NegatedStatement" />
     <property role="34LRSv" value="not" />
+    <property role="R4oN_" value="(¬a)" />
     <ref role="1TJDcQ" node="1eUmoOwLV1Z" resolve="AStatement" />
     <node concept="1TJgyj" id="3r_kuFMMdFB" role="1TKVEi">
       <property role="IQ2ns" value="3955657917252295399" />
@@ -426,6 +404,7 @@
     <property role="3GE5qa" value="model.statements" />
     <property role="TrG5h" value="ParenthesesStatement" />
     <property role="34LRSv" value="(" />
+    <property role="R4oN_" value="Wrap in parentheses" />
     <ref role="1TJDcQ" node="1eUmoOwLV1Z" resolve="AStatement" />
     <node concept="1TJgyj" id="3r_kuFMNfVa" role="1TKVEi">
       <property role="IQ2ns" value="3955657917252566730" />
@@ -440,6 +419,7 @@
     <property role="3GE5qa" value="model.statements.twoops" />
     <property role="TrG5h" value="AndOperatorStatement" />
     <property role="34LRSv" value="and" />
+    <property role="R4oN_" value="(a ∧ b)" />
     <ref role="1TJDcQ" node="1eUmoOwLV27" resolve="AOperatorStatement" />
   </node>
   <node concept="1TIwiD" id="5PbuL$CPtwf">
@@ -447,6 +427,7 @@
     <property role="3GE5qa" value="model.statements.twoops" />
     <property role="TrG5h" value="OrOperatorStatement" />
     <property role="34LRSv" value="or" />
+    <property role="R4oN_" value="(a v b)" />
     <ref role="1TJDcQ" node="1eUmoOwLV27" resolve="AOperatorStatement" />
   </node>
   <node concept="1TIwiD" id="5PbuL$CX5Qn">
@@ -454,6 +435,7 @@
     <property role="3GE5qa" value="model.statements.twoops" />
     <property role="TrG5h" value="ImpliesOperatorStatement" />
     <property role="34LRSv" value="implies" />
+    <property role="R4oN_" value="(a ⇒ b)" />
     <ref role="1TJDcQ" node="1eUmoOwLV27" resolve="AOperatorStatement" />
   </node>
   <node concept="1TIwiD" id="5PbuL$CX5Rn">
@@ -461,6 +443,7 @@
     <property role="3GE5qa" value="model.statements.twoops" />
     <property role="TrG5h" value="EqualsOperatorStatement" />
     <property role="34LRSv" value="equivalent" />
+    <property role="R4oN_" value="(a ⇔ b)" />
     <ref role="1TJDcQ" node="1eUmoOwLV27" resolve="AOperatorStatement" />
   </node>
   <node concept="1TIwiD" id="3Xhz2slINJ9">
@@ -489,6 +472,9 @@
       <property role="IQ2nx" value="4562581996999228363" />
       <property role="TrG5h" value="text" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="3xeUha4l_zw" role="PzmwI">
+      <ref role="PrY4T" node="4bJulCWNd4o" resolve="ISheetEntry" />
     </node>
   </node>
 </model>

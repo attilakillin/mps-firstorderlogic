@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import jetbrains.mps.lang.editor.menus.EditorMenuDescriptorBase;
 import jetbrains.mps.smodel.SNodePointer;
 
-public class EmptyStatement_SubstituteMenu extends SubstituteMenuBase {
+public class AAtomicStatement_SubstituteMenu extends SubstituteMenuBase {
   @NotNull
   @Override
   protected List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> getParts(final SubstituteMenuContext _context) {
@@ -24,7 +24,7 @@ public class EmptyStatement_SubstituteMenu extends SubstituteMenuBase {
   @Override
   public List<SubstituteMenuItem> createMenuItems(@NotNull SubstituteMenuContext context) {
     context.getEditorMenuTrace().pushTraceInfo();
-    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("default substitute menu for " + "EmptyStatement", new SNodePointer("r:57c81b84-3cd4-45b0-b861-c5121c082b5e(FirstOrderLogic.editor)", "8839271311500826989")));
+    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("default substitute menu for " + "AAtomicStatement", new SNodePointer("r:57c81b84-3cd4-45b0-b861-c5121c082b5e(FirstOrderLogic.editor)", "3249548406761780437")));
     try {
       return super.createMenuItems(context);
     } finally {

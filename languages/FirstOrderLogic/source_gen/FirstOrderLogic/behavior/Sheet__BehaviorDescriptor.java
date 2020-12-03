@@ -40,13 +40,13 @@ public final class Sheet__BehaviorDescriptor extends BaseBHDescriptor {
     List<SNode> values = new ArrayList<SNode>();
     for (SNode entry : SLinkOperations.getChildren(__thisNode__, LINKS.content$_J4j)) {
       if (SNodeOperations.isInstanceOf(entry, CONCEPTS.FunctionListEntry$3y)) {
-        ListSequence.fromList(values).addSequence(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.as(entry, CONCEPTS.FunctionListEntry$3y), LINKS.functions$euTU)));
+        ListSequence.fromList(values).addSequence(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.as(entry, CONCEPTS.FunctionListEntry$3y), LINKS.function$euTU)));
       }
       if (SNodeOperations.isInstanceOf(entry, CONCEPTS.ConstantListEntry$vg)) {
-        ListSequence.fromList(values).addSequence(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.as(entry, CONCEPTS.ConstantListEntry$vg), LINKS.constants$rdeW)));
+        ListSequence.fromList(values).addSequence(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.as(entry, CONCEPTS.ConstantListEntry$vg), LINKS.constant$rdeW)));
       }
       if (SNodeOperations.isInstanceOf(entry, CONCEPTS.PredicateListEntry$jl)) {
-        ListSequence.fromList(values).addSequence(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.as(entry, CONCEPTS.PredicateListEntry$jl), LINKS.predicates$26Nq)));
+        ListSequence.fromList(values).addSequence(ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.as(entry, CONCEPTS.PredicateListEntry$jl), LINKS.predicate$26Nq)));
       }
     }
     return ListScope.forNamedElements(values);
@@ -100,9 +100,9 @@ public final class Sheet__BehaviorDescriptor extends BaseBHDescriptor {
 
   private static final class LINKS {
     /*package*/ static final SContainmentLink content$_J4j = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00ac843eL, 0x5c35fb00ac8464L, "content");
-    /*package*/ static final SContainmentLink functions$euTU = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00b32488L, 0x5c35fb00b32489L, "functions");
-    /*package*/ static final SContainmentLink constants$rdeW = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00ac8357L, 0x5c35fb00ac835aL, "constants");
-    /*package*/ static final SContainmentLink predicates$26Nq = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x41354ec0cdeaf521L, 0x41354ec0cdeaf522L, "predicates");
+    /*package*/ static final SContainmentLink function$euTU = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00b32488L, 0x5c35fb00b32489L, "function");
+    /*package*/ static final SContainmentLink constant$rdeW = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00ac8357L, 0x5c35fb00ac835aL, "constant");
+    /*package*/ static final SContainmentLink predicate$26Nq = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x41354ec0cdeaf521L, 0x41354ec0cdeaf522L, "predicate");
   }
 
   private static final class CONCEPTS {

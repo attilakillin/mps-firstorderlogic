@@ -12,11 +12,11 @@ import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 
-/*package*/ class EmptyLine_EditorBuilder_a extends AbstractEditorBuilder {
+/*package*/ class EmptyLineEntry_EditorBuilder_a extends AbstractEditorBuilder {
   @NotNull
   private SNode myNode;
 
-  public EmptyLine_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
+  public EmptyLineEntry_EditorBuilder_a(@NotNull EditorContext context, @NotNull SNode node) {
     super(context);
     myNode = node;
   }
@@ -33,7 +33,7 @@ import jetbrains.mps.editor.runtime.style.StyleAttributes;
 
   private EditorCell createConstant_0() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
-    editorCell.setCellId("Constant_s23fc5_a");
+    editorCell.setCellId("Constant_5cn8a5_a");
     editorCell.setBig(true);
     setCellContext(editorCell);
     Style style = new StyleImpl();

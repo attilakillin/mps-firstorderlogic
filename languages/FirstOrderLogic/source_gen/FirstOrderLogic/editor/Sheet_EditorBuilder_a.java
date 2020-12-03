@@ -147,7 +147,7 @@ import org.jetbrains.mps.openapi.language.SInterfaceConcept;
     }
 
     public SNode nodeFactory() {
-      return SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x42ef795a3cc8ef2aL, "FirstOrderLogic.structure.EmptyLine"));
+      return SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x42ef795a3cc8ef2aL, "FirstOrderLogic.structure.EmptyLineEntry"));
     }
     public EditorCell createNodeCell(SNode elementNode) {
       EditorCell elementCell = getUpdateSession().updateChildNodeCell(elementNode);

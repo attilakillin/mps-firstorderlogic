@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="a5mswmn3lbakgedfsf962y9ff6wg3uf">
+<product version="3" modelHash="-1ovdbovk2vgsqqy9tfmxmmkfmzrajo7">
   <files names="IntentionsDescriptor.java:SurroundWithComment_Intention.java:SurroundWithParentheses_Intention.java:UnwrapComment_Intention.java" />
 </product>
 

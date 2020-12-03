@@ -17,20 +17,18 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_ATerm;
   private ConceptPresentation props_AllQuantifiedStatement;
   private ConceptPresentation props_AndOperatorStatement;
-  private ConceptPresentation props_Comment;
   private ConceptPresentation props_CommentStatement;
   private ConceptPresentation props_CommentText;
   private ConceptPresentation props_Constant;
   private ConceptPresentation props_ConstantListEntry;
   private ConceptPresentation props_ConstantReference;
-  private ConceptPresentation props_EmptyLine;
+  private ConceptPresentation props_EmptyLineEntry;
   private ConceptPresentation props_EmptyStatement;
   private ConceptPresentation props_EqualsOperatorStatement;
   private ConceptPresentation props_ExistsQuantifiedStatement;
   private ConceptPresentation props_Function;
   private ConceptPresentation props_FunctionListEntry;
   private ConceptPresentation props_FunctionReference;
-  private ConceptPresentation props_ICommonPattern;
   private ConceptPresentation props_ISheetEntry;
   private ConceptPresentation props_ImpliesOperatorStatement;
   private ConceptPresentation props_KnowledgeBaseEntry;
@@ -89,6 +87,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.AllQuantifiedStatement:
         if (props_AllQuantifiedStatement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("(∀x: a)");
           cpb.rawPresentation("all");
           props_AllQuantifiedStatement = cpb.create();
         }
@@ -96,18 +95,11 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.AndOperatorStatement:
         if (props_AndOperatorStatement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("(a ∧ b)");
           cpb.rawPresentation("and");
           props_AndOperatorStatement = cpb.create();
         }
         return props_AndOperatorStatement;
-      case LanguageConceptSwitch.Comment:
-        if (props_Comment == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("Insert comment");
-          cpb.rawPresentation("#");
-          props_Comment = cpb.create();
-        }
-        return props_Comment;
       case LanguageConceptSwitch.CommentStatement:
         if (props_CommentStatement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -146,16 +138,17 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_ConstantReference = cpb.create();
         }
         return props_ConstantReference;
-      case LanguageConceptSwitch.EmptyLine:
-        if (props_EmptyLine == null) {
+      case LanguageConceptSwitch.EmptyLineEntry:
+        if (props_EmptyLineEntry == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("EmptyLine");
-          props_EmptyLine = cpb.create();
+          cpb.rawPresentation("EmptyLineEntry");
+          props_EmptyLineEntry = cpb.create();
         }
-        return props_EmptyLine;
+        return props_EmptyLineEntry;
       case LanguageConceptSwitch.EmptyStatement:
         if (props_EmptyStatement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("An empty statement");
           cpb.rawPresentation("EmptyStatement");
           props_EmptyStatement = cpb.create();
         }
@@ -163,6 +156,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.EqualsOperatorStatement:
         if (props_EqualsOperatorStatement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("(a ⇔ b)");
           cpb.rawPresentation("equivalent");
           props_EqualsOperatorStatement = cpb.create();
         }
@@ -170,6 +164,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.ExistsQuantifiedStatement:
         if (props_ExistsQuantifiedStatement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("(∃x: a)");
           cpb.rawPresentation("exists");
           props_ExistsQuantifiedStatement = cpb.create();
         }
@@ -196,12 +191,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_FunctionReference = cpb.create();
         }
         return props_FunctionReference;
-      case LanguageConceptSwitch.ICommonPattern:
-        if (props_ICommonPattern == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          props_ICommonPattern = cpb.create();
-        }
-        return props_ICommonPattern;
       case LanguageConceptSwitch.ISheetEntry:
         if (props_ISheetEntry == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -211,6 +200,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.ImpliesOperatorStatement:
         if (props_ImpliesOperatorStatement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("(a ⇒ b)");
           cpb.rawPresentation("implies");
           props_ImpliesOperatorStatement = cpb.create();
         }
@@ -226,6 +216,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.NegatedStatement:
         if (props_NegatedStatement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("(¬a)");
           cpb.rawPresentation("not");
           props_NegatedStatement = cpb.create();
         }
@@ -233,6 +224,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.OrOperatorStatement:
         if (props_OrOperatorStatement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("(a v b)");
           cpb.rawPresentation("or");
           props_OrOperatorStatement = cpb.create();
         }
@@ -240,6 +232,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.ParenthesesStatement:
         if (props_ParenthesesStatement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Wrap in parentheses");
           cpb.rawPresentation("(");
           props_ParenthesesStatement = cpb.create();
         }

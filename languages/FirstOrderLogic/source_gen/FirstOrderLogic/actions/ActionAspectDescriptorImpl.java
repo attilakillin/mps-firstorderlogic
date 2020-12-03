@@ -18,6 +18,10 @@ public class ActionAspectDescriptorImpl extends BaseActionAspectDescriptor imple
       switch (concept.getName()) {
         case "AOperatorStatement":
           return Collections.<NodeFactory>singletonList(new AOperatorStatement_Factories.NodeFactory_6722602216769930282());
+        case "NegatedStatement":
+          return Collections.<NodeFactory>singletonList(new NegatedStatement_Factory.NodeFactory_3249548406763446801());
+        case "ParenthesesStatement":
+          return Collections.<NodeFactory>singletonList(new ParenthesesStatement_Factory.NodeFactory_3249548406763024355());
         default:
       }
     }

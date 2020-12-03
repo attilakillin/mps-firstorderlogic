@@ -14,11 +14,10 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import java.util.Collections;
 import jetbrains.mps.intentions.AbstractIntentionExecutable;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.smodel.action.SNodeFactoryOperations;
 import jetbrains.mps.openapi.intentions.IntentionDescriptor;
 import org.jetbrains.mps.openapi.language.SConcept;
-import org.jetbrains.mps.openapi.language.SContainmentLink;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public final class SurroundWithParentheses_Intention extends AbstractIntentionDescriptor implements IntentionFactory {
   private Collection<IntentionExecutable> myCachedExecutable;
@@ -58,9 +57,7 @@ public final class SurroundWithParentheses_Intention extends AbstractIntentionDe
     }
     @Override
     public void execute(final SNode node, final EditorContext editorContext) {
-      SNode pnode = SConceptOperations.createNewNode(MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x36e551eaf2ccfec9L, "FirstOrderLogic.structure.ParenthesesStatement"));
-      SLinkOperations.setTarget(pnode, LINKS.statement$TjGf, SNodeOperations.copyNode(node));
-      SNodeOperations.replaceWithAnother(node, pnode);
+      SNodeFactoryOperations.replaceWithNewChild(node, CONCEPTS.ParenthesesStatement$zg);
     }
     @Override
     public IntentionDescriptor getDescriptor() {
@@ -70,9 +67,5 @@ public final class SurroundWithParentheses_Intention extends AbstractIntentionDe
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept ParenthesesStatement$zg = MetaAdapterFactory.getConcept(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x36e551eaf2ccfec9L, "FirstOrderLogic.structure.ParenthesesStatement");
-  }
-
-  private static final class LINKS {
-    /*package*/ static final SContainmentLink statement$TjGf = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x36e551eaf2ccfec9L, 0x36e551eaf2ccfecaL, "statement");
   }
 }

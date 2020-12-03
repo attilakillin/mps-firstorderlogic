@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="FirstOrderLogic.generator.generator.translate.QueriesGenerated">
+    <classNode dependClassName="FirstOrderLogic.behavior.AOperatorStatement__BehaviorDescriptor" />
+    <classNode dependClassName="FirstOrderLogic.behavior.Constant__BehaviorDescriptor" />
+    <classNode dependClassName="FirstOrderLogic.behavior.NegatedStatement__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.LinkageError" />
     <classNode dependClassName="java.lang.Object" />

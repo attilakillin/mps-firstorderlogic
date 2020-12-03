@@ -1,23 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082485599095:jetbrains.mps.baseLanguage.structure.BlockStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1164991038168:jetbrains.mps.baseLanguage.structure.ThrowStatement" />
   <root>
     <file name="ActionAspectDescriptorImpl.java">
-      <unit at="12,0,28,0" name="FirstOrderLogic.actions.ActionAspectDescriptorImpl" />
+      <unit at="12,0,32,0" name="FirstOrderLogic.actions.ActionAspectDescriptorImpl" />
+    </file>
+  </root>
+  <root nodeRef="r:b99417da-4eab-4617-8cfa-ffc2f0e4d5e3(FirstOrderLogic.actions)/3249548406763024354">
+    <file name="ParenthesesStatement_Factory.java">
+      <node id="3249548406763024856" at="18,138,19,121" concept="1" />
+      <node id="3249548406763151051" at="20,14,21,96" concept="5" />
+      <node id="3249548406763024354" at="27,0,28,0" concept="4" trace="statement$TjGf" />
+      <node id="3249548406763024354" at="31,0,32,0" concept="4" trace="AStatement$1q" />
+      <node id="3249548406763150989" at="20,12,22,7" concept="0" />
+      <node id="3249548406763026822" at="17,91,22,7" concept="2" />
+      <node id="3249548406763024355" at="17,0,24,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="3249548406763026824" at="18,138,19,121" />
+      <scope id="3249548406763150990" at="20,14,21,96" />
+      <scope id="3249548406763024355" at="17,91,22,7" />
+      <scope id="3249548406763024355" at="17,0,24,0">
+        <var name="enclosingNode" id="3249548406763024355" />
+        <var name="model" id="3249548406763024355" />
+        <var name="newNode" id="3249548406763024355" />
+        <var name="sampleNode" id="3249548406763024355" />
+      </scope>
+      <unit id="3249548406763024354" at="26,0,29,0" name="FirstOrderLogic.actions.ParenthesesStatement_Factory$LINKS" />
+      <unit id="3249548406763024354" at="30,0,33,0" name="FirstOrderLogic.actions.ParenthesesStatement_Factory$CONCEPTS" />
+      <unit id="3249548406763024355" at="16,0,25,0" name="FirstOrderLogic.actions.ParenthesesStatement_Factory$NodeFactory_3249548406763024355" />
+      <unit id="3249548406763024354" at="15,0,34,0" name="FirstOrderLogic.actions.ParenthesesStatement_Factory" />
+    </file>
+  </root>
+  <root nodeRef="r:b99417da-4eab-4617-8cfa-ffc2f0e4d5e3(FirstOrderLogic.actions)/3249548406763446800">
+    <file name="NegatedStatement_Factory.java">
+      <node id="3249548406763446815" at="18,138,19,121" concept="1" />
+      <node id="3249548406763452286" at="20,14,21,92" concept="5" />
+      <node id="3249548406763446800" at="27,0,28,0" concept="4" trace="statement$pxjq" />
+      <node id="3249548406763446800" at="31,0,32,0" concept="4" trace="AStatement$1q" />
+      <node id="3249548406763452225" at="20,12,22,7" concept="0" />
+      <node id="3249548406763448900" at="17,91,22,7" concept="2" />
+      <node id="3249548406763446801" at="17,0,24,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <scope id="3249548406763448902" at="18,138,19,121" />
+      <scope id="3249548406763452226" at="20,14,21,92" />
+      <scope id="3249548406763446801" at="17,91,22,7" />
+      <scope id="3249548406763446801" at="17,0,24,0">
+        <var name="enclosingNode" id="3249548406763446801" />
+        <var name="model" id="3249548406763446801" />
+        <var name="newNode" id="3249548406763446801" />
+        <var name="sampleNode" id="3249548406763446801" />
+      </scope>
+      <unit id="3249548406763446800" at="26,0,29,0" name="FirstOrderLogic.actions.NegatedStatement_Factory$LINKS" />
+      <unit id="3249548406763446800" at="30,0,33,0" name="FirstOrderLogic.actions.NegatedStatement_Factory$CONCEPTS" />
+      <unit id="3249548406763446801" at="16,0,25,0" name="FirstOrderLogic.actions.NegatedStatement_Factory$NodeFactory_3249548406763446801" />
+      <unit id="3249548406763446800" at="15,0,34,0" name="FirstOrderLogic.actions.NegatedStatement_Factory" />
     </file>
   </root>
   <root nodeRef="r:b99417da-4eab-4617-8cfa-ffc2f0e4d5e3(FirstOrderLogic.actions)/6722602216769930281">
     <file name="AOperatorStatement_Factories.java">
-      <node id="6722602216769930291" at="17,85,18,126" concept="0" />
-      <node id="6722602216769930300" at="18,126,19,128" concept="0" />
-      <node id="6722602216769930281" at="25,0,26,0" concept="3" trace="AOperatorStatement$ft" />
-      <node id="6722602216769930281" at="29,0,30,0" concept="3" trace="left$tEgL" />
-      <node id="6722602216769930281" at="30,0,31,0" concept="3" trace="right$g53S" />
-      <node id="6722602216769930285" at="16,91,20,7" concept="1" />
-      <node id="6722602216769930282" at="16,0,22,0" concept="2" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;)V" />
+      <node id="6722602216769930291" at="17,85,18,126" concept="1" />
+      <node id="6722602216769930300" at="18,126,19,128" concept="1" />
+      <node id="6722602216769930281" at="25,0,26,0" concept="4" trace="AOperatorStatement$ft" />
+      <node id="6722602216769930281" at="29,0,30,0" concept="4" trace="left$tEgL" />
+      <node id="6722602216769930281" at="30,0,31,0" concept="4" trace="right$g53S" />
+      <node id="6722602216769930285" at="16,91,20,7" concept="2" />
+      <node id="6722602216769930282" at="16,0,22,0" concept="3" trace="setup#(Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SNode;Lorg/jetbrains/mps/openapi/model/SModel;)V" />
       <scope id="6722602216769930290" at="17,85,19,128" />
       <scope id="6722602216769930282" at="16,91,20,7" />
       <scope id="6722602216769930282" at="16,0,22,0">

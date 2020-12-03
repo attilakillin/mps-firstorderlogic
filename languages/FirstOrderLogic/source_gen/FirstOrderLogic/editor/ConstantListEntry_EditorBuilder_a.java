@@ -62,18 +62,18 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createRefNodeList_0() {
-    AbstractCellListHandler handler = new constantsListHandler_tfjbny_b0(myNode, getEditorContext());
+    AbstractCellListHandler handler = new constantListHandler_tfjbny_b0(myNode, getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Horizontal(), false);
-    editorCell.setCellId("refNodeList_constants");
+    editorCell.setCellId("refNodeList_constant");
     ChangeEnterBehavior.setCellActions(editorCell, myNode, getEditorContext());
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class constantsListHandler_tfjbny_b0 extends RefNodeListHandler {
+  private static class constantListHandler_tfjbny_b0 extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public constantsListHandler_tfjbny_b0(SNode ownerNode, EditorContext context) {
+    public constantListHandler_tfjbny_b0(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -83,7 +83,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return myNode;
     }
     public SContainmentLink getSLink() {
-      return LINKS.constants$rdeW;
+      return LINKS.constant$rdeW;
     }
     public SAbstractConcept getChildSConcept() {
       return CONCEPTS.Constant$96;
@@ -96,7 +96,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(constantsListHandler_tfjbny_b0.this.getNode(), LINKS.constants$rdeW));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(constantListHandler_tfjbny_b0.this.getNode(), LINKS.constant$rdeW));
       try {
         EditorCell emptyCell = null;
         emptyCell = createConstant_1();
@@ -157,7 +157,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
   }
 
   private static final class LINKS {
-    /*package*/ static final SContainmentLink constants$rdeW = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00ac8357L, 0x5c35fb00ac835aL, "constants");
+    /*package*/ static final SContainmentLink constant$rdeW = MetaAdapterFactory.getContainmentLink(0x5d8a3d04c5e547e4L, 0x806d03da42a8c2cbL, 0x5c35fb00ac8357L, 0x5c35fb00ac835aL, "constant");
   }
 
   private static final class CONCEPTS {
