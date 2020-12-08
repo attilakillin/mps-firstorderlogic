@@ -10,28 +10,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc982716-13a2-445c-918c-7d724cff1647" name="Default Changelist" comment="Smaller fixes, merged CommentLine and CommentText">
+    <list default="true" id="bc982716-13a2-445c-918c-7d724cff1647" name="Default Changelist" comment="Updated sandbox examples, deleted unused aspects">
+      <change afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/sandbox/source_gen/FirstOrderLogic/sandbox/John &amp; the Peanut.pl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/sandbox/source_gen/FirstOrderLogic/sandbox/Roman example.pl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/sandbox/models/FirstOrderLogic.sandbox.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/sandbox/models/FirstOrderLogic.sandbox.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/PrologProxy/models/PrologProxy.behavior.mps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/PrologProxy/models/PrologProxy.constraints.mps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/PrologProxy/models/PrologProxy.typesystem.mps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen.caches/PrologProxy/behavior/dependencies" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen.caches/PrologProxy/behavior/generated" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen.caches/PrologProxy/constraints/dependencies" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen.caches/PrologProxy/constraints/generated" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen.caches/PrologProxy/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/PrologProxy/source_gen.caches/PrologProxy/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen.caches/PrologProxy/typesystem/dependencies" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen.caches/PrologProxy/typesystem/generated" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/behavior/trace.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/constraints/ConstraintsAspectDescriptor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/constraints/aspectcps-descriptorclasses.mps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/constraints/checkpoints" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/constraints/trace.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/typesystem/TypesystemDescriptor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/typesystem/aspectcps-descriptorclasses.mps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/typesystem/checkpoints" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/PrologProxy/source_gen/PrologProxy/typesystem/trace.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/FirstOrderLogic/sandbox/source_gen.caches/FirstOrderLogic/sandbox/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/FirstOrderLogic/sandbox/source_gen.caches/FirstOrderLogic/sandbox/generated" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +27,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="3fe8eaed-ef60-47f9-9a5e-4db1fb29971a/r:b5163f11-92e3-411c-b989-04ba43b60ee0(TempModule3fe8eaed-ef60-47f9-9a5e-4db1fb29971a/ConsoleModel_4869861362973)">
+            <model ref="1354a313-748d-44a2-8d05-56d99cbbc900/r:e5bd883e-ca2b-4dda-ade3-98c22109f76c(TempModule1354a313-748d-44a2-8d05-56d99cbbc900/ConsoleModel_23356578624026)">
               <persistence version="9" />
               <languages>
                 <devkit ref="70d3d6da-af63-483d-a75f-9c8acf8de332(jetbrains.mps.console.devkit)" />
@@ -64,11 +47,11 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="2GiYB7g7KSc">
-                <node concept="3balQm" id="2GiYB7g7KSd" role="aymYE" />
-                <node concept="2Clz$F" id="2GiYB7g7KSe" role="aymYO" />
-                <node concept="2_V_lH" id="2GiYB7g7KSf" role="1PhJh3">
-                  <ref role="2_V_lI" node="2GiYB7g7KSe" resolve="CommandHolder" />
+              <node concept="aymSD" id="5Trl$7hfadA">
+                <node concept="3balQm" id="5Trl$7hfadB" role="aymYE" />
+                <node concept="2Clz$F" id="5Trl$7hfadC" role="aymYO" />
+                <node concept="2_V_lH" id="5Trl$7hfadD" role="1PhJh3">
+                  <ref role="2_V_lI" node="5Trl$7hfadC" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -197,6 +180,64 @@
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" />
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="b652e673-8536-4769-bfa6-45ef50c1c44d" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="b652e673-8536-4769-bfa6-45ef50c1c44d" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FirstOrderLogic" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:9b6ec50d-f7ec-4b64-879f-5d3819edc76e(FirstOrderLogic.sandbox) in IdeaFile[path: /home/attila/University/Témalabor/FirstOrderLogic/languages/FirstOrderLogic/sandbox/models/FirstOrderLogic.sandbox.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="b652e673-8536-4769-bfa6-45ef50c1c44d" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FirstOrderLogic" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <SELECTED>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </SELECTED>
+        </subPane>
+      </pane>
       <pane id="FileSystem">
         <subPane>
           <expand>
@@ -214,160 +255,6 @@
             </path>
           </expand>
           <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="5d8a3d04-c5e5-47e4-806d-03da42a8c2cb(FirstOrderLogic)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FirstOrderLogic.generator" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FirstOrderLogic" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:d10a8a23-5e3f-455c-bbc1-e889e2e1bf3f(FirstOrderLogic.generator.generator.translate@generator) in IdeaFile[path: /home/attila/University/Témalabor/FirstOrderLogic/languages/FirstOrderLogic/generator/templates/FirstOrderLogic.generator.generator.translate@generator.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="5d8a3d04-c5e5-47e4-806d-03da42a8c2cb(FirstOrderLogic)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FirstOrderLogic.generator" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FirstOrderLogic" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:d10a8a23-5e3f-455c-bbc1-e889e2e1bf3f(FirstOrderLogic.generator.generator.translate@generator) in IdeaFile[path: /home/attila/University/Témalabor/FirstOrderLogic/languages/FirstOrderLogic/generator/templates/FirstOrderLogic.generator.generator.translate@generator.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="preprocess" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="b652e673-8536-4769-bfa6-45ef50c1c44d" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FirstOrderLogic" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="5d8a3d04-c5e5-47e4-806d-03da42a8c2cb(FirstOrderLogic)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FirstOrderLogic.generator" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="b652e673-8536-4769-bfa6-45ef50c1c44d" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="5d8a3d04-c5e5-47e4-806d-03da42a8c2cb(FirstOrderLogic)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="5d8a3d04-c5e5-47e4-806d-03da42a8c2cb(FirstOrderLogic)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FirstOrderLogic.generator" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FirstOrderLogic" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <SELECTED>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="5d8a3d04-c5e5-47e4-806d-03da42a8c2cb(FirstOrderLogic)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FirstOrderLogic.generator" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FirstOrderLogic" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:d10a8a23-5e3f-455c-bbc1-e889e2e1bf3f(FirstOrderLogic.generator.generator.translate@generator) in IdeaFile[path: /home/attila/University/Témalabor/FirstOrderLogic/languages/FirstOrderLogic/generator/templates/FirstOrderLogic.generator.generator.translate@generator.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="preprocess" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="7076127368651552628" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </SELECTED>
         </subPane>
       </pane>
     </panes>
@@ -500,7 +387,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606998697099</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Updated sandbox examples, deleted unused aspects">
+      <created>1607435311368</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1607435311368</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="UsagesViewTool">
@@ -649,7 +543,8 @@
     <MESSAGE value="Smaller fixes for the generator and textgen" />
     <MESSAGE value="Finally created proper predicate/term substitution/insertion menu" />
     <MESSAGE value="Smaller fixes, merged CommentLine and CommentText" />
-    <option name="LAST_COMMIT_MESSAGE" value="Smaller fixes, merged CommentLine and CommentText" />
+    <MESSAGE value="Updated sandbox examples, deleted unused aspects" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated sandbox examples, deleted unused aspects" />
   </component>
   <component name="WindowStateProjectService">
     <state x="567" y="177" width="916" height="582" key="#MPSPropertiesConfigurable" timestamp="1606914655953">
@@ -682,12 +577,20 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="242" y="0" width="1105" height="856" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1604580582041" />
-    <state x="583" y="264" width="424" height="480" key="FileChooserDialogImpl" timestamp="1606133423845">
+    <state x="100" y="176" width="1400" height="660" key="DiffContextDialog" timestamp="1607436066548">
+      <screen x="0" y="76" width="1600" height="900" />
+    </state>
+    <state x="100" y="176" width="1400" height="660" key="DiffContextDialog/0.76.1600.900/1600.0.1920.1080@0.76.1600.900" timestamp="1607436066548" />
+    <state x="583" y="264" width="424" height="480" key="FileChooserDialogImpl" timestamp="1607435449558">
       <screen x="0" y="76" width="1600" height="900" />
     </state>
     <state x="583" y="180" width="424" height="480" key="FileChooserDialogImpl/0.0.1600.860/1600.0.1920.1080@0.0.1600.860" timestamp="1603883093326" />
     <state x="583" y="180" width="424" height="480" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1605960214220" />
-    <state x="583" y="264" width="424" height="480" key="FileChooserDialogImpl/0.76.1600.900/1600.0.1920.1080@0.76.1600.900" timestamp="1606133423845" />
+    <state x="583" y="264" width="424" height="480" key="FileChooserDialogImpl/0.76.1600.900/1600.0.1920.1080@0.76.1600.900" timestamp="1607435449558" />
+    <state x="643" y="404" key="Github.ShareDialog" timestamp="1607435901294">
+      <screen x="0" y="76" width="1600" height="900" />
+    </state>
+    <state x="643" y="404" key="Github.ShareDialog/0.76.1600.900/1600.0.1920.1080@0.76.1600.900" timestamp="1607435901294" />
     <state x="383" y="176" width="814" height="503" key="IDE.errors.dialog" timestamp="1604580950435">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
